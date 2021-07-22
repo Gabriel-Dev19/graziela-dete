@@ -11,7 +11,7 @@
               Home
             </button>
             <button class="btn nav-link">
-              Sobre Graziela
+              Sobre
             </button>
             <button class="btn nav-link">
               Serviços
