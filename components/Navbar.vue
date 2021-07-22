@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <nav class="navbar nav borda">
+      <nav class="navbar nav">
         <div class="container">
           <a href="">
             <img src="" alt="Logo">
