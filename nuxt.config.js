@@ -5,6 +5,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  server: {
+    host: '0.0.0.0'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'graziela-dete',
@@ -15,19 +19,30 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'theme-color', content: '#00649e' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: '#00649e' },
-      { name: 'msapplication-navbutton-color', content: '#00649e' }
+      { name: 'theme-color', content: '#ffffff' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: '#ffffff' },
+      { name: 'msapplication-navbutton-color', content: '#ffffff' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css', integrity: 'sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p', crossorigin: 'anonymous' },
       { href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css', rel: 'stylesheet' }
+    ],
+    script: [
+      {
+        type: 'module',
+        src: 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'
+      },
+      {
+        nomodule: '',
+        src: 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'
+      }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/scss/index.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -45,6 +60,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // https://go.nuxtjs.dev/bootstrap
+    'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios'
   ],

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
 @import url(./padrao.css);
 @import url(./media-queries.css);
@@ -28,13 +29,9 @@
     --light: #f8f9fa;
     --dark: #343a40;
 
-    --azul: #00649e;
-    --azul_light: #00a2ff;
-    --azul_escuro: #005282;
-    --black: #000000;
-    --black: #00d86c;
-    --cinza-claro: #c9c9c9;
-    --black_dark: #232b33;
+    --roxo: #a55eea;
+    --roxo_claro: #b88de2;
+    --roxo_escuro: #8854d0;
     --whatsapp: #34af23;
     --whatsapp_hover: #258c18;
 }
@@ -49,6 +46,41 @@ button:focus, .btn:focus{
 }
 .borda{
     border: 1px solid var(--danger);
+}
+.font-teko{
+    font-family: 'Teko', sans-serif !important;
+    letter-spacing: 0.9px;
+}
+@media (min-width: 1px) {
+    h1.font-teko{
+        line-height: 45px;
+    }
+}
+@media (min-width: 576px) {
+    h1.display-sm-4{
+        line-height: 55px;
+    }
+}
+@media (min-width: 992px) {
+    h1.display-lg-3{
+        line-height: 70px;
+    }
+}
+.text-roxo{
+    color: var(--roxo);
+}
+a i.text-roxo{
+    color: var(--roxo);
+}
+a i.text-roxo:hover{
+    color: var(--roxo_escuro);
+}
+.btn-roxo{
+    background-color: var(--roxo);
+    color: var(--white) !important;
+}
+.btn-roxo:hover{
+    background-color: var(--roxo_escuro);
 }
 .no-underline:hover{
     text-decoration: none !important;
@@ -94,39 +126,6 @@ button:focus, .btn:focus{
 .text-italic{
     font-style: italic;
 }
-.text-whatsapp{
-    color: #34af23;
-}
-.text-facebook{
-    color: #3b5998;
-}
-.text-twitter{
-    color: #00aced;
-}
-.text-instagram{
-    color: #517fa4;
-}
-.text-pinterest{
-    color: #cb2027;
-}
-.text-youtube{
-    color: #bb0000;
-}
-.bg-facebook{
-    background-color: #3b5998;
-}
-.bg-twitter{
-    background-color: #00aced;
-}
-.bg-instagram{
-    background-color: #517fa4;
-}
-.bg-pinterest{
-    background-color: #cb2027;
-}
-.bg-youtube{
-    background-color: #bb0000;
-}
 .borda-top-preto-separation{
     position: absolute;
     top: 17px;
@@ -153,35 +152,6 @@ button:focus, .btn:focus{
     margin: 0 !important;
 }
 
-#modal-produto-1 .modal-body,
-#modal-produto-2 .modal-body,
-#modal-produto-3 .modal-body,
-#modal-produto-4 .modal-body,
-#modal-produto-5 .modal-body,
-#modal-produto-6 .modal-body,
-#modal-produto-7 .modal-body,
-#modal-produto-8 .modal-body,
-#modal-produto-9 .modal-body,
-#modal-produto-10 .modal-body,
-#modal-produto-11 .modal-body,
-#modal-produto-12 .modal-body,
-#modal-produto-13 .modal-body,
-#modal-produto-14 .modal-body,
-#modal-produto-15 .modal-body,
-#modal-produto-16 .modal-body,
-#modal-produto-17 .modal-body,
-#modal-produto-18 .modal-body,
-#modal-produto-19 .modal-body{
-    border: none !important;
-    background-color: var(--white);
-    border-radius: 5px;
-    padding-bottom: 20px;
-    padding-top: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    overflow: hidden;
-}
-
 #modal-whatsapp___BV_modal_outer_ .modal-backdrop{
     background: #000;
     opacity: 0.6;
@@ -201,193 +171,6 @@ button:focus, .btn:focus{
     opacity: 0;
 }
 #termos___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-1___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-1___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-1___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-2___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-2___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-2___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-3___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-3___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-3___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-4___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-4___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-4___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-5___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-5___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-5___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-6___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-6___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-6___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-7___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-7___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-7___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-8___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-8___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-8___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-9___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-9___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-9___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-10___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-10___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-10___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-11___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-11___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-11___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-12___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-12___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-12___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-13___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-13___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-13___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-14___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-14___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-14___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-15___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-15___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-15___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-16___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-16___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-16___BV_modal_outer_ .modal-backdrop.show{
-  opacity: 0.6;
-}
-
-#modal-produto-17___BV_modal_outer_ .modal-backdrop{
-    background: #000;
-    opacity: 0.6;
-}
-#modal-produto-17___BV_modal_outer_ .modal-backdrop.fade {
-    opacity: 0;
-}
-#modal-produto-17___BV_modal_outer_ .modal-backdrop.show{
   opacity: 0.6;
 }
 
