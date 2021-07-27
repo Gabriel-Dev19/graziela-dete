@@ -1,19 +1,12 @@
 <template>
   <div>
     <Navbar />
-    <Home bg-home="true" />
-    <Planejamento />
-    <Servicos />
-    <section class="height-100-vh" />
+    <Nuxt />
   </div>
 </template>
-
 <script>
-import Vue from '../node_modules/vue'
-import Home from '~/components/Home.vue'
+import Vue from '~/node_modules/vue'
 import Navbar from '~/components/Navbar.vue'
-import Planejamento from '~/components/Planejamento.vue'
-import Servicos from '~/components/Servicos.vue'
 Vue.directive('scroll', {
   inserted (el, binding) {
     const f = function (evt) {
@@ -25,6 +18,10 @@ Vue.directive('scroll', {
   }
 })
 export default {
-  components: { Navbar, Home, Planejamento, Servicos }
+  components: { Navbar }
+
 }
 </script>
+<style scoped>
+
+</style>

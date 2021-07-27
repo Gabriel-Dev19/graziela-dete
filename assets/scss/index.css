@@ -39,7 +39,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     min-width: 360px;
-    color: #2c3e50;
+    color: #2a2f33;
 }
 button:focus, .btn:focus{
     box-shadow: none !important;
@@ -69,6 +69,12 @@ button:focus, .btn:focus{
 .text-roxo{
     color: var(--roxo);
 }
+.bg-roxo{
+    background-color: var(--roxo);
+}
+.bg-roxo-escuro{
+    background-color: var(--roxo_escuro);
+}
 a i.text-roxo{
     color: var(--roxo);
 }
@@ -81,6 +87,21 @@ a i.text-roxo:hover{
 }
 .btn-roxo:hover{
     background-color: var(--roxo_escuro);
+}
+.btn-teko{
+    font-family: 'Teko', sans-serif !important;
+    letter-spacing: 0.9px;
+}
+.btn-teko:hover{
+    color: var(--roxo_escuro);
+}
+.btn-teko-branco{
+    font-family: 'Teko', sans-serif !important;
+    letter-spacing: 0.9px;
+    color: var(--white);
+}
+.btn-teko-branco:hover{
+    color: var(--roxo_escuro);
 }
 .no-underline:hover{
     text-decoration: none !important;

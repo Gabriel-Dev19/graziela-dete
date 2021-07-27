@@ -1,5 +1,13 @@
 <template>
-  <div class="py-xs-50 py-sm-90 d-flex align-items-center bg-home">
+  <div
+    class="py-xs-50 py-sm-90 d-flex align-items-center"
+    :class="{
+      'bg-home': bgHome,
+      'bg-investigacao-conjugal': bgConjugal,
+      'bg-investigacao-empresarial': bgEmpresarial,
+      'bg-investigacao-politica': bgPolitica,
+      'bg-localizacao-de-pessoas': bgLocalizacao, }"
+  >
     <div class="container mt-110">
       <h1 class="text-white text-center position-relative d-flex px-0 justify-content-center col-xl-8 mx-auto text-uppercase fw-400 display-sm-4 display-lg-3 font-teko">
         {{ titleHome }}
@@ -55,6 +63,34 @@ export default {
     hashBtn: {
       type: String,
       default: '#servicos'
+    },
+    bgHome: {
+      type: Boolean,
+      default: false
+    },
+    bgConjugal: {
+      type: Boolean,
+      default: false
+    },
+    bgEmpresarial: {
+      type: Boolean,
+      default: false
+    },
+    bgPolitica: {
+      type: Boolean,
+      default: false
+    },
+    bgLocalizacao: {
+      type: Boolean,
+      default: false
+    },
+    bgSoftware: {
+      type: Boolean,
+      default: false
+    },
+    bgProvas: {
+      type: Boolean,
+      default: false
     }
   }
 }
@@ -62,6 +98,37 @@ export default {
 <style scoped>
   .bg-home{
     background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    background-size: cover;
+  }
+  .bg-investigacao-conjugal{
+    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    background-size: cover;
+  }
+  .bg-investigacao-empresarial{
+    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    background-size: cover;
+  }
+  .bg-investigacao-politica{
+    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    background-size: cover;
+  }
+  .bg-localizacao-de-pessoas{
+    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
     background-size: cover;
   }
   .separation-home{
