@@ -19,7 +19,7 @@
     --cyan: #17a2b8;
     --white: #ffffff;
     --gray: #6c757d;
-    --gray-dark: #343a40;
+    --gray-dark: #2a2f33;
     --primary: #007bff;
     --secondary: #6c757d;
     --success: #28a745;
@@ -27,11 +27,13 @@
     --warning: #ffc107;
     --danger: #dc3545;
     --light: #f8f9fa;
-    --dark: #343a40;
+    --dark: #2a2f33 !important;
 
     --roxo: #a55eea;
     --roxo_claro: #b88de2;
     --roxo_escuro: #8854d0;
+    --roxo_super_escuro: #6c43a5;
+    --grafite: #2a2f33;
     --whatsapp: #34af23;
     --whatsapp_hover: #258c18;
 }
@@ -40,6 +42,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     min-width: 360px;
     color: #2a2f33;
+    background-color: var(--light);
 }
 button:focus, .btn:focus{
     box-shadow: none !important;
@@ -47,9 +50,18 @@ button:focus, .btn:focus{
 .borda{
     border: 1px solid var(--danger);
 }
+.bg-cinza{
+    background-color: #e8e8e8;
+}
 .font-teko{
     font-family: 'Teko', sans-serif !important;
     letter-spacing: 0.9px;
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease, opacity .3s ease;
 }
 @media (min-width: 1px) {
     h1.font-teko{
@@ -82,11 +94,11 @@ a i.text-roxo:hover{
     color: var(--roxo_escuro);
 }
 .btn-roxo{
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
     color: var(--white) !important;
 }
 .btn-roxo:hover{
-    background-color: var(--roxo_escuro);
+    background-color: var(--roxo_super_escuro);
 }
 .btn-teko{
     font-family: 'Teko', sans-serif !important;

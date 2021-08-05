@@ -70,7 +70,6 @@ export default {
   }
   .nav-link{
     color: var(--white);
-    font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.5px;
   }

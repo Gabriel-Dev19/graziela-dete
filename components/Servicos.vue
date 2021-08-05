@@ -205,27 +205,27 @@ export default {
     letter-spacing: 1px;
   }
   .bg-conjugal{
-    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/bg-conjugal.webp) center center no-repeat;
+    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/servicos/bg-conjugal.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-empresarial{
-    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/bg-empresarial.webp) center center no-repeat;
+    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/servicos/bg-empresarial.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-politica{
-    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/bg-politica.webp) center center no-repeat;
+    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-localizacao{
-    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/bg-localizacao.webp) center center no-repeat;
+    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/servicos/bg-localizacao.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-provas{
-    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/bg-provas.webp) center center no-repeat;
+    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/servicos/bg-provas.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-software{
-    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/bg-software.webp) center center no-repeat;
+    background: linear-gradient(#000000b6, #000000b6), url(../assets/img/servicos/bg-software.webp) center center no-repeat;
     background-size: cover;
   }
 </style>
