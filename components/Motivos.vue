@@ -21,7 +21,7 @@
       <div class="col-sm-10 col-md col-lg-5 col-xl-4 bg-paper py-60 shadow-sm border">
         <div class="col-xs-7 col-sm-7 col-lg-6 d-flex justify-content-center mx-auto px-2">
           <div>
-            <img src="../assets/img/agencia-preparada.webp" class="img-fluid rounded-circle border shadow" alt="">
+            <img src="../assets/img/agencia-preparada.webp" class="img-fluid rounded-circle shadow" alt="">
           </div>
         </div>
         <h2 class="font-teko text-center mb-1 text-uppercase mt-30">
@@ -35,7 +35,7 @@
       <div class="col-sm-10 col-md col-lg-5 col-xl-4 mt-xs-30 mt-sm-30 mt-md-0 ml-md-50 bg-paper py-60 shadow-sm border">
         <div class="col-xs-7 col-sm-7 col-lg-6 d-flex justify-content-center mx-auto px-2">
           <div>
-            <img src="../assets/img/profissionais-capacitados.webp" class="img-fluid rounded-circle border shadow" alt="">
+            <img src="../assets/img/profissionais-capacitados.webp" class="img-fluid rounded-circle shadow" alt="">
           </div>
         </div>
         <h2 class="font-teko text-center mb-1 text-uppercase mt-30">
@@ -75,6 +75,9 @@ export default {
     bottom: -10px;
     border-radius: 3px;
     background-color: var(--roxo);
+  }
+  img{
+    border: 2px solid var(--roxo);
   }
   .container-conteudo-motivos{
     margin-top: -235px;

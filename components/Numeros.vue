@@ -1,6 +1,6 @@
 <template>
   <div class="py-100">
-    <div class="container d-flex row mx-auto">
+    <div v-scroll="NumerosScroll" class="container d-flex row mx-auto">
       <div class="col-lg-7 px-0">
         <h1 class="font-teko mb-0 text-xs-center text-sm-center text-lg-left text-uppercase">
           Agência Graziela Bastos
@@ -24,10 +24,10 @@
           Números surpreendentes
           <div class="borda-tema-numeros" />
         </h6>
-        <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start row mx-auto">
+        <div id="container-numeros" class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start row mx-auto">
           <div class="col-xs-6 col-sm-auto mt-20 px-0 py-20">
             <h1 class="font-teko display-4 d-flex justify-content-center position-relative fw-500 text-center">
-              128
+              {{ Numeros.Casos }}
               <div class="borda-numeros" />
             </h1>
             <h5 class="fw-700 mt-4 text-center text-uppercase fs-14">
@@ -38,7 +38,7 @@
           </div>
           <div class="col-xs-6 col-sm-auto mt-20 px-0 mx-sm-70 py-20">
             <h1 class="font-teko display-4 d-flex justify-content-center position-relative fw-500 text-center">
-              109
+              {{ Numeros.Suspeitas }}
               <div class="borda-numeros" />
             </h1>
             <h5 class="fw-700 mt-4 text-center text-uppercase fs-14">
@@ -49,7 +49,7 @@
           </div>
           <div class="col-xs-6 col-sm-auto mt-20 px-0 py-20">
             <h1 class="font-teko display-4 d-flex justify-content-center position-relative fw-500 text-center">
-              98
+              {{ Numeros.Clientes }}
               <div class="borda-numeros" />
             </h1>
             <h5 class="fw-700 mt-4 text-center text-uppercase fs-14">
@@ -73,7 +73,36 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
+      Numeros: {
+        Casos: 0,
+        Suspeitas: 0,
+        Clientes: 0
+      }
+    }
+  },
+  methods: {
+    NumerosScroll () {
+      const Janela = document.body.getBoundingClientRect()
+      const ContainerScroll = document.getElementById('container-numeros').getBoundingClientRect()
+      const OffsetScroll = ContainerScroll.top - Janela.top
 
+      if (window.scrollY > OffsetScroll - 650) {
+        setInterval(() => {
+          if (this.Numeros.Casos < 128) {
+            this.Numeros.Casos = this.Numeros.Casos + 1
+          }
+          if (this.Numeros.Suspeitas < 109) {
+            this.Numeros.Suspeitas = this.Numeros.Suspeitas + 1
+          }
+          if (this.Numeros.Clientes < 98) {
+            this.Numeros.Clientes = this.Numeros.Clientes + 1
+          }
+        }, 80)
+      }
+    }
+  }
 }
 </script>
 <style scoped>

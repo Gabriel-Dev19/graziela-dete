@@ -81,11 +81,20 @@ button:focus, .btn:focus{
 .text-roxo{
     color: var(--roxo);
 }
+.text-grafite{
+    color: var(--grafite);
+}
 .bg-roxo{
     background-color: var(--roxo);
 }
 .bg-roxo-escuro{
     background-color: var(--roxo_escuro);
+}
+.bg-roxo-super-escuro{
+    background-color: var(--roxo_super_escuro);
+}
+.text-roxo-escuro{
+    color: var(--roxo_super_escuro);
 }
 a i.text-roxo{
     color: var(--roxo);
