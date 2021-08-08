@@ -46,9 +46,9 @@
         <div class="col separation-redes-home ml-3" />
       </div>
       <div class="mt-70 bg-roxo-escuro d-flex row mx-auto px-xs-3 px-sm-3 px-lg-30 px-xl-50 py-30">
-        <div class="col-lg-4 col-xl-5 px-0 text-white">
-          <h3 class="mb-0 text-xs-center text-sm-center text-lg-left">
-            <i class="fab fa-telegram-plane mb-1 mr-10 fs-xs-35 fs-sm-35 fs-lg-28 float-lg-left" />
+        <div class="col-xl-4 col-xl-5 px-0 text-white">
+          <h3 class="mb-0 text-xs-center text-sm-center text-xl-left">
+            <i class="fab fa-telegram-plane mb-1 mr-10 fs-xs-38 fs-sm-38 fs-xl-28 float-xl-left" />
             <div class="text-uppercase font-teko">
               Fale diretamente com uma
               <div class="d-inline-block">
@@ -60,47 +60,53 @@
               </div>
             </div>
           </h3>
-          <p class="mt-1 text-xs-center text-sm-center text-lg-left mb-0">
+          <p class="mt-1 text-xs-center text-sm-center text-xl-left mb-0">
             Se você não se sente a vontade de falar com um detetive homem você veio ao lugar certo, temos canais de
             atendimento específicos onde você fala com a própria Graziela Bastos!
           </p>
         </div>
-        <div class="col-md-11 mx-auto mt-xs-30 mt-sm-30 mt-lg-0 col-lg px-0 text-white d-flex row justify-content-xs-center justify-content-sm-center justify-content-lg-end align-items-center ml-lg-50">
-          <div class="col-xs-12 col-sm-9 col-md border rounded py-10 px-2">
+        <div class="col-md-11 mx-auto mt-xs-30 mt-sm-30 mt-xl-0 col-xl px-0 text-white d-flex row justify-content-xs-center justify-content-sm-center justify-content-lg-end align-items-center ml-lg-40 ml-xl-50">
+          <div class="col-xs-9 col-sm-9 col-md py-10 px-2">
             <div class="d-flex justify-content-center">
               <ion-icon class="fs-37" name="mail-outline" style="margin-top: 0px" />
             </div>
             <p class="fs-13 col-11 mt-1 mb-10 text-center line-height-p-mulher px-0 mx-auto">
-              Mande um e-mail para a Grazi
+              Mande um e-mail
+              <br>
+              para a Grazi
             </p>
             <div class="d-flex pt-1 justify-content-center">
-              <a href="mailto:" class="text-center btn btn-outline-light border-radius-0 btn-sm">
-                Envie seu email <i class="fab fa-telegram-plane ml-1 mb-1" />
+              <a href="mailto:" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
+                Envie seu E-mail <i class="fab fa-telegram-plane ml-1 mb-1" />
               </a>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-9 col-md border rounded py-10 my-xs-20 my-sm-20 my-md-0 mx-md-40 mx-lg-10 mx-xl-20 px-0">
+          <div class="col-xs-9 col-sm-9 col-md py-10 my-xs-20 my-sm-20 my-md-0 mx-md-40 mx-lg-10 px-2">
             <div class="d-flex justify-content-center">
               <ion-icon class="fs-37" name="call-outline" style="margin-top: 0px" />
             </div>
             <p class="fs-13 col-11 mt-1 mb-10 text-center line-height-p-mulher mx-auto px-0">
-              Ligue diretamente para a Grazi
+              Ligue diretamente
+              <br>
+              para a Grazi
             </p>
             <div class="d-flex pt-1 justify-content-center">
-              <a href="mailto:" class="text-center btn btn-outline-light border-radius-0 btn-sm">
+              <a href="mailto:" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
                 Ligue agora <i class="fa fa-phone-alt fs-12 ml-1 mb-1" />
               </a>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-9 col-md border rounded py-10 px-2">
+          <div class="col-xs-9 col-sm-9 col-md py-10 px-2">
             <div class="d-flex justify-content-center">
               <ion-icon class="fs-37" name="reader-outline" style="margin-top: 0px" />
             </div>
             <p class="fs-13 col-11 mt-1 mb-10 text-center line-height-p-mulher px-0 mx-auto">
-              Preencha nosso formulário
+              Preencha nosso
+              <br>
+              formulário
             </p>
             <div class="d-flex pt-1 justify-content-center">
-              <a href="mailto:" class="text-center btn btn-outline-light border-radius-0 btn-sm">
+              <a href="mailto:" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
                 Formulário <ion-icon class="fs-16" name="reader-outline" style="margin-bottom: -3px" />
               </a>
             </div>
@@ -221,8 +227,8 @@ export default {
     height: 84%;
     z-index: 0;
   }
-  @media (min-width: 992px) {
-    .float-lg-left{
+  @media (min-width: 1200px) {
+    .float-xl-left{
       float: left;
     }
   }

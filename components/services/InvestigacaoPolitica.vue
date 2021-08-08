@@ -1,6 +1,6 @@
 <template scoped>
   <div>
-    <div id="content-servicos-3" v-scroll="ScrollContent" class="mt-70 col-md-10 col-lg-12 px-0 d-flex position-relative justify-content-end align-items-center row mx-auto">
+    <div id="content-servicos-3" v-scroll="ScrollContent" class="col-md-10 col-lg-12 px-0 d-flex position-relative justify-content-end align-items-center row mx-auto">
       <div :class="{'show-content-servicos-1': ShowContentScroll}" class="conteudo-left hide-content-servicos-1 shadow pb-xs-20 pb-sm-20 pt-xs-40 pt-sm-40 py-lg-20 order-xs-2 order-sm-2 order-lg-1 col-lg-6 px-lg-20">
         <h1 class="font-teko mb-1 text-white text-xs-center text-sm-center fw-400 text-lg-left text-uppercase">
           Investigação política
@@ -77,24 +77,48 @@ export default {
 </script>
 <style scoped>
   .hide-content-servicos-1{
-    transform: translateX(-200px);
+    transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
     opacity: 0;
     transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .hide-img-servicos-1{
-    transform: translateX(200px);
+    transform: translateX(100px);
+    -o-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -webkit-transform: translateX(100px);
     opacity: 0;
     transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .show-content-servicos-1{
     transform: translateX(0px) !important;
+    -o-transform: translateX(0px) !important;
+    -moz-transform: translateX(0px) !important;
+    -webkit-transform: translateX(0px) !important;
     opacity: 1 !important;
     transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .show-img-servicos-1{
     transform: translateX(0px) !important;
+    -o-transform: translateX(0px) !important;
+    -moz-transform: translateX(0px) !important;
+    -webkit-transform: translateX(0px) !important;
     opacity: 1 !important;
     transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .separation-tema{
     position: absolute;

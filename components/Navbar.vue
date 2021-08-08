@@ -17,25 +17,25 @@
             Logo
           </a>
           <div class="ml-auto d-flex">
-            <button class="btn nav-link position-relative px-0" :class="{'text-white': NavScroll}" @click.prevent="$router.push('/')">
+            <button class="btn nav-link d-flex position-relative px-0" @click.prevent="$router.push('/')">
               Início
-              <div class="marcacao-nav" :class="{'bg-white': NavScroll, 'bg-roxo': !NavScroll}" />
+              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
             </button>
-            <button class="btn nav-link position-relative px-0 mx-35" :class="{'text-white': NavScroll}" @click.prevent="$router.push('/sobre')">
+            <button class="btn nav-link d-flex position-relative px-0 mx-35" @click.prevent="$router.push('/sobre')">
               Sobre
-              <div class="marcacao-nav" :class="{'bg-white': NavScroll, 'bg-roxo': !NavScroll}" />
+              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
             </button>
-            <button class="btn nav-link position-relative px-0" :class="{'text-white': NavScroll}" @click.prevent="$router.push('/servicos')">
+            <button class="btn nav-link d-flex position-relative px-0" @click.prevent="$router.push('/servicos')">
               Serviços
-              <div class="marcacao-nav" :class="{'bg-white': NavScroll, 'bg-roxo': !NavScroll}" />
+              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
             </button>
-            <button class="btn nav-link position-relative px-0 mx-35" :class="{'text-white': NavScroll}">
+            <button class="btn nav-link d-flex position-relative px-0 mx-35">
               Onde atendemos
-              <div class="marcacao-nav" :class="{'bg-white': NavScroll, 'bg-roxo': !NavScroll}" />
+              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
             </button>
-            <button class="btn nav-link position-relative px-0" :class="{'text-white': NavScroll}">
+            <button class="btn nav-link d-flex position-relative px-0">
               Fale conosco
-              <div class="marcacao-nav" :class="{'bg-white': NavScroll, 'bg-roxo': !NavScroll}" />
+              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
             </button>
           </div>
         </div>
@@ -47,7 +47,8 @@
 export default {
   data () {
     return {
-      NavScroll: false
+      NavScroll: false,
+      MarcacaoHome: false
     }
   },
   methods: {
@@ -67,6 +68,18 @@ export default {
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
+  }
+  button.nav-link i{
+    width: 0px;
+    overflow: hidden;
+    transition: all .2s;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+  }
+  button.nav-link:hover i {
+    width: 22px;
+    padding-left: 10px;
   }
   .nav-link{
     color: var(--white);
@@ -89,8 +102,5 @@ export default {
   .nav-link:hover .marcacao-nav{
     transform: translateY(0px);
     opacity: 1;
-  }
-  .nav-link:hover{
-    color: var(--roxo_claro);
   }
 </style>

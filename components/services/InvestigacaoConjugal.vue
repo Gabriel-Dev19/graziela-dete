@@ -77,24 +77,48 @@ export default {
 </script>
 <style scoped>
   .hide-content-servicos-1{
-    transform: translateX(-200px);
+    transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
     opacity: 0;
     transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .hide-img-servicos-1{
-    transform: translateX(200px);
+    transform: translateX(100px);
+    -o-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -webkit-transform: translateX(100px);
     opacity: 0;
     transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .show-content-servicos-1{
     transform: translateX(0px) !important;
+    -o-transform: translateX(0px) !important;
+    -moz-transform: translateX(0px) !important;
+    -webkit-transform: translateX(0px) !important;
     opacity: 1 !important;
     transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .show-img-servicos-1{
     transform: translateX(0px) !important;
+    -o-transform: translateX(0px) !important;
+    -moz-transform: translateX(0px) !important;
+    -webkit-transform: translateX(0px) !important;
     opacity: 1 !important;
     transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
   }
   .separation-tema{
     position: absolute;

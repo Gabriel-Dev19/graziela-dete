@@ -1,11 +1,15 @@
 <template>
-  <div class="pt-120">
+  <div class="pt-130">
     <div class="container px-0 position-relative d-flex justify-content-center row mx-auto pb-80">
+      <h1 class="font-teko position-relative col-12 d-flex justify-content-center text-uppercase text-center">
+        Nosso trabalho fala por sí!
+        <div class="separation-tema" />
+      </h1>
       <b-carousel
         id="carousel-comentarios"
         ref="carouselComentarios"
         :interval="7000"
-        class="mx-auto mx-0 col-12"
+        class="mx-auto mx-0 mt-60 col-12"
         @sliding-start="VerificaSlide"
       >
         <b-carousel-slide>
@@ -19,7 +23,7 @@
               Juliana Santos / Floarianópolis - SC
             </h5>
           </div>
-          <p class="fw-500 text-center mt-10 col-lg-10 px-xs-0 mx-auto">
+          <p class="fw-500 text-center mt-10 col-lg-10 fs-17 px-xs-0 mx-auto">
             <i class="fas fa-quote-left text-roxo" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, numquam ad temporibus cumque accusantium
             assumenda quibusdam officiis iste ex optio rem vel soluta placeat enim, atque minima
             porro voluptas consectetur
@@ -39,7 +43,7 @@
               Fabrício Cavalcante / Mafra - SC
             </h5>
           </div>
-          <p class="fw-500 text-center mt-10 col-lg-10 px-xs-0 mx-auto">
+          <p class="fw-500 text-center mt-10 col-lg-10 fs-17 px-xs-0 mx-auto">
             <i class="fas fa-quote-left text-roxo" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, numquam ad temporibus cumque accusantium
             assumenda quibusdam officiis iste ex optio rem vel soluta placeat enim, atque minima
             porro voluptas consectetur
@@ -59,7 +63,7 @@
               Emmily Fonseca / Blumenal - SC
             </h5>
           </div>
-          <p class="fw-500 text-center mt-10 col-lg-10 px-xs-0 mx-auto">
+          <p class="fw-500 text-center mt-10 col-lg-10 fs-17 px-xs-0 mx-auto">
             <i class="fas fa-quote-left text-roxo" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, numquam ad temporibus cumque accusantium
             assumenda quibusdam officiis iste ex optio rem vel soluta placeat enim, atque minima
             porro voluptas consectetur
@@ -79,7 +83,7 @@
               Emílio Alencar / Curitiba - PR
             </h5>
           </div>
-          <p class="fw-500 text-center mt-10 col-lg-10 px-xs-0 mx-auto">
+          <p class="fw-500 text-center mt-10 col-lg-10 fs-17 px-xs-0 mx-auto">
             <i class="fas fa-quote-left text-roxo" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, numquam ad temporibus cumque accusantium
             assumenda quibusdam officiis iste ex optio rem vel soluta placeat enim, atque minima
             porro voluptas consectetur
@@ -167,6 +171,14 @@ export default {
 }
 </script>
 <style scoped>
+  .separation-tema{
+    position: absolute;
+    height: 3px;
+    width: 150px;
+    bottom: -10px;
+    border-radius: 3px;
+    background-color: var(--roxo);
+  }
   .div-indicadores{
     position: absolute;
     bottom: 0px;
