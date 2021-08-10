@@ -35,8 +35,8 @@
       </div>
     </div>
     <div class="bb-roxo col-md-10 col-lg-12 mx-auto d-flex justify-content-center align-items-center col-12 my-xs-60 my-sm-70 my-lg-110 my-xl-80">
-      <div class="seta-borda px-15">
-        <ion-icon class="fs-30 text-roxo-escuro mt-2" name="chevron-down-circle-outline" style="--ionicon-stroke-width: 20px;" />
+      <div class="seta-borda px-25">
+        <ion-icon class="fs-35 text-roxo-escuro mt-2" name="chevron-down-circle-outline" style="--ionicon-stroke-width: 14px;" />
       </div>
     </div>
   </div>
@@ -63,8 +63,8 @@ export default {
     ScrollContent () {
       const Janela = document.body.getBoundingClientRect()
       const ContainerScroll = document.getElementById('content-servicos-2').getBoundingClientRect()
-      const OffsetHome = ContainerScroll.top - Janela.top
-      if (window.scrollY > OffsetHome - 600) {
+      const OffsetScroll = ContainerScroll.top - Janela.top
+      if (window.scrollY > OffsetScroll - window.innerHeight + 200) {
         this.ShowContentScroll = true
         this.ShowImgScroll = true
       } else {
@@ -173,7 +173,7 @@ export default {
   }
   .seta-borda{
     position: absolute;
-    background-color: #ededed;
+    background-color: var(--light);
   }
   h1.font-teko{
     line-height: 38px;

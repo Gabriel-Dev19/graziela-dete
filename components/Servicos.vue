@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-90 overflow-hidden pb-140 bg-servicos mt-90">
+  <div class="overflow-hidden pb-140 mt-120">
     <div class="container d-flex row mx-auto">
       <h1 class="font-teko position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
         Nossos serviços
@@ -40,8 +40,5 @@ export default {
     bottom: -10px;
     border-radius: 3px;
     background-color: var(--roxo);
-  }
-  .bg-servicos{
-    background-color: #ededed;
   }
 </style>

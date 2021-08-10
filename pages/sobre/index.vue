@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Home title-home="Sobre a agência Graziela Bastos" bg-home="true" />
+    <Home title-home="Sobre a agência Graziela Bastos" :bg-home="true" />
     <section class="height-100-vh" />
   </div>
 </template>

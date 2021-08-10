@@ -58,8 +58,8 @@ export default {
     ScrollContent () {
       const Janela = document.body.getBoundingClientRect()
       const ContainerScroll = document.getElementById('content-servicos-6').getBoundingClientRect()
-      const OffsetHome = ContainerScroll.top - Janela.top
-      if (window.scrollY > OffsetHome - 600) {
+      const OffsetScroll = ContainerScroll.top - Janela.top
+      if (window.scrollY > OffsetScroll - window.innerHeight + 200) {
         this.ShowContentScroll = true
         this.ShowImgScroll = true
       } else {
@@ -168,7 +168,7 @@ export default {
   }
   .seta-borda{
     position: absolute;
-    background-color: #ededed;
+    background-color: var(--light);
   }
   h1.font-teko{
     line-height: 38px;

@@ -128,6 +128,63 @@
         </div>
       </div>
     </div>
+    <div class="container d-flex justify-content-center row mx-auto mt-70">
+      <div class="col-lg-3 bg-paper shadow-sm border mt-20 py-40">
+        <div class="d-flex justify-content-center align-items-end">
+          <ion-icon class="text-roxo-escuro fs-29" name="trophy-outline" style="margin-bottom: 5px;" />
+          <ion-icon class="text-roxo-escuro fs-70" name="trophy-outline" style="--ionicon-stroke-width: 18px;" />
+          <ion-icon class="text-roxo-escuro fs-29" name="trophy-outline" style="margin-bottom: 5px;" />
+        </div>
+        <h3 class="font-teko text-center mb-0 text-uppercase mt-30">
+          Melhor atendimento
+        </h3>
+        <p class="mb-0 fs-15 text-center">
+          Somos preferência no quesito atendimento, pois temos um atendimento personalizado
+          para cada necessidade.
+        </p>
+      </div>
+      <div class="col-lg-3 bg-paper shadow-sm border mt-20 mx-lg-4 py-40">
+        <div class="d-flex justify-content-center align-items-end">
+          <ion-icon class="text-roxo-escuro fs-29" name="medal-outline" style="margin-bottom: 5px;" />
+          <ion-icon class="text-roxo-escuro fs-70" name="medal-outline" style="--ionicon-stroke-width: 18px;" />
+          <ion-icon class="text-roxo-escuro fs-29" name="medal-outline" style="margin-bottom: 5px;" />
+        </div>
+        <h3 class="font-teko text-center col-lg-9 col-xl-12 px-0 mx-auto mb-0 text-uppercase mt-30">
+          Melhor agência
+        </h3>
+        <p class="mb-0 fs-15 text-center">
+          Nossa agência preza a garantia da investigação, se tornando assim,
+          referência quando o assunto é qualidade.
+        </p>
+      </div>
+      <div class="col-lg-3 bg-paper shadow-sm border mt-20 py-40">
+        <div class="d-flex justify-content-center align-items-end">
+          <ion-icon class="text-roxo-escuro fs-29" name="ribbon-outline" style="margin-bottom: 5px;" />
+          <ion-icon class="text-roxo-escuro fs-70" name="ribbon-outline" style="--ionicon-stroke-width: 18px;" />
+          <ion-icon class="text-roxo-escuro fs-29" name="ribbon-outline" style="margin-bottom: 5px;" />
+        </div>
+        <h3 class="font-teko text-center mb-0 text-uppercase mt-30">
+          Melhores detetives
+        </h3>
+        <p class="mb-0 fs-15 text-center">
+          Nossa agência conta com um time de detetives extremamente profissionais e dedicados
+          com seu trabalho.
+        </p>
+      </div>
+      <p class="col-lg-10 px-0 text-center mx-auto mb-0 mt-40">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore tempora eaque ipsam
+        ex consequatur placeat illum quasi incidunt. Saepe, dolore. Esse, est ea. Veritatis, deleniti.
+        Aspernatur iste iure excepturi!
+      </p>
+      <div class="d-flex row mx-auto col-12 px-0 mt-20 justify-content-center">
+        <button class="btn col-xs-8 border-radius-0 px-20 btn-roxo">
+          Entre em contato
+        </button>
+        <button class="btn col-xs-8 mt-xs-10 border-radius-0 px-20 ml-sm-3 btn-roxo">
+          Fale com a grazi
+        </button>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -182,6 +239,13 @@ export default {
   .div-indicadores{
     position: absolute;
     bottom: 0px;
+  }
+  .fs-70{
+    font-size: 70px;
+  }
+  .bg-paper{
+    background: url(../assets/img/bg-paper.webp) center center no-repeat;
+    background-size: cover;
   }
   .indicadores{
     opacity: 0.6;

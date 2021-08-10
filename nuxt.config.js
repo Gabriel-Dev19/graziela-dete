@@ -19,9 +19,9 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'theme-color', content: '#ffffff' },
-      { name: 'apple-mobile-web-app-status-bar-style', content: '#ffffff' },
-      { name: 'msapplication-navbutton-color', content: '#ffffff' }
+      { name: 'theme-color', content: '#f8f9fa' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: '#f8f9fa' },
+      { name: 'msapplication-navbutton-color', content: '#f8f9fa' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -67,11 +67,13 @@ export default {
   ],
 
   router: {
-    scrollBehavior () {}
+    scrollBehavior () {
+      return { x: 0, y: 0 }
+    }
   },
 
   loading: {
-    color: '#00d86c',
+    color: '#8854d0',
     height: '3px',
     continuous: true
   },

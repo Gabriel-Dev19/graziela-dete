@@ -47,6 +47,18 @@ body{
 button:focus, .btn:focus{
     box-shadow: none !important;
 }
+.alert-form{
+    position: fixed;
+    top: 15%;
+    z-index: 20;
+}
+.progress {
+    background-color: #ffffff93 !important;
+}
+.progress-bar {
+    background-color: #ffffff !important;
+    transition: width 1s linear;
+}
 .borda{
     border: 1px solid var(--danger);
 }

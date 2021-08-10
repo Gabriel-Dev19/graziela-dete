@@ -1,41 +1,144 @@
 <template>
   <div>
     <header>
-      <nav v-scroll="ScrollNav" class="navbar align-items-center d-lg-none fixed-top nav" :class="{'bg-roxo-escuro shadow': NavScroll, 'pt-40': !NavScroll}">
-        <div class="container">
-          <a href="" class="text-white">
+      <nav v-scroll="ScrollNav" class="navbar align-items-center px-0 d-lg-none fixed-top nav" :class="{'bg-nav-scroll py-0 shadow': NavScroll, 'pt-40': !NavScroll}">
+        <div class="container px-30" :class="{'border-bottom pt-20 pb-15': CollapseNav, 'pt-10 pb-10': NavScroll}">
+          <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
             Logo
           </a>
-          <button class="btn py-0 px-0">
-            <ion-icon class="text-white fs-40" name="menu-outline" style="margin-bottom: -7px;" />
+          <button v-b-toggle.collapse-navbar class="btn py-0 px-0">
+            <ion-icon v-show="IconBar" class="fs-40 text-roxo" name="menu-outline" style="margin-bottom: -7px;" />
+            <ion-icon v-show="IconTimes" class="fs-37 text-danger" name="close-circle-outline" style="margin-bottom: -7px;" />
           </button>
         </div>
+        <b-collapse id="collapse-navbar" class="col-12 px-0">
+          <div class="nav-event col-12 bg-light">
+            <h3 class="font-teko mt-3">
+              Menu principal
+            </h3>
+            <div class="pl-10">
+              <button class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center">
+                Página inicial <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+              </button>
+              <button class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
+                Sobre nós <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+              </button>
+              <button class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
+                Serviços <i class="fa fa-angle-down text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+              </button>
+              <button class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
+                Onde atendemos <i class="fa fa-angle-down text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+              </button>
+              <button class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
+                Fale conosco <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+              </button>
+            </div>
+          </div>
+        </b-collapse>
       </nav>
-      <nav v-scroll="ScrollNav" class="navbar d-xs-none d-sm-none d-lg-flex fixed-top nav" :class="{'bg-roxo-escuro shadow': NavScroll, 'pt-40': !NavScroll}">
+      <nav v-scroll="ScrollNav" class="navbar d-xs-none d-sm-none d-lg-flex fixed-top nav" :class="{'bg-nav-scroll border-bottom py-10 shadow': NavScroll, 'pt-40': !NavScroll}">
         <div class="container">
-          <a href="" class="text-white">
+          <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
             Logo
           </a>
           <div class="ml-auto d-flex">
-            <button class="btn nav-link d-flex position-relative px-0" @click.prevent="$router.push('/')">
+            <button
+              :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"
+              class="btn nav-link d-flex position-relative px-0"
+              @click.prevent="$router.push('/')"
+            >
               Início
-              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
+              <i id="arrow-marcacao" class="fs-13 fa fa-arrow-right text-roxo" style="margin-top: 6px;" />
             </button>
-            <button class="btn nav-link d-flex position-relative px-0 mx-35" @click.prevent="$router.push('/sobre')">
+            <button
+              :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"
+              class="btn nav-link d-flex position-relative px-0 mx-35"
+              @click.prevent="$router.push('/sobre')"
+            >
               Sobre
-              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
+              <i id="arrow-marcacao" class="fs-13 fa fa-arrow-right text-roxo" style="margin-top: 6px;" />
             </button>
-            <button class="btn nav-link d-flex position-relative px-0" @click.prevent="$router.push('/servicos')">
+            <button
+              :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"
+              class="btn nav-link d-flex justify-content-center position-relative px-0"
+              @mouseenter="ShowDropdownservicos = true"
+              @mouseleave="ShowDropdownservicos = false"
+            >
               Serviços
-              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
+              <transition enter-active-class="animate__animated animate__fadeIn" leave-active-class="animate__animated animate__fadeOut">
+                <div v-show="ShowDropdownservicos" class="dropwdown-servicos pt-20">
+                  <div class="bg-light position-relative py-10 px-1 cursor-normal d-flex row mx-auto shadow justify-content-center">
+                    <div class="seta-dropdown" />
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos')">
+                      Investigação conjugal <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      Investigação empresarial <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      Investigação política <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      Localização de pessoas <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      Provas para advogados <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      Software espião para filhos <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    </button>
+                  </div>
+                </div>
+              </transition>
             </button>
-            <button class="btn nav-link d-flex position-relative px-0 mx-35">
+            <button
+              :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"
+              class="btn nav-link d-flex justify-content-center position-relative px-0 mx-35"
+              @mouseenter="ShowDropdownLocalidades = true"
+              @mouseleave="ShowDropdownLocalidades = false"
+            >
               Onde atendemos
-              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
+              <transition enter-active-class="animate__animated animate__fadeIn" leave-active-class="animate__animated animate__fadeOut">
+                <div v-show="ShowDropdownLocalidades" class="dropwdown-localidades pt-20">
+                  <div class="bg-light position-relative py-10 px-1 cursor-normal d-flex row mx-auto shadow justify-content-center">
+                    <div class="seta-dropdown" />
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos')">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Santa Catarina
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Paraná
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Rio Grande do Sul
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> São Paulo
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Rio de Janeiro
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Distrito Federal
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Minas Gerais
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Mato Grosso do Sul
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                      <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Goiás
+                    </button>
+                  </div>
+                </div>
+              </transition>
             </button>
-            <button class="btn nav-link d-flex position-relative px-0">
+            <button
+              :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"
+              class="btn nav-link d-flex position-relative px-0"
+            >
               Fale conosco
-              <i :class="{'text-roxo': !NavScroll, 'text-white': NavScroll}" class="fs-13 fa fa-arrow-right" style="margin-top: 6px;" />
+              <i id="arrow-marcacao" class="fs-13 fa fa-arrow-right text-roxo" style="margin-top: 6px;" />
             </button>
           </div>
         </div>
@@ -48,8 +151,29 @@ export default {
   data () {
     return {
       NavScroll: false,
-      MarcacaoHome: false
+      ShowDropdownservicos: false,
+      ShowDropdownLocalidades: false,
+      CollapseNav: false,
+      IconTimes: false,
+      IconBar: true
     }
+  },
+  mounted () {
+    this.$root.$on('bv::collapse::state', (collapseId, isJustShown) => {
+      if (collapseId === 'collapse-navbar' && isJustShown === true) {
+        this.ShowIconTimes()
+        document.body.classList.add('overflow-hidden')
+        this.CollapseNav = true
+        this.NavScroll = true
+      } else {
+        this.ShowIconBar()
+        document.body.classList.remove('overflow-hidden')
+        this.CollapseNav = false
+        if (window.scrollY < 1) {
+          this.NavScroll = false
+        }
+      }
+    })
   },
   methods: {
     ScrollNav () {
@@ -58,18 +182,36 @@ export default {
       } else {
         this.NavScroll = false
       }
+    },
+    ShowIconTimes () {
+      this.IconTimes = true
+      this.IconBar = false
+    },
+    ShowIconBar () {
+      this.IconTimes = false
+      this.IconBar = true
     }
   }
 }
 </script>
 <style scoped>
-  nav{
+  .animate__animated{
+    animation-duration: .3s !important;
+    -o-animation-duration: .3s !important;
+    -moz-animation-duration: .3s !important;
+    -webkit-animation-duration: .3s !important;
+  }
+  .nav-event{
+    height: calc(100vh - 63px);
+    overflow-y: scroll;
+  }
+  nav, nav .container{
     transition: all .3s;
     -o-transition: all .3s;
     -moz-transition: all .3s;
     -webkit-transition: all .3s;
   }
-  button.nav-link i{
+  button.nav-link i#arrow-marcacao{
     width: 0px;
     overflow: hidden;
     transition: all .2s;
@@ -77,17 +219,73 @@ export default {
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
   }
-  button.nav-link:hover i {
+  button.nav-link:hover i#arrow-marcacao {
     width: 22px;
     padding-left: 10px;
   }
   .nav-link{
-    color: var(--white);
     font-weight: 500;
     letter-spacing: 0.5px;
   }
+  .dropwdown-servicos button{
+    transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transition: all .1s;
+    -o-transition: all .1s;
+    -moz-transition: all .1s;
+    -webkit-transition: all .1s;
+  }
+  .dropwdown-servicos button:hover{
+    transform: translateX(7px);
+    -o-transform: translateX(7px);
+    -moz-transform: translateX(7px);
+    -webkit-transform: translateX(7px);
+  }
+  .dropwdown-localidades button{
+    transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transition: all .1s;
+    -o-transition: all .1s;
+    -moz-transition: all .1s;
+    -webkit-transition: all .1s;
+  }
+  .dropwdown-localidades button:hover{
+    transform: translateX(7px);
+    -o-transform: translateX(7px);
+    -moz-transform: translateX(7px);
+    -webkit-transform: translateX(7px);
+  }
+  .dropwdown-servicos{
+    position: absolute;
+    top: 31px;
+    width: 280px;
+  }
+  .dropwdown-localidades{
+    position: absolute;
+    top: 31px;
+    width: 230px;
+  }
+  .seta-dropdown{
+    position: absolute;
+    top: -8px;
+    height: 16px;
+    width: 16px;
+    z-index: -1;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background-color: var(--roxo_escuro);
+  }
   .text-white{
     color: var(--white) !important;
+  }
+  .bg-nav-scroll{
+    background-color: var(--light);
   }
   .marcacao-nav{
     position: absolute;
@@ -97,10 +295,16 @@ export default {
     background-color: var(--roxo);
     transition: all .3s;
     transform: translateY(5px);
+    -o-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -webkit-transform: translateY(5px);
     opacity: 0;
   }
   .nav-link:hover .marcacao-nav{
     transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
     opacity: 1;
   }
 </style>

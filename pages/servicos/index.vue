@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Home title-home="Serviços de detetive particular" bg-home="true" />
+    <Home title-home="Serviços de detetive particular" :bg-home="true" />
     <section class="height-100-vh" />
   </div>
 </template>

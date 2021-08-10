@@ -1,14 +1,16 @@
 <template>
   <div>
     <Navbar />
-    <Home bg-home="true" />
+    <Home :bg-home="true" />
     <Planejamento />
     <Servicos />
     <ParalaxHome />
     <Numeros />
     <Motivos />
     <Comentarios />
-    <section class="height-100-vh" />
+    <Perguntas />
+    <Contato />
+    <Footer />
   </div>
 </template>
 
@@ -21,6 +23,9 @@ import ParalaxHome from '~/components/ParalaxHome.vue'
 import Numeros from '~/components/Numeros.vue'
 import Motivos from '~/components/Motivos.vue'
 import Comentarios from '~/components/Comentarios.vue'
+import Perguntas from '~/components/Perguntas.vue'
+import Contato from '~/components/Contato.vue'
+import Footer from '~/components/Footer.vue'
 export default {
   components: {
     Navbar,
@@ -30,7 +35,10 @@ export default {
     ParalaxHome,
     Numeros,
     Motivos,
-    Comentarios
+    Comentarios,
+    Perguntas,
+    Contato,
+    Footer
   }
 }
 </script>
