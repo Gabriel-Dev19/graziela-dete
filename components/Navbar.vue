@@ -2,13 +2,13 @@
   <div>
     <header>
       <nav v-scroll="ScrollNav" class="navbar align-items-center px-0 d-lg-none fixed-top nav" :class="{'bg-nav-scroll py-0 shadow': NavScroll, 'pt-40': !NavScroll}">
-        <div class="container px-30" :class="{'border-bottom pt-20 pb-15': CollapseNav, 'pt-10 pb-10': NavScroll}">
+        <div class="container px-30" :class="{'border-bottom pt-15 pb-15': CollapseNav, 'pt-10 pb-10': NavScroll}">
           <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
             Logo
           </a>
           <button v-b-toggle.collapse-navbar class="btn py-0 px-0">
             <ion-icon v-show="IconBar" class="fs-40 text-roxo" name="menu-outline" style="margin-bottom: -7px;" />
-            <ion-icon v-show="IconTimes" class="fs-37 text-danger" name="close-circle-outline" style="margin-bottom: -7px;" />
+            <ion-icon v-show="IconTimes" class="fs-37 text-roxo" name="close-circle-outline" style="margin-bottom: -7px;" />
           </button>
         </div>
         <b-collapse id="collapse-navbar" class="col-12 px-0">
@@ -17,19 +17,75 @@
               Menu principal
             </h3>
             <div class="pl-10">
-              <button class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center">
+              <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/')">
                 Página inicial <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
               </button>
-              <button class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
+              <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/sobre/')">
                 Sobre nós <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
               </button>
-              <button class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
+              <button v-b-toggle.collapse-servicos class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
                 Serviços <i class="fa fa-angle-down text-roxo fs-15 ml-2" style="margin-top: 2px;" />
               </button>
-              <button class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
+              <b-collapse id="collapse-servicos">
+                <div class="pl-30 pb-10 pt-1">
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/')">
+                    Todos os serviços <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/investigacao-conjugal/')">
+                    Investigação conjugal <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/investigacao-empresarial/')">
+                    Investigação empresarial <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/investigacao-politica/')">
+                    Investigação política <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/localizacao-de-pessoas/')">
+                    Localização de pessoas <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/provas-para-advogados/')">
+                    Provas para advogados <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/software-espiao-de-celular/')">
+                    Software celular espião (filhos) <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  </button>
+                </div>
+              </b-collapse>
+              <button v-b-toggle.collapse-localidades class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
                 Onde atendemos <i class="fa fa-angle-down text-roxo fs-15 ml-2" style="margin-top: 2px;" />
               </button>
-              <button class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center">
+              <b-collapse id="collapse-localidades">
+                <div class="pl-30 pb-10 pt-1">
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-em-Santa-Catarina')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Santa Catarina
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-no-Parana')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Paraná
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-no-Rio-Grande-do-Sul')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Rio Grande do Sul
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-em-Sao-Paulo')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> São Paulo
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-no-Rio-de-Janeiro')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Rio de Janeiro
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-no-Distrito-Federal')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Distrito Federal
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-em-Minas-Gerais')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Minas Gerais
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-no-Mato-Grosso-do-Sul')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Mato Grosso do Sul
+                  </button>
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/detetive-particular-em-Goias')">
+                    <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Goiás
+                  </button>
+                </div>
+              </b-collapse>
+              <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 mt-2 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="ScrollContato">
                 Fale conosco <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
               </button>
             </div>
@@ -53,7 +109,7 @@
             <button
               :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"
               class="btn nav-link d-flex position-relative px-0 mx-35"
-              @click.prevent="$router.push('/sobre')"
+              @click.prevent="$router.push('/sobre/')"
             >
               Sobre
               <i id="arrow-marcacao" class="fs-13 fa fa-arrow-right text-roxo" style="margin-top: 6px;" />
@@ -69,22 +125,25 @@
                 <div v-show="ShowDropdownservicos" class="dropwdown-servicos pt-20">
                   <div class="bg-light position-relative py-10 px-1 cursor-normal d-flex row mx-auto shadow justify-content-center">
                     <div class="seta-dropdown" />
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos')">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/')">
+                      Todos os serviços <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    </button>
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/investigacao-conjugal/')">
                       Investigação conjugal <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/investigacao-empresarial/')">
                       Investigação empresarial <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/investigacao-politica/')">
                       Investigação política <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/localizacao-de-pessoas/')">
                       Localização de pessoas <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/provas-para-advogados/')">
                       Provas para advogados <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/software-espiao-de-celular/')">
                       Software espião para filhos <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
                   </div>
@@ -102,7 +161,7 @@
                 <div v-show="ShowDropdownLocalidades" class="dropwdown-localidades pt-20">
                   <div class="bg-light position-relative py-10 px-1 cursor-normal d-flex row mx-auto shadow justify-content-center">
                     <div class="seta-dropdown" />
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos')">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Santa Catarina
                     </button>
                     <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
@@ -136,6 +195,7 @@
             <button
               :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"
               class="btn nav-link d-flex position-relative px-0"
+              @click.prevent="ScrollContato"
             >
               Fale conosco
               <i id="arrow-marcacao" class="fs-13 fa fa-arrow-right text-roxo" style="margin-top: 6px;" />
@@ -155,7 +215,8 @@ export default {
       ShowDropdownLocalidades: false,
       CollapseNav: false,
       IconTimes: false,
-      IconBar: true
+      IconBar: true,
+      Quantidade_retira_hash: 0
     }
   },
   mounted () {
@@ -165,7 +226,8 @@ export default {
         document.body.classList.add('overflow-hidden')
         this.CollapseNav = true
         this.NavScroll = true
-      } else {
+      }
+      if (collapseId === 'collapse-navbar' && isJustShown === false) {
         this.ShowIconBar()
         document.body.classList.remove('overflow-hidden')
         this.CollapseNav = false
@@ -190,6 +252,35 @@ export default {
     ShowIconBar () {
       this.IconTimes = false
       this.IconBar = true
+    },
+    ScrollContato () {
+      this.$smoothScroll({
+        scrollTo: document.getElementById('contato'),
+        duration: 500,
+        offset: -10
+      })
+      setTimeout(() => {
+        this.HideHash()
+      }, 490)
+    },
+    HideHash () {
+      this.Quantidade_retira_hash = 0
+      const interval = setInterval(() => {
+        let scrollV; let scrollH; const loc = window.location
+        if ('replaceState' in history) {
+          history.replaceState('', document.title, loc.pathname + loc.search)
+        } else {
+          // Prevent scrolling by storing the page's current scroll offset
+          scrollV = document.body.scrollTop
+          scrollH = document.body.scrollLeft
+          loc.hash = ''
+          // Restore the scroll offset, should be flicker free
+          document.body.scrollTop = scrollV
+          document.body.scrollLeft = scrollH
+        }
+        this.Quantidade_retira_hash++
+        if (this.Quantidade_retira_hash > 15) { clearInterval(interval) }
+      }, 0)
     }
   }
 }

@@ -1,6 +1,6 @@
 <template scoped>
   <div>
-    <div id="content-servicos-1" v-scroll="ScrollContent" class="mt-70 col-md-10 col-lg-12 px-0 d-flex position-relative justify-content-end align-items-center row mx-auto">
+    <div id="content-servicos-1" v-scroll="ScrollContent" class="col-md-10 col-lg-12 px-0 d-flex position-relative justify-content-end align-items-center row mx-auto">
       <div :class="{'show-content-servicos-1': ShowContentScroll}" class="conteudo-left hide-content-servicos-1 shadow pb-xs-20 pb-sm-20 pt-xs-40 pt-sm-40 py-lg-20 order-xs-2 order-sm-2 order-lg-1 col-lg-6 px-lg-20">
         <h1 class="font-teko mb-1 text-white text-xs-center text-sm-center fw-400 text-lg-left text-uppercase">
           Investigação conjugal
@@ -26,7 +26,7 @@
           <div class="borda-numeros-servicos" />
         </div>
         <div class="d-flex mt-3 justify-content-xs-center justify-content-sm-center justify-content-lg-start">
-          <BtnLightTekoRouter router-to="/servicos" />
+          <BtnLightTekoRouter router-to="/servicos/investigacao-conjugal/" />
           <BtnLightTekoWhatsApp class="ml-3" />
         </div>
       </div>

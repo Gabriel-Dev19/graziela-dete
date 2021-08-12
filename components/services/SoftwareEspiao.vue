@@ -1,5 +1,12 @@
 <template scoped>
   <div>
+    <div v-show="hideSeta">
+      <div class="bb-roxo col-md-10 col-lg-12 mx-auto d-flex justify-content-center align-items-center col-12 my-xs-60 my-sm-70 my-lg-110 my-xl-80">
+        <div class="seta-borda px-25">
+          <ion-icon class="fs-35 text-roxo-escuro mt-2" name="chevron-down-circle-outline" style="--ionicon-stroke-width: 14px;" />
+        </div>
+      </div>
+    </div>
     <div id="content-servicos-6" v-scroll="ScrollContent" class="col-md-10 col-lg-12 px-0 d-flex position-relative justify-content-start align-items-center row mx-auto">
       <div :class="{'show-content-servicos-1': ShowContentScroll}" class="conteudo-right hide-content-servicos-1 shadow pb-xs-20 pb-sm-20 pt-xs-40 pt-sm-40 py-lg-20 order-xs-2 order-sm-2 order-lg-1 col-lg-6 px-lg-20">
         <h1 class="font-teko mb-1 text-white text-xs-center text-sm-center fw-400 text-lg-left text-uppercase">
@@ -26,7 +33,7 @@
           <div class="borda-numeros-servicos" />
         </div>
         <div class="d-flex mt-3 justify-content-xs-center justify-content-sm-center justify-content-lg-start">
-          <BtnLightTekoRouter router-to="/servicos" />
+          <BtnLightTekoRouter router-to="/servicos/software-espiao-de-celular/" />
           <BtnLightTekoWhatsApp class="ml-3" />
         </div>
       </div>
@@ -43,6 +50,12 @@ export default {
   components: {
     BtnLightTekoWhatsApp,
     BtnLightTekoRouter
+  },
+  props: {
+    hideSeta: {
+      type: Boolean,
+      default: true
+    }
   },
   data () {
     return {

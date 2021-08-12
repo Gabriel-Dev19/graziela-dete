@@ -104,9 +104,9 @@
           </b-collapse>
         </div>
         <div class="d-flex col-12 mt-50 justify-content-center">
-          <a class="btn btn-perguntas text-uppercase fs-14 py-10 px-25 border-radius-30 fw-600">
+          <button class="btn btn-perguntas text-uppercase fs-14 py-10 px-25 border-radius-30 fw-600" @click.prevent="ScrollContato">
             Faça uma pergunta
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -114,6 +114,42 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
+      Quantidade_retira_hash: 0
+    }
+  },
+  methods: {
+    ScrollContato () {
+      this.$smoothScroll({
+        scrollTo: document.getElementById('contato'),
+        duration: 500,
+        offset: -10
+      })
+      setTimeout(() => {
+        this.HideHash()
+      }, 490)
+    },
+    HideHash () {
+      this.Quantidade_retira_hash = 0
+      const interval = setInterval(() => {
+        let scrollV; let scrollH; const loc = window.location
+        if ('replaceState' in history) {
+          history.replaceState('', document.title, loc.pathname + loc.search)
+        } else {
+          // Prevent scrolling by storing the page's current scroll offset
+          scrollV = document.body.scrollTop
+          scrollH = document.body.scrollLeft
+          loc.hash = ''
+          // Restore the scroll offset, should be flicker free
+          document.body.scrollTop = scrollV
+          document.body.scrollLeft = scrollH
+        }
+        this.Quantidade_retira_hash++
+        if (this.Quantidade_retira_hash > 15) { clearInterval(interval) }
+      }, 0)
+    }
+  }
 }
 </script>
 <style scoped>

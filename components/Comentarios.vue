@@ -171,24 +171,26 @@
           com seu trabalho.
         </p>
       </div>
-      <p class="col-lg-10 px-0 text-center mx-auto mb-0 mt-40">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore tempora eaque ipsam
-        ex consequatur placeat illum quasi incidunt. Saepe, dolore. Esse, est ea. Veritatis, deleniti.
-        Aspernatur iste iure excepturi!
+      <h1 class="font-teko position-relative col-12 px-0 mt-70 d-flex justify-content-center text-uppercase text-center">
+        Torne-se um detetive de sucesso!
+        <div class="separation-tema" />
+      </h1>
+      <p class="col-lg-10 px-0 text-center mx-auto mb-0 mt-20">
+        Você também pode fazer parte da rede de detetives Graziela Bastos! Basta ser maior de idade, ter carteira de motorista,
+        possuir um veículo para locomoção e ser formado em nosso curso de detetive particular.
       </p>
       <div class="d-flex row mx-auto col-12 px-0 mt-20 justify-content-center">
-        <button class="btn col-xs-8 border-radius-0 px-20 btn-roxo">
-          Entre em contato
-        </button>
-        <button class="btn col-xs-8 mt-xs-10 border-radius-0 px-20 ml-sm-3 btn-roxo">
-          Fale com a grazi
-        </button>
+        <BtnRoxoContatoScroll class="col-xs-8" name-btn="Matricule-se agora!" />
+        <BtnRoxoFooter class="ml-sm-3 col-xs-8 mt-xs-10" />
       </div>
     </div>
   </div>
 </template>
 <script>
+import BtnRoxoContatoScroll from './buttons/BtnRoxoContatoScroll.vue'
+import BtnRoxoFooter from './buttons/BtnRoxoFooter.vue'
 export default {
+  components: { BtnRoxoContatoScroll, BtnRoxoFooter },
   data () {
     return {
       Active1: true,

@@ -26,17 +26,12 @@
           <div class="borda-numeros-servicos" />
         </div>
         <div class="d-flex mt-3 justify-content-xs-center justify-content-sm-center justify-content-lg-start">
-          <BtnLightTekoRouter router-to="/servicos" />
+          <BtnLightTekoRouter router-to="/servicos/provas-para-advogados/" />
           <BtnLightTekoWhatsApp class="ml-3" />
         </div>
       </div>
       <div :class="{'show-img-servicos-1': ShowImgScroll}" class="col-lg-7 hide-img-servicos-1 px-0">
         <img src="../../assets/img/servicos/bg-provas.webp" class="img-fluid shadow" alt="Provas para advogados">
-      </div>
-    </div>
-    <div class="bb-roxo col-md-10 col-lg-12 mx-auto d-flex justify-content-center align-items-center col-12 my-xs-60 my-sm-70 my-lg-110 my-xl-80">
-      <div class="seta-borda px-25">
-        <ion-icon class="fs-35 text-roxo-escuro mt-2" name="chevron-down-circle-outline" style="--ionicon-stroke-width: 14px;" />
       </div>
     </div>
   </div>

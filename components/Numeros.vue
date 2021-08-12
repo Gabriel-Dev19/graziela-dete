@@ -1,5 +1,5 @@
 <template>
-  <div class="py-100">
+  <div class="pt-100">
     <div v-scroll="NumerosScroll" class="container d-flex row mx-auto">
       <div class="col-lg-7 px-0">
         <h1 class="font-teko mb-0 text-xs-center text-sm-center text-lg-left text-uppercase">
@@ -60,9 +60,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start mt-10">
-          <button class="btn btn-roxo border-radius-0 px-20">
-            Contate um detetive
-          </button>
+          <btn-roxo-contato-scroll name-btn="Contate um detetive" />
         </div>
       </div>
       <div class="d-xs-none d-sm-none d-lg-block col-lg mt-xs-50 mt-sm-50 mt-lg-0 ml-lg-50 px-0">
@@ -72,7 +70,11 @@
   </div>
 </template>
 <script>
+import BtnRoxoContatoScroll from './buttons/BtnRoxoContatoScroll.vue'
 export default {
+  components: {
+    BtnRoxoContatoScroll
+  },
   data () {
     return {
       Numeros: {

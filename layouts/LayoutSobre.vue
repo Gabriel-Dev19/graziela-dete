@@ -2,11 +2,15 @@
   <div>
     <Navbar />
     <Nuxt />
+    <btn-voltar-topo />
   </div>
 </template>
 <script>
 import Vue from '../node_modules/vue'
 import Navbar from '../components/Navbar.vue'
+import VueSmoothScroll from '../node_modules/vue2-smooth-scroll'
+import BtnVoltarTopo from '~/components/buttons/BtnVoltarTopo.vue'
+Vue.use(VueSmoothScroll)
 Vue.directive('scroll', {
   inserted (el, binding) {
     const f = function (evt) {
@@ -18,7 +22,7 @@ Vue.directive('scroll', {
   }
 })
 export default {
-  components: { Navbar }
+  components: { Navbar, BtnVoltarTopo }
 }
 </script>
 <style lang="">

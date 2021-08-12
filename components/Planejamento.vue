@@ -18,9 +18,9 @@
           <div class="detalhe-bottom mt-20">
             <div class="h-100 bg-roxo-escuro" />
           </div>
-          <a href="" class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko">
+          <button class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko" @click.prevent="ScrollContato">
             Faça um diagnóstico <i class="fa fa-angle-right fw-600 ml-1 mb-1" />
-          </a>
+          </button>
         </div>
         <div class="col-lg px-0 my-xs-90 my-sm-90 my-lg-0 mx-lg-50">
           <span class="display-3 d-block fw-500 font-teko">02.</span>
@@ -34,9 +34,9 @@
           <div class="detalhe-bottom mt-20">
             <div class="h-100 bg-roxo-escuro" />
           </div>
-          <a href="" class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko">
+          <button class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko" @click.prevent="ScrollContato">
             Planeje com a gente <i class="fa fa-angle-right fw-600 ml-1 mb-1" />
-          </a>
+          </button>
         </div>
         <div class="col-lg px-0">
           <span class="display-3 d-block fw-500 font-teko">03.</span>
@@ -50,9 +50,9 @@
           <div class="detalhe-bottom mt-20">
             <div class="h-100 bg-roxo-escuro" />
           </div>
-          <a href="" class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko">
+          <button class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko" @click.prevent="ScrollContato">
             Saiba de tudo! <i class="fa fa-angle-right fw-600 ml-1 mb-1" />
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -60,7 +60,42 @@
 </template>
 <script>
 export default {
-
+  data () {
+    return {
+      Quantidade_retira_hash: 0
+    }
+  },
+  methods: {
+    ScrollContato () {
+      this.$smoothScroll({
+        scrollTo: document.getElementById('contato'),
+        duration: 500,
+        offset: -10
+      })
+      setTimeout(() => {
+        this.HideHash()
+      }, 490)
+    },
+    HideHash () {
+      this.Quantidade_retira_hash = 0
+      const interval = setInterval(() => {
+        let scrollV; let scrollH; const loc = window.location
+        if ('replaceState' in history) {
+          history.replaceState('', document.title, loc.pathname + loc.search)
+        } else {
+          // Prevent scrolling by storing the page's current scroll offset
+          scrollV = document.body.scrollTop
+          scrollH = document.body.scrollLeft
+          loc.hash = ''
+          // Restore the scroll offset, should be flicker free
+          document.body.scrollTop = scrollV
+          document.body.scrollLeft = scrollH
+        }
+        this.Quantidade_retira_hash++
+        if (this.Quantidade_retira_hash > 15) { clearInterval(interval) }
+      }, 0)
+    }
+  }
 }
 </script>
 <style scoped>

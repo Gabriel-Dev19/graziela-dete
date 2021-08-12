@@ -25,9 +25,7 @@
             com todas as provas
           </h5>
           <div class="d-flex justify-content-center mt-20">
-            <button class="btn btn-roxo shadow-sm border-radius-0 px-20 fw-500">
-              Contate um detetive
-            </button>
+            <btn-roxo-contato-scroll name-btn="Contate um detetive" />
           </div>
         </div>
         <div class="col-lg bg-white-50 mt-40 mx-lg-50 py-50">
@@ -45,9 +43,7 @@
             pela justiça
           </h5>
           <div class="d-flex justify-content-center mt-20">
-            <button class="btn btn-roxo shadow-sm border-radius-0 px-20 fw-500">
-              Precisa de provas ?
-            </button>
+            <btn-roxo-contato-scroll name-btn="Precisa de provas ?" />
           </div>
         </div>
         <div class="col-lg bg-white-50 mt-40 py-50">
@@ -64,9 +60,7 @@
             Fazemos todo o trabalho de campana da pessoa investigada para obeter melhores resultados
           </h5>
           <div class="d-flex justify-content-center mt-20">
-            <button class="btn btn-roxo shadow-sm border-radius-0 px-20 fw-500">
-              Monitore tudo!
-            </button>
+            <btn-roxo-contato-scroll name-btn="Monitore tudo!" />
           </div>
         </div>
       </div>
@@ -74,7 +68,9 @@
   </div>
 </template>
 <script>
+import BtnRoxoContatoScroll from './buttons/BtnRoxoContatoScroll.vue'
 export default {
+  components: { BtnRoxoContatoScroll }
 
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-130">
+  <div id="contato" class="pt-130">
     <div class="container">
       <h1 class="font-teko position-relative mx-auto col-sm-12 d-flex justify-content-center text-uppercase text-center">
         Contate nossa agência

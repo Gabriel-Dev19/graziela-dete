@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-motivos">
+    <div class="bg-motivos mt-100">
       <div class="container">
         <h1 class="font-teko text-white position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
           Porquê a Agência Graziela Bastos?

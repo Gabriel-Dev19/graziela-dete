@@ -6,7 +6,10 @@
       'bg-investigacao-conjugal': bgConjugal,
       'bg-investigacao-empresarial': bgEmpresarial,
       'bg-investigacao-politica': bgPolitica,
-      'bg-localizacao-de-pessoas': bgLocalizacao, }"
+      'bg-localizacao-de-pessoas': bgLocalizacao,
+      'bg-provas': bgProvas,
+      'bg-software': bgSoftware,
+    }"
   >
     <div class="container mt-110">
       <h1 class="text-white text-center position-relative d-flex px-0 justify-content-center col-xl-8 mx-auto text-uppercase fw-400 display-sm-4 display-lg-3 font-teko">
@@ -17,15 +20,15 @@
         {{ descriptionHome }}
       </p>
       <div class="d-flex mt-4 row mx-auto justify-content-center">
-        <a :href="hashBtn" class="btn col-xs-10 btn-lg btn-roxo border-radius-0 px-sm-30 fs-18">
+        <button class="btn col-xs-10 btn-lg btn-roxo border-radius-0 px-sm-30 fs-18" @click.prevent="ScrollServicos">
           {{ nameBtnHomeServicos }}
-        </a>
-        <a :href="hashBtn" class="btn col-xs-10 btn-lg btn-roxo border-radius-0 mt-xs-3 ml-sm-3 px-sm-30 fs-18">
-          {{ nameBtnHomeContact }}
-        </a>
+        </button>
+        <button class="btn col-xs-10 btn-lg btn-roxo border-radius-0 mt-xs-3 ml-sm-3 px-sm-30 fs-18" @click.prevent="ScrollFooter">
+          {{ nameBtnHomeFooter }}
+        </button>
       </div>
       <div class="d-flex mt-70 align-items-center">
-        <div class="col separation-redes-home mr-3" />
+        <div class="col separation-redes-home mr-4" />
         <div class="d-flex">
           <a href="http://" target="_blank" rel="noopener noreferrer">
             <i class="fab fs-22 text-roxo fa-twitter" />
@@ -43,7 +46,7 @@
             <i class="fab fs-22 text-roxo fa-instagram" />
           </a>
         </div>
-        <div class="col separation-redes-home ml-3" />
+        <div class="col separation-redes-home ml-4" />
       </div>
       <div class="mt-70 bg-roxo-escuro d-flex row mx-auto px-xs-3 px-sm-3 px-lg-30 px-xl-50 py-30">
         <div class="col-xl-4 col-xl-5 px-0 text-white">
@@ -128,7 +131,7 @@ export default {
       default:
       `A Agência de detetives particulares Graziela Bastos está a mais de 24 anos no mercado
       proporcionando para seus clientes investigações de qualidade além de segurança e confidenciabilidade. 
-      omos peritos em investigação conjugal, investigação empresarial, localização de pessoas desaparecidas,
+      somos peritos em investigação conjugal, investigação empresarial, localização de pessoas desaparecidas,
       software espião para filhos menores e muitos outros serviços.
       `
     },
@@ -136,7 +139,7 @@ export default {
       type: String,
       default: 'Nossos serviços'
     },
-    nameBtnHomeContact: {
+    nameBtnHomeFooter: {
       type: String,
       default: 'Fale com a Grazi'
     },
@@ -164,13 +167,60 @@ export default {
       type: Boolean,
       default: false
     },
-    bgSoftware: {
-      type: Boolean,
-      default: false
-    },
     bgProvas: {
       type: Boolean,
       default: false
+    },
+    bgSoftware: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data () {
+    return {
+      Quantidade_retira_hash: 0
+    }
+  },
+  methods: {
+    ScrollServicos () {
+      this.$smoothScroll({
+        scrollTo: document.getElementById('servicos'),
+        duration: 500,
+        offset: -130
+      })
+      setTimeout(() => {
+        this.HideHash()
+      }, 490)
+    },
+    ScrollFooter () {
+      this.$smoothScroll({
+        scrollTo: document.getElementById('footer'),
+        duration: 500,
+        offset: -100
+      })
+      setTimeout(() => {
+        this.HideHash()
+      }, 490)
+      this.$root.$emit('PulseFooter')
+    },
+    HideHash () {
+      this.Quantidade_retira_hash = 0
+      const interval = setInterval(() => {
+        let scrollV; let scrollH; const loc = window.location
+        if ('replaceState' in history) {
+          history.replaceState('', document.title, loc.pathname + loc.search)
+        } else {
+          // Prevent scrolling by storing the page's current scroll offset
+          scrollV = document.body.scrollTop
+          scrollH = document.body.scrollLeft
+          loc.hash = ''
+          // Restore the scroll offset, should be flicker free
+          document.body.scrollTop = scrollV
+          document.body.scrollLeft = scrollH
+        }
+        this.Quantidade_retira_hash++
+        if (this.Quantidade_retira_hash > 15) { clearInterval(interval) }
+      }, 0)
     }
   }
 }
@@ -184,31 +234,45 @@ export default {
     background-size: cover;
   }
   .bg-investigacao-conjugal{
-    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-conjugal.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-conjugal.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-conjugal.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-conjugal.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-investigacao-empresarial{
-    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+   background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-empresarial.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-empresarial.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-empresarial.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-empresarial.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-investigacao-politica{
-    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+   background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-localizacao-de-pessoas{
-    background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
-    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-home.webp) center center no-repeat;
+   background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-localizacao.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-localizacao.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-localizacao.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-localizacao.webp) center center no-repeat;
+    background-size: cover;
+  }
+  .bg-provas{
+   background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-provas.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-provas.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-provas.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-provas.webp) center center no-repeat;
+    background-size: cover;
+  }
+  .bg-software{
+   background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-software.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-software.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-software.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-software.webp) center center no-repeat;
     background-size: cover;
   }
   .separation-home{
@@ -242,6 +306,6 @@ export default {
   .separation-redes-home{
     height: 2px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
 </style>

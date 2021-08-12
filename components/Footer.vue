@@ -1,11 +1,11 @@
 <template>
   <footer class="bg-roxo-escuro pt-70 mt-100">
     <div class="container d-flex row mx-auto">
-      <div class="col-lg-4 px-0">
-        <h1 class="font-teko mb-1 text-white">
+      <div class="col-xl-4 px-0">
+        <h1 class="font-teko mb-1 text-xs-center text-sm-center text-xl-left text-white">
           Graziela Bastos
         </h1>
-        <p class="text-white mb-2 fs-14">
+        <p class="text-white mb-2 text-xs-center text-sm-center text-xl-left fs-14">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, eius obcaecati reiciendis nam deserunt, doloribus,
           quia soluta vitae quo ad fuga.
           Modi, eius obcaecati reiciendis nam deserunt, doloribus,
@@ -13,51 +13,61 @@
           nam deserunt, doloribus,
           quia soluta vitae quo ad fuga.
         </p>
-        <button class="font-teko py-0 px-0 text-uppercase d-flex align-items-center fs-20 text-white btn">
-          Saiba mais <i class="fa fa-angle-right fw-400 mb-1 ml-1" />
-        </button>
+        <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-xl-start">
+          <button class="font-teko py-0 px-0 text-uppercase d-flex align-items-center fs-20 text-white btn">
+            Saiba mais <i class="fa fa-angle-right fw-400 mb-1 ml-1" />
+          </button>
+        </div>
       </div>
-      <div class="borda-separation-footer my-xs-4 my-sm-4 my-lg-0 mx-lg-4" />
-      <div class="col-lg-3 px-0">
-        <h3 class="font-teko mb-1 text-white">
-          Links rápidos
-        </h3>
-        <button class="btn px-0 text-left py-0 fs-15 text-white btn-link">
-          # Investigação conjugal
-        </button>
-        <button class="btn px-0 text-left py-0 fs-15 text-white btn-link">
-          # Investigação empresarial
-        </button>
-        <button class="btn px-0 text-left py-0 fs-15 text-white btn-link">
-          # Investigação política
-        </button>
-        <button class="btn px-0 text-left py-0 fs-15 text-white btn-link">
-          # Localização de pessoas
-        </button>
-        <button class="btn px-0 text-left py-0 fs-15 text-white btn-link">
-          # Provas para advogados
-        </button>
-        <button class="btn px-0 text-left py-0 fs-15 text-white btn-link">
-          # Software celular espião (para filhos)
-        </button>
-        <button class="btn px-0 text-left py-0 fs-15 text-white btn-link">
-          # Políticas de provacidade
-        </button>
-        <button class="btn px-0 text-left py-0 fs-15 text-white btn-link">
-          # Trabalhe conosco
-        </button>
+      <div class="borda-separation-footer my-xs-4 my-sm-4 my-xl-0 mx-xl-4" />
+      <div class="col-xl-3 d-flex justify-content-center px-0">
+        <div class="px-0">
+          <h3 class="font-teko mb-1 text-xs-center text-sm-center text-xl-left text-white">
+            Links rápidos
+          </h3>
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+            # Investigação conjugal
+          </button>
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+            # Investigação empresarial
+          </button>
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+            # Investigação política
+          </button>
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+            # Localização de pessoas
+          </button>
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+            # Provas para advogados
+          </button>
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+            # Software celular espião (para filhos)
+          </button>
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+            # Políticas de provacidade
+          </button>
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+            # Trabalhe conosco
+          </button>
+        </div>
       </div>
-      <div class="borda-separation-footer my-xs-4 my-sm-4 my-lg-0 mx-lg-4" />
-      <div class="col-lg px-0">
-        <h4 class="font-teko mb-1 fs-27 text-white">
-          Mulher entende mulher! <span style="text-decoration: underline;">Canal exclusivo</span> para o
+      <div class="borda-separation-footer my-xs-4 my-sm-4 my-xl-0 mx-xl-4" />
+      <div id="footer" class="col-xl px-0" :class="{'animate-footer': PulseAnimate}">
+        <h4 class="font-teko mb-1 fs-27 text-xs-center text-sm-center text-xl-left text-white">
+          <span class="position-relative mr-2">
+            Mulher entende mulher!
+            <span class="tarja-branca position-absolute col-12 px-0 text-roxo">
+              Mulher entende mulher!
+            </span>
+          </span>
+          <span style="text-decoration: underline;">Canal exclusivo</span> para o
           <span style="text-decoration: underline;">atendimento de mulheres.</span>
         </h4>
-        <p class="text-white mt-2 fs-14">
+        <p class="text-white mt-2 text-xs-center text-sm-center text-xl-left fs-14">
           Se você não se sente a vontade de contar seu caso para um detetive homem, esse canal
           é exclusivo para atendentes mulheres
         </p>
-        <div class="col-sm-9 col-md-7 col-lg-12 px-xs-0 px-sm-0 px-xl-5 d-flex mt-4">
+        <div class="col-12 px-xs-0 px-sm-0 px-xl-5 d-flex justify-content-xs-center justify-content-sm-center justify-content-xl-start mt-4">
           <a href="mailto:" class="no-underline">
             <div class="d-flex justify-content-center col-12 px-0">
               <ion-icon class="fs-36 text-white" name="mail-outline" />
@@ -99,7 +109,21 @@
 </template>
 <script>
 export default {
-
+  data () {
+    return {
+      PulseAnimate: false
+    }
+  },
+  created () {
+    this.$root.$on('PulseFooter', () => {
+      setTimeout(() => {
+        this.PulseAnimate = true
+        setTimeout(() => {
+          this.PulseAnimate = false
+        }, 1050)
+      }, 750)
+    })
+  }
 }
 </script>
 <style scoped>
@@ -110,7 +134,7 @@ export default {
       background-color: var(--white);
     }
   }
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .borda-separation-footer{
       width: 1px;
       height: initial;
@@ -133,6 +157,15 @@ export default {
     margin-top: 3px;
     border-radius: 6px;
   }
+  .tarja-branca{
+    position: absolute;
+    left: 0;
+    top: 5px;
+    height: 27px;
+    padding-left: 3px !important;
+    padding-top: 2px;
+    background-color: var(--white);
+  }
   .icon-card:hover {
     background-color: #ffffff;
   }
@@ -141,5 +174,23 @@ export default {
   }
   .mr-7-px {
     margin-right: 7.5px;
+  }
+  .animate-footer{
+    animation-name: AnimateFooter;
+    animation-duration: 1s;
+  }
+  @keyframes AnimateFooter {
+    from {
+      transform: scale3d(1, 1, 1);
+      box-shadow: none;
+    }
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+      box-shadow: none;
+    }
   }
 </style>

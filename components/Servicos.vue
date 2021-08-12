@@ -1,16 +1,18 @@
 <template>
-  <div class="overflow-hidden pb-140 mt-120">
+  <div id="servicos" class="overflow-hidden pb-140 mt-120">
     <div class="container d-flex row mx-auto">
       <h1 class="font-teko position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
-        Nossos serviços
+        {{ titleServicos }}
         <div class="separation-tema" />
       </h1>
-      <InvestigacaoConjugal />
-      <InvestigacaoEmpresarial />
-      <InvestigacaoPolitica />
-      <LocalizacaoDePessoas />
-      <ProvasParaAdvogados />
-      <SoftwareEspiao />
+      <div class="mt-70">
+        <InvestigacaoConjugal v-show="hideConjugal" />
+        <InvestigacaoEmpresarial v-show="hideEmpresarial" />
+        <InvestigacaoPolitica v-show="hidePolitica" />
+        <LocalizacaoDePessoas v-show="hideLocalizacao" />
+        <ProvasParaAdvogados v-show="hideProvas" />
+        <SoftwareEspiao v-show="hideSoftware" :hide-seta="hideSetaSoftware" />
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +31,40 @@ export default {
     LocalizacaoDePessoas,
     ProvasParaAdvogados,
     SoftwareEspiao
+  },
+  props: {
+    titleServicos: {
+      type: String,
+      default: 'Nossos serviços'
+    },
+    hideSetaSoftware: {
+      type: Boolean,
+      default: true
+    },
+    hideConjugal: {
+      type: Boolean,
+      default: true
+    },
+    hideEmpresarial: {
+      type: Boolean,
+      default: true
+    },
+    hidePolitica: {
+      type: Boolean,
+      default: true
+    },
+    hideLocalizacao: {
+      type: Boolean,
+      default: true
+    },
+    hideProvas: {
+      type: Boolean,
+      default: true
+    },
+    hideSoftware: {
+      type: Boolean,
+      default: true
+    }
   }
 }
 </script>

@@ -26,7 +26,7 @@
           <div class="borda-numeros-servicos" />
         </div>
         <div class="d-flex mt-3 justify-content-xs-center justify-content-sm-center justify-content-lg-start">
-          <BtnLightTekoRouter router-to="/servicos" />
+          <BtnLightTekoRouter router-to="/servicos/investigacao-empresarial/" />
           <BtnLightTekoWhatsApp class="ml-3" />
         </div>
       </div>
