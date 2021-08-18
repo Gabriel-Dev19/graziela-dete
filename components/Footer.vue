@@ -3,7 +3,7 @@
     <div class="container d-flex row mx-auto">
       <div class="col-xl-4 px-0">
         <h1 class="font-teko mb-1 text-xs-center text-sm-center text-xl-left text-white">
-          Graziela Bastos
+          Graziella Bastos
         </h1>
         <p class="text-white mb-2 text-xs-center text-sm-center text-xl-left fs-14">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, eius obcaecati reiciendis nam deserunt, doloribus,
@@ -44,7 +44,7 @@
             # Software celular espião (para filhos)
           </button>
           <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
-            # Políticas de provacidade
+            # Políticas de privacidade
           </button>
           <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
             # Trabalhe conosco
@@ -84,12 +84,12 @@
               Telefone
             </h4>
           </a>
-          <a href="mailto:" class="no-underline">
+          <a class="no-underline cursor-pointer" @click.prevent="$root.$emit('ShowModalWhatsapp')">
             <div class="d-flex justify-content-center col-12 px-0">
               <ion-icon class="fs-36 text-white" name="logo-whatsapp" />
             </div>
             <h4 class="text-white text-uppercase font-teko col-12 px-0" style="margin-top: 4px;">
-              Whatsapp
+              Mensagem
             </h4>
           </a>
         </div>
@@ -98,7 +98,7 @@
     <div class="bg-roxo-super-escuro py-15 mt-70">
       <div class="container d-flex align-items-center justify-content-xs-center justify-content-sm-center justify-content-lg-between text-white row mx-auto">
         <p class="mb-0 text-xs-center text-sm-center text-lg-left">
-          &copy; Copyright - Agência Graziela Bastos - Todos os direitos reservados
+          &copy; Copyright - Agência Graziella Bastos - Todos os direitos reservados
         </p>
         <a href="https://wa.me/5588996912604?text=Olá,+Gabriel+gostaria+de+receber+mais+informações+sobre+seu+trabalho+como+programador" target="_blank" class="text-white mt-xs-2 mt-sm-2 mt-lg-0" rel="nopenner noreferrer">
           Desenvolvido por Gabriel Camurça <ion-icon class="fs-20" style="margin-bottom: -5px;" name="logo-vue" />

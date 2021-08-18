@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Home title-home="Investigação politica - eleições fraudadas" name-btn-home-servicos="Outros serviços" :bg-politica="true" />
+    <Home title-home="Investigação política - eleições fraudadas" name-btn-home-servicos="Outros serviços" :bg-politica="true" />
     <section class="pt-100">
       <div class="container">
         <h1 class="font-teko position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
-          Mais sobre investigação politica
+          Mais sobre investigação política
           <div class="separation-tema" />
         </h1>
         <div class="mt-50 row mx-auto d-xs-flex d-sm-block">
@@ -79,6 +79,9 @@ import Servicos from '~/components/Servicos.vue'
 export default {
   components: { Home, Servicos, BtnRoxoContatoScroll },
   layout: 'LayoutServicos',
+  head: {
+    title: 'Investigação política - Agência de detetives Graziella Bastos'
+  },
   mounted () {
     this.$smoothScroll({
       scrollTo: document.body,

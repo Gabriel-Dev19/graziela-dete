@@ -1,4 +1,4 @@
-# graziela-dete
+# Graziella-dete
 
 ## Build Setup
 

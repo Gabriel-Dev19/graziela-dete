@@ -3,7 +3,7 @@
     <div class="bg-motivos mt-100">
       <div class="container">
         <h1 class="font-teko text-white position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
-          Porquê a Agência Graziela Bastos?
+          Porquê a Agência Graziella Bastos?
           <div class="separation-tema" />
         </h1>
         <p class="col-xl-10 mx-auto text-center text-white mt-4">
@@ -42,7 +42,7 @@
           Grandes detetives
         </h2>
         <p class="fw-500 col-11 mb-0 px-0 mx-auto text-center">
-          A Agência de detetives Graziela Bastos só trabalha com
+          A Agência de detetives Graziella Bastos só trabalha com
           profissionais altamente capacitados e discretos.
         </p>
       </div>

@@ -183,15 +183,15 @@
           </h3>
           <div class="d-flex mt-15 justify-content-center">
             <a href="mailto:">
-              <ion-icon class="text-roxo-escuro fs-25" name="mail-outline" style="margin-bottom: -7px; margin-left: -7px; margin-right: 8px;" />contato@graziela.com.br
+              <ion-icon class="text-roxo-escuro fs-25" name="mail-outline" style="margin-bottom: -7px; margin-left: -7px; margin-right: 8px;" />contato@Graziella.com.br
             </a>
           </div>
           <h3 class="text-uppercase position-relative mt-40 d-flex justify-content-center text-center font-teko fw-600">
-            Whatsapp
+            Mensagem
             <div class="separation-contatos" />
           </h3>
           <div class="d-flex mt-15 justify-content-center">
-            <a href="mailto:">
+            <a class="cursor-pointer" @click.prevent="$root.$emit('ShowModalWhatsapp')">
               <ion-icon class="text-roxo-escuro fs-25" name="logo-whatsapp" style="margin-bottom: -7px; margin-left: -7px; margin-right: 8px;" />+55 (00) 0000-0000
             </a>
           </div>

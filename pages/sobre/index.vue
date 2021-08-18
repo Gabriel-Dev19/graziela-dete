@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Home title-home="Sobre a agência Graziela Bastos" :bg-home="true" />
+    <Home title-home="Sobre a agência Graziella Bastos" :bg-home="true" />
     <section class="pt-100">
       <div class="container">
         <h1 class="font-teko position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
-          Saiba mais sobre Graziela e sua equipe
+          Saiba mais sobre Graziella e sua equipe
           <div class="separation-tema" />
         </h1>
         <div class="d-flex justify-content-between align-items-start row mx-auto mt-80">
@@ -39,26 +39,19 @@
         </div>
       </div>
     </section>
-    <Servicos class="mt-150" />
-    <ParalaxHome />
-    <Numeros />
-    <Contato />
-    <Footer />
   </div>
 </template>
 
 <script>
 import BtnRoxoContatoScroll from '~/components/buttons/BtnRoxoContatoScroll.vue'
-import Contato from '~/components/Contato.vue'
-import Footer from '~/components/Footer.vue'
 import Home from '~/components/Home.vue'
-import Numeros from '~/components/Numeros.vue'
-import ParalaxHome from '~/components/ParalaxHome.vue'
-import Servicos from '~/components/Servicos.vue'
 import CardSobre from '~/components/parts/CardSobre.vue'
 export default {
-  components: { Home, BtnRoxoContatoScroll, Servicos, ParalaxHome, Numeros, Contato, Footer, CardSobre },
+  components: { Home, BtnRoxoContatoScroll, CardSobre },
   layout: 'LayoutSobre',
+  head: {
+    title: 'Sobre nós - Agência de detetives Graziella Bastos'
+  },
   mounted () {
     this.$smoothScroll({
       scrollTo: document.body,

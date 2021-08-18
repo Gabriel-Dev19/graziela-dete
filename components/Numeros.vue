@@ -3,7 +3,7 @@
     <div v-scroll="NumerosScroll" class="container d-flex row mx-auto">
       <div class="col-lg-7 px-0">
         <h1 class="font-teko mb-0 text-xs-center text-sm-center text-lg-left text-uppercase">
-          Agência Graziela Bastos
+          Agência Graziella Bastos
         </h1>
         <h5 class="text-uppercase d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative fw-600 text-black-50 font-teko">
           Detetives Particulares

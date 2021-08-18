@@ -46,7 +46,7 @@
                   <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/provas-para-advogados/')">
                     Provas para advogados <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
                   </button>
-                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/software-espiao-de-celular/')">
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/programa-de-celular-vip/')">
                     Software celular espião (filhos) <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
                   </button>
                 </div>
@@ -95,7 +95,7 @@
       <nav v-scroll="ScrollNav" class="navbar d-xs-none d-sm-none d-lg-flex fixed-top nav" :class="{'bg-nav-scroll border-bottom py-10 shadow': NavScroll, 'pt-40': !NavScroll}">
         <div class="container">
           <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
-            Logo
+            <img src="../assets/img/img-teste-logo.webp" width="220" alt="Logo Graziela Detetives">
           </a>
           <div class="ml-auto d-flex">
             <button
@@ -143,7 +143,7 @@
                     <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/provas-para-advogados/')">
                       Provas para advogados <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/software-espiao-de-celular/')">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/programa-de-celular-vip/')">
                       Software espião para filhos <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
                   </div>
@@ -161,36 +161,44 @@
                 <div v-show="ShowDropdownLocalidades" class="dropwdown-localidades pt-20">
                   <div class="bg-light position-relative py-10 px-1 cursor-normal d-flex row mx-auto shadow justify-content-center">
                     <div class="seta-dropdown" />
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/')">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-em-Santa-Catarina/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Santa Catarina
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-no-Parana/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Paraná
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-no-Rio-Grande-do-Sul/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Rio Grande do Sul
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-em-Sao-Paulo/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> São Paulo
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-no-Rio-de-Janeiro/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Rio de Janeiro
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-no-Distrito-Federal/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Distrito Federal
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-em-Minas-Gerais/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Minas Gerais
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-no-Mato-Grosso-do-Sul/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Mato Grosso do Sul
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/detetive-particular-em-Goias/')">
                       <i class="fa fa-map-marker-alt mr-2 fs-13 text-roxo" /> Goiás
                     </button>
                   </div>
                 </div>
               </transition>
+            </button>
+            <button
+              :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"
+              class="btn nav-link d-flex mr-35 position-relative px-0"
+              @click.prevent="$router.push('/imprensa/')"
+            >
+              Imprensa
+              <i id="arrow-marcacao" class="fs-13 fa fa-arrow-right text-roxo" style="margin-top: 6px;" />
             </button>
             <button
               :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}"

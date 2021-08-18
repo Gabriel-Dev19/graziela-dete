@@ -6,6 +6,7 @@
     <Numeros />
     <Contato />
     <Footer />
+    <ModalWhatsapp />
     <BtnVoltarTopo />
   </div>
 </template>
@@ -18,6 +19,7 @@ import ParalaxHome from '~/components/ParalaxHome.vue'
 import Numeros from '~/components/Numeros.vue'
 import Contato from '~/components/Contato.vue'
 import Footer from '~/components/Footer.vue'
+import ModalWhatsapp from '~/components/ModalWhatsapp.vue'
 Vue.use(VueSmoothScroll)
 Vue.directive('scroll', {
   inserted (el, binding) {
@@ -36,7 +38,8 @@ export default {
     ParalaxHome,
     Numeros,
     Contato,
-    Footer
+    Footer,
+    ModalWhatsapp
   }
 }
 </script>

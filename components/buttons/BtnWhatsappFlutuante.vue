@@ -1,0 +1,506 @@
+<template>
+  <div>
+    <div id="div-botao-suspenso-whatsapp">
+      <button id="botao-suspenso-whatsapp" class=" shadow-lg d-flex btn justify-content-center d-block" :class="{'animate-whatsapp bg-whatsapp': !ShowDropdownWhatsapp, 'bg-roxo-escuro': ShowDropdownWhatsapp}" @click.prevent="ShowDropdownWhatsapp = !ShowDropdownWhatsapp">
+        <i v-show="!ShowDropdownWhatsapp" class=" fab fa-whatsapp align-self-center" />
+        <i v-show="ShowDropdownWhatsapp" class=" fa fa-times fw-300 align-self-center" />
+      </button>
+      <transition enter-active-class="animate__animated animate__fadeIn" leave-active-class="animate__animated animate__fadeOut">
+        <div v-show="ShowDropdownWhatsapp" id="dropdown-whatsapp" class="bg-white rounded cursor-normal shadow-lg" @click.stop="">
+          <div class="d-flex rounded row h-100 mx-0">
+            <div class="py-15 bg-roxo-escuro align-self-start col-12 px-0">
+              <div class="px-3">
+                <h5 class="fw-600 text-white text-center mb-0">
+                  Seja bem vindo!
+                </h5>
+                <p class="line-height-p mt-1 text-white text-center fw-500 fs-14 mb-0">
+                  Você está na nossa central de atendimento!
+                  Fale com um de nossos especialistas.
+                </p>
+              </div>
+            </div>
+            <div class="height-div-meio-whatsapp bg-light align-self-center d-flex justify-content-center col-12">
+              <div>
+                <a href="https://wa.me/5547991062096?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex mt-20 px-20 border-bottom pb-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Norte de Santa Catarina</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(47) 99106-2096</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5548998200602?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Sul de Santa Catarina</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(48) 99820-0602</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5549991662520?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Serra Catarinense</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(49) 99166-2520</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5541995190579?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Paraná</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(41) 99519-0579</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5511973773244?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">São Paulo</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(11) 97377-3244</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5551997544960?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Rio Grande do Sul</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(51) 99754-4960</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5521999932082?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Rio de Janeiro</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(21) 99993-2082</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5531998082674?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Minas Gerais</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(31) 99808-2674</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5562999599493?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Goiás</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(62) 99959-9493</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5567996182861?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 border-bottom pb-10 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Mato Grosso do Sul</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(67) 99618-2861</p>
+                  </div>
+                </a>
+                <a href="https://wa.me/5561998300643?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" class="d-flex px-20 pb-20 mt-10 align-items-center no-underline" rel="noopener noreferrer">
+                  <div class="bolinha-whatsapp-conteudo d-flex justify-content-center align-items-center bg-whatsapp">
+                    <i class="fab fa-whatsapp text-white fs-24" />
+                  </div>
+                  <div class="col text-dark">
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">Distrito Federal</p>
+                    <p class="fw-600 d-block fs-15 text-left mb-0 col-12 px-0">(61) 99830-0643</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="py-10 align-self-end bg-white border position-relative col-12 px-0">
+              <p class="fw-600 text-center col-12 d-flex align-items-center justify-content-center fs-15 px-3 mb-0">
+                Atendimento - 24h <i class="fa fa-circle ml-1 fs-12 text-success" />
+              </p>
+              <div class="seta-btn-whatsapp bg-roxo-escuro" />
+            </div>
+          </div>
+        </div>
+      </transition>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  data () {
+    return {
+      ShowDropdownWhatsapp: false
+    }
+  }
+}
+</script>
+<style lang="css" scoped>
+    .animate__animated{
+      animation-duration: .3s !important;
+      -o-animation-duration: .3s !important;
+      -moz-animation-duration: .3s !important;
+      -webkit-animation-duration: .3s !important;
+    }
+  .text-whatsapp{
+    color: #34af23;
+  }
+  .height-1-px{
+    height: 1px;
+  }
+  @media (min-width: 1px) {
+    #div-botao-suspenso-whatsapp{
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 20;
+    }
+    #botao-suspenso-whatsapp {
+      height: 50px;
+      width: 50px;
+      border-radius: 50% !important;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      z-index: 30 !important;
+    }
+    #dropdown-whatsapp{
+      position: absolute;
+      bottom: 90px;
+      right: -10px;
+      height: 450px;
+      width: 320px;
+    }
+    .height-div-meio-whatsapp{
+      height: 67.0%;
+      overflow-y: scroll;
+    }
+    .seta-btn-whatsapp{
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      transform: rotate(45deg);
+      bottom: -8px;
+      right: 15px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: 576px) {
+    #div-botao-suspenso-whatsapp{
+      position: fixed;
+      bottom: 40px;
+      right: 40px;
+      z-index: 20;
+    }
+    #botao-suspenso-whatsapp {
+      height: 55px;
+      width: 55px;
+      border-radius: 50% !important;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      z-index: 30 !important;
+    }
+    #dropdown-whatsapp{
+      position: absolute;
+      right: 80px;
+      bottom: 20px;
+      height: 450px;
+      width: 380px;
+    }
+    .seta-btn-whatsapp{
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      transform: rotate(45deg);
+      right: -8px;
+      top: 15px;
+      z-index: -1;
+    }
+    .height-div-meio-whatsapp{
+      height: 71.3%;
+      overflow-y: scroll;
+    }
+  }
+  .bolinha-whatsapp-conteudo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .bg-whatsapp{
+    background-color: #34af23;
+  }
+  .bg-whatsapp:hover{
+    background-color: #288f1a;
+  }
+  #botao-suspenso-whatsapp:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  #botao-suspenso-whatsapp i {
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .animate-whatsapp{
+    animation-name: AnimateWhatsapp;
+    -o-animation-name: AnimateWhatsapp;
+    -moz-animation-name: AnimateWhatsapp;
+    -webkit-animation-name: AnimateWhatsapp;
+    animation-duration: 5s;
+    -o-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  @keyframes AnimateWhatsapp {
+    60% {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+
+    75% {
+      transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -o-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -moz-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+    }
+
+    87% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    90% {
+      transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+    }
+
+    93% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    96% {
+      transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+    }
+
+    99% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @-o-keyframes AnimateWhatsapp {
+    60% {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+
+    75% {
+      transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -o-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -moz-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+    }
+
+    87% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    90% {
+      transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+    }
+
+    93% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    96% {
+      transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+    }
+
+    99% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @-moz-keyframes AnimateWhatsapp {
+    60% {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+
+    75% {
+      transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -o-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -moz-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+    }
+
+    87% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    90% {
+      transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+    }
+
+    93% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    96% {
+      transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+    }
+
+    99% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+  }
+
+  @-webkit-keyframes AnimateWhatsapp {
+    60% {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+
+    75% {
+      transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -o-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -moz-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+      -webkit-transform: scale3d(1.2, 1.2, 1.2) rotate(20deg);
+    }
+
+    87% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    90% {
+      transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+    }
+
+    93% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    96% {
+      transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+    }
+
+    99% {
+      transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+    }
+
+    100% {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+    }
+  }
+</style>

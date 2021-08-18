@@ -40,6 +40,9 @@ export default {
     Contato,
     Footer
   },
+  head: {
+    title: 'Página inicial - Agência de detetives Graziella Bastos'
+  },
   mounted () {
     this.$smoothScroll({
       scrollTo: document.body,

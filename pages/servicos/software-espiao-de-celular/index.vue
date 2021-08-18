@@ -75,6 +75,9 @@ import Servicos from '~/components/Servicos.vue'
 export default {
   components: { Home, Servicos, BtnRoxoContatoScroll },
   layout: 'LayoutServicos',
+  head: {
+    title: 'Software celular espião para filhos menores - Agência de detetives Graziella Bastos'
+  },
   mounted () {
     this.$smoothScroll({
       scrollTo: document.body,

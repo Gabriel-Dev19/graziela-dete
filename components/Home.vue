@@ -9,6 +9,7 @@
       'bg-localizacao-de-pessoas': bgLocalizacao,
       'bg-provas': bgProvas,
       'bg-software': bgSoftware,
+      'bg-imprensa': bgImprensa
     }"
   >
     <div class="container mt-110">
@@ -65,7 +66,7 @@
           </h3>
           <p class="mt-1 text-xs-center text-sm-center text-xl-left mb-0">
             Se você não se sente a vontade de falar com um detetive homem você veio ao lugar certo, temos canais de
-            atendimento específicos onde você fala com a própria Graziela Bastos!
+            atendimento específicos onde você fala com a própria Graziella Bastos!
           </p>
         </div>
         <div class="col-md-11 mx-auto mt-xs-30 mt-sm-30 mt-xl-0 col-xl px-0 text-white d-flex row justify-content-xs-center justify-content-sm-center justify-content-lg-end align-items-center ml-lg-40 ml-xl-50">
@@ -124,12 +125,12 @@ export default {
   props: {
     titleHome: {
       type: String,
-      default: 'Agência de Detetives particulares Graziela Bastos'
+      default: 'Agência de Detetives particulares Graziella Bastos'
     },
     descriptionHome: {
       type: String,
       default:
-      `A Agência de detetives particulares Graziela Bastos está a mais de 24 anos no mercado
+      `A Agência de detetives particulares Graziella Bastos está a mais de 24 anos no mercado
       proporcionando para seus clientes investigações de qualidade além de segurança e confidenciabilidade. 
       somos peritos em investigação conjugal, investigação empresarial, localização de pessoas desaparecidas,
       software espião para filhos menores e muitos outros serviços.
@@ -172,6 +173,10 @@ export default {
       default: false
     },
     bgSoftware: {
+      type: Boolean,
+      default: false
+    },
+    bgImprensa: {
       type: Boolean,
       default: false
     }
@@ -273,6 +278,13 @@ export default {
     -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-software.webp) center center no-repeat;
     -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-software.webp) center center no-repeat;
     -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-software.webp) center center no-repeat;
+    background-size: cover;
+  }
+  .bg-imprensa{
+   background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-entrevista.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-entrevista.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-entrevista.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/bg-entrevista.webp) center center no-repeat;
     background-size: cover;
   }
   .separation-home{

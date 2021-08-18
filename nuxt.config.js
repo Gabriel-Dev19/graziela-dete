@@ -11,14 +11,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'graziela-dete',
+    title: 'Agência de detetives Graziella Bastos',
     htmlAttrs: {
       lang: 'pt-BR'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'A Agência de detetives Graziella Bastos está preparada para atender todos os tipos de necessidades. Investigações conjugais - Casos de traição - Investigação empresarial - Investigação política - Software celular espião para filhos menores' },
       { name: 'theme-color', content: '#f8f9fa' },
       { name: 'apple-mobile-web-app-status-bar-style', content: '#f8f9fa' },
       { name: 'msapplication-navbutton-color', content: '#f8f9fa' }

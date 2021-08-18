@@ -79,6 +79,9 @@ import Servicos from '~/components/Servicos.vue'
 export default {
   components: { Home, Servicos, BtnRoxoContatoScroll },
   layout: 'LayoutServicos',
+  head: {
+    title: 'Investigação empresarial - Agência de detetives Graziella Bastos'
+  },
   mounted () {
     this.$smoothScroll({
       scrollTo: document.body,

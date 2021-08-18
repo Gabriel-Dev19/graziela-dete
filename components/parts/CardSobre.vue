@@ -45,7 +45,7 @@
           deleniti labore ut
         </p>
         <div class="d-flex justify-content-center">
-          <BtnLightTekoRouter name-btn="Software espião" router-to="/servicos/software-espiao-de-celular/" />
+          <BtnLightTekoRouter name-btn="Software espião" router-to="/servicos/programa-de-celular-vip/" />
         </div>
       </div>
     </b-carousel-slide>

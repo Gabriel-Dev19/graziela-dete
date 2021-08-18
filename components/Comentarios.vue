@@ -176,11 +176,11 @@
         <div class="separation-tema" />
       </h1>
       <p class="col-lg-10 px-0 text-center mx-auto mb-0 mt-20">
-        Você também pode fazer parte da rede de detetives Graziela Bastos! Basta ser maior de idade, ter carteira de motorista,
-        possuir um veículo para locomoção e ser formado em nosso curso de detetive particular.
+        Você também pode fazer parte da rede de detetives Graziella Bastos! Basta ser maior de idade, ter carteira de motorista,
+        possuir um veículo para locomoção e ter certificação em algum curso de detetive particular.
       </p>
       <div class="d-flex row mx-auto col-12 px-0 mt-20 justify-content-center">
-        <BtnRoxoContatoScroll class="col-xs-8" name-btn="Matricule-se agora!" />
+        <BtnRoxoContatoScroll class="col-xs-8" name-btn="Trabalhe conosco!" />
         <BtnRoxoFooter class="ml-sm-3 col-xs-8 mt-xs-10" />
       </div>
     </div>
