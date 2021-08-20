@@ -151,10 +151,10 @@ export default {
     background-color: var(--white);
   }
   .conteudo-left{
-    background-color: var(--roxo_super_escuro);
+    background-color: var(--roxo_escuro);
   }
   .conteudo-right{
-    background-color: var(--roxo_super_escuro);
+    background-color: var(--roxo_escuro);
   }
   @media (min-width: 992px) {
     .conteudo-left{

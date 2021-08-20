@@ -4,7 +4,7 @@
       <nav v-scroll="ScrollNav" class="navbar align-items-center px-0 d-lg-none fixed-top nav" :class="{'bg-nav-scroll py-0 shadow': NavScroll, 'pt-40': !NavScroll}">
         <div class="container px-30" :class="{'border-bottom pt-15 pb-15': CollapseNav, 'pt-10 pb-10': NavScroll}">
           <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
-            Logo
+            <img src="../assets/img/img-teste-logo.webp" width="200" alt="Logo Graziela Detetives">
           </a>
           <button v-b-toggle.collapse-navbar class="btn py-0 px-0">
             <ion-icon v-show="IconBar" class="fs-40 text-roxo" name="menu-outline" style="margin-bottom: -7px;" />
