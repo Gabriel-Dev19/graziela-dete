@@ -116,7 +116,7 @@ export default {
     width: 200px;
     bottom: -10px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .borda-lateral-sobre{
     position: absolute;

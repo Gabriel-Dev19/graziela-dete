@@ -74,10 +74,10 @@ export default {
     width: 150px;
     bottom: -10px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   img{
-    border: 2px solid var(--roxo);
+    border: 2px solid var(--roxo_escuro);
   }
   .container-conteudo-motivos{
     margin-top: -235px;

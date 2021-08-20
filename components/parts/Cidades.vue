@@ -86,7 +86,7 @@ export default {
     width: 200px;
     bottom: -10px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .borda-tema-fina{
     position: absolute;
@@ -94,6 +94,6 @@ export default {
     width: 200px;
     bottom: -1px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
 </style>

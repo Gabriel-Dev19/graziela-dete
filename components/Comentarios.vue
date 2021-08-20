@@ -236,7 +236,7 @@ export default {
     width: 150px;
     bottom: -10px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .div-indicadores{
     position: absolute;
@@ -263,12 +263,12 @@ export default {
     width: 95px;
     height: 95px;
     border-radius: 50%;
-    background-color: #a45eea93;
+    background-color: #6c5ce76e;
   }
   .profile-comments{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #a45eea93;
+    background-color: #6c5ce76e;
   }
 </style>

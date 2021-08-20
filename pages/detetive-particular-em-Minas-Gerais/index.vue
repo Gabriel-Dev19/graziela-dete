@@ -19,11 +19,11 @@
         </div>
         <h1 class="font-teko d-flex text-center text-uppercase mt-90 justify-content-center position-relative mb-1">
           Confira as cidades atendidas
-          <div class="borda-tema-fina" />
+          <div class="separation-tema" />
         </h1>
       </div>
     </section>
-    <section class="col-12 px-0">
+    <section class="col-12 mt-50 px-0">
       <div class="container px-xs-0">
         <!-- Cidades B -->
         <div class="position-relative bg-roxo-escuro border shadow border-radius-10 mt-30 overflow-hidden col-12 d-flex row mx-auto pr-0 pt-1 pb-30 pl-65">
@@ -87,7 +87,7 @@ export default {
     width: 200px;
     bottom: -10px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .borda-tema-fina{
     position: absolute;
@@ -95,7 +95,7 @@ export default {
     width: 200px;
     bottom: -1px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   ol.carousel-indicators li{
     width: 13px !important;

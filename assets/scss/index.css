@@ -31,8 +31,9 @@
 
     --roxo: #a55eea;
     --roxo_claro: #b88de2;
-    --roxo_escuro: #8854d0;
-    --roxo_super_escuro: #6c43a5;
+    /*--roxo_escuro: #8854d0;*/
+    --roxo_escuro: #6c5ce7;
+    --roxo_super_escuro: #5548b5;
     --grafite: #2a2f33;
     --whatsapp: #34af23;
     --whatsapp_hover: #258c18;
@@ -91,13 +92,13 @@ button:focus, .btn:focus{
     }
 }
 .text-roxo{
-    color: var(--roxo);
+    color: var(--roxo_escuro);
 }
 .text-grafite{
     color: var(--grafite);
 }
 .bg-roxo{
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
 }
 .bg-roxo-escuro{
     background-color: var(--roxo_escuro);
@@ -109,10 +110,10 @@ button:focus, .btn:focus{
     color: var(--roxo_super_escuro);
 }
 a i.text-roxo{
-    color: var(--roxo);
+    color: var(--roxo_escuro);
 }
 a i.text-roxo:hover{
-    color: var(--roxo_escuro);
+    color: var(--roxo_super_escuro);
 }
 .btn-roxo{
     background-color: var(--roxo_escuro);

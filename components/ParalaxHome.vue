@@ -89,7 +89,7 @@ export default {
     width: 150px;
     bottom: -10px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .quadrado-alvo-1{
     position: absolute;

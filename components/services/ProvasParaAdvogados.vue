@@ -121,7 +121,7 @@ export default {
     width: 80px;
     bottom: -10px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .borda-tema-servicos{
     position: absolute;
@@ -146,10 +146,10 @@ export default {
     background-color: var(--white);
   }
   .conteudo-left{
-    background-color: #784db5;
+    background-color: var(--roxo_super_escuro);
   }
   .conteudo-right{
-    background-color: #784db5;
+    background-color: var(--roxo_super_escuro);
   }
   @media (min-width: 992px) {
     .conteudo-left{
@@ -164,7 +164,7 @@ export default {
     }
   }
   .bb-roxo{
-    border-bottom: 1px solid var(--roxo);
+    border-bottom: 1px solid var(--roxo_escuro);
   }
   .seta-borda{
     position: absolute;

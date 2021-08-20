@@ -391,7 +391,7 @@ export default {
     bottom: 5px;
     width: 100%;
     height: 2px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
     transition: all .3s;
     transform: translateY(5px);
     -o-transform: translateY(5px);

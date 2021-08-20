@@ -182,6 +182,9 @@ export default {
   @keyframes AnimateFooter {
     from {
       transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
       box-shadow: none;
     }
     50% {
@@ -190,6 +193,69 @@ export default {
     }
     to {
       transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+      box-shadow: none;
+    }
+  }
+  @-o-keyframes AnimateFooter {
+    from {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+      box-shadow: none;
+    }
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+      box-shadow: none;
+    }
+  }
+  @-moz-keyframes AnimateFooter {
+    from {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+      box-shadow: none;
+    }
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+      box-shadow: none;
+    }
+  }
+  @-webkit-keyframes AnimateFooter {
+    from {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
+      box-shadow: none;
+    }
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+      -o-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -webkit-transform: scale3d(1, 1, 1);
       box-shadow: none;
     }
   }

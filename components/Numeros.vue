@@ -114,7 +114,7 @@ export default {
     width: 250px;
     bottom: -8px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .borda-numeros{
     position: absolute;

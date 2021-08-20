@@ -372,8 +372,8 @@ export default {
     max-height: 130px;
   }
   input:focus, select:focus, textarea:focus{
-    box-shadow: 0 0 0 0.2rem #8854d067 !important;
-    border-color: #8854d067;
+    box-shadow: 0 0 0 0.2rem #6c5ce76e !important;
+    border-color: #6c5ce76e;
   }
   a{
     color: var(--grafite);
@@ -412,7 +412,7 @@ export default {
     box-shadow: 0 0.125rem 0.25rem #00000013 !important;
   }
   .success-form:focus{
-    box-shadow: 0 0 0 0.2rem #8854d067 !important;
+    box-shadow: 0 0 0 0.2rem #6c5ce76e !important;
   }
   @keyframes AnimateErrorContact {
     20%{
@@ -561,7 +561,7 @@ export default {
     width: 150px;
     bottom: -10px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .separation-contatos{
     position: absolute;
@@ -569,6 +569,6 @@ export default {
     width: 50px;
     bottom: -4px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
 </style>

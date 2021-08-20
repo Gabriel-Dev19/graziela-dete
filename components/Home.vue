@@ -293,7 +293,7 @@ export default {
     width: 300px;
     bottom: -20px;
     border-radius: 3px;
-    background-color: var(--roxo);
+    background-color: var(--roxo_escuro);
   }
   .traco-mulher{
     position: absolute;
