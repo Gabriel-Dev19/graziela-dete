@@ -2,7 +2,7 @@
   <div class="bg-paralaxx pb-70">
     <div class="container">
       <h1 class="font-teko text-white position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
-        Investigações detalhadas
+        O que pode esperar de nós?
         <div class="separation-tema" />
       </h1>
       <p class="col-xl-10 mx-auto text-center text-white mt-4">
@@ -17,12 +17,11 @@
               <div class="quadrado-alvo-2" />
               <div class="quadrado-alvo-3" />
               <div class="quadrado-alvo-4" />
-              <ion-icon class="fs-70" name="receipt-outline" style="margin-bottom: -7px; --ionicon-stroke-width: 23px;" />
+              <ion-icon class="fs-70" name="alert-circle-outline" style="margin-bottom: -7px; --ionicon-stroke-width: 23px;" />
             </div>
           </div>
           <h5 class="fw-600 col-11 px-0 mx-auto mt-25 fs-17 mb-0 text-center">
-            Construímos um dossiê completo com todo o caso documentado
-            com todas as provas
+            <span class="fw-700">Discrição e sigilo:</span> Peça um orçamento grátis. Garantimos discrição e a sua confidencialidade.
           </h5>
           <div class="d-flex justify-content-center mt-20">
             <btn-roxo-contato-scroll name-btn="Contate um detetive" />
@@ -35,12 +34,11 @@
               <div class="quadrado-alvo-2" />
               <div class="quadrado-alvo-3" />
               <div class="quadrado-alvo-4" />
-              <ion-icon class="fs-70" name="finger-print-outline" style="margin-bottom: -7px; --ionicon-stroke-width: 23px;" />
+              <ion-icon class="fs-70" name="receipt-outline" style="margin-bottom: -7px; --ionicon-stroke-width: 23px;" />
             </div>
           </div>
           <h5 class="fw-600 col-11 px-0 mx-auto mt-25 fs-17 mb-0 text-center">
-            Coletamos provas de forma que elas possam ser usadas legalmente
-            pela justiça
+            <span class="fw-700">Relatórios detalhados:</span> Com dados específicos e comprovados que podem ser usados legalmente.
           </h5>
           <div class="d-flex justify-content-center mt-20">
             <btn-roxo-contato-scroll name-btn="Precisa de provas ?" />
@@ -53,11 +51,11 @@
               <div class="quadrado-alvo-2" />
               <div class="quadrado-alvo-3" />
               <div class="quadrado-alvo-4" />
-              <ion-icon class="fs-70" name="footsteps-outline" style="margin-bottom: -7px; --ionicon-stroke-width: 23px;" />
+              <ion-icon class="fs-70" name="time-outline" style="margin-bottom: -7px; --ionicon-stroke-width: 23px;" />
             </div>
           </div>
           <h5 class="fw-600 col-11 px-0 mx-auto mt-25 fs-17 mb-0 text-center">
-            Fazemos todo o trabalho de campana da pessoa investigada para obeter melhores resultados
+            <span class="fw-700">24H, 7 dias da semana:</span> Contate-nos agora, não espere por amanhã. Podemos aliviar a sua preocupação hoje mesmo.
           </h5>
           <div class="d-flex justify-content-center mt-20">
             <btn-roxo-contato-scroll name-btn="Monitore tudo!" />

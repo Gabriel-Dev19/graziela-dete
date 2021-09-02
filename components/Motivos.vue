@@ -21,7 +21,7 @@
       <div class="col-sm-10 col-md col-lg-5 col-xl-4 bg-paper py-60 shadow-sm border">
         <div class="col-xs-7 col-sm-7 col-lg-6 d-flex justify-content-center mx-auto px-2">
           <div>
-            <img src="../assets/img/agencia-preparada.webp" class="img-fluid rounded-circle shadow" alt="">
+            <img src="../assets/img/agencia-preparada.webp" class="img-fluid rounded-circle shadow" alt="Agência de detetives detetives investigando um caso">
           </div>
         </div>
         <h2 class="font-teko text-center mb-1 text-uppercase mt-30">
@@ -35,7 +35,7 @@
       <div class="col-sm-10 col-md col-lg-5 col-xl-4 mt-xs-30 mt-sm-30 mt-md-0 ml-md-50 bg-paper py-60 shadow-sm border">
         <div class="col-xs-7 col-sm-7 col-lg-6 d-flex justify-content-center mx-auto px-2">
           <div>
-            <img src="../assets/img/profissionais-capacitados.webp" class="img-fluid rounded-circle shadow" alt="">
+            <img src="../assets/img/profissionais-capacitados.webp" class="img-fluid rounded-circle shadow" alt="Detetives capacitados">
           </div>
         </div>
         <h2 class="font-teko text-center mb-1 text-uppercase mt-30">

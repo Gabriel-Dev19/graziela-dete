@@ -25,28 +25,28 @@
           <h3 class="font-teko mb-1 text-xs-center text-sm-center text-xl-left text-white">
             Links rápidos
           </h3>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/investigacao-conjugal')">
             # Investigação conjugal
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/investigacao-empresarial')">
             # Investigação empresarial
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/investigacao-politica')">
             # Investigação política
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/localizacao-de-pessoas')">
             # Localização de pessoas
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/provas-para-advogados')">
             # Provas para advogados
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/software-espiao-de-celular')">
             # Software celular espião (para filhos)
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/politica-de-privacidade')">
             # Políticas de privacidade
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link">
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/trabalhe-conosco')">
             # Trabalhe conosco
           </button>
         </div>

@@ -46,7 +46,7 @@
                   <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/provas-para-advogados/')">
                     Provas para advogados <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
                   </button>
-                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/programa-de-celular-vip/')">
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/software-espiao-de-celular/')">
                     Software celular espião (filhos) <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
                   </button>
                 </div>
@@ -89,13 +89,77 @@
                 Fale conosco <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
               </button>
             </div>
+            <h3 class="font-teko mt-30">
+              Redes sociais
+            </h3>
+            <div class="d-flex mt-10 pl-10">
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fs-25 text-roxo fa-twitter" />
+              </a>
+              <a href="http://" target="_blank" class="mx-15" rel="noopener noreferrer">
+                <i class="fab fs-25 text-roxo fa-facebook" />
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fs-25 text-roxo fa-youtube" />
+              </a>
+              <a href="http://" target="_blank" class="mx-15" rel="noopener noreferrer">
+                <i class="fab fs-25 text-roxo fa-pinterest" />
+              </a>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fs-25 text-roxo fa-instagram" />
+              </a>
+            </div>
+            <h3 class="font-teko mt-30">
+              Telefones
+            </h3>
+            <div class="d-flex">
+              <div class="pl-10 mt-10">
+                <h6 class="text-center fs-15 mb-0 fw-600">
+                  Baln. Camboriú
+                </h6>
+                <div class="d-flex justify-content-center">
+                  <a href="tel:+" class="text-center text-dark">
+                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />
+                    +55 (00) 0000-0000
+                  </a>
+                </div>
+                <h6 class="text-center fs-15 mb-0 mt-10 fw-600">
+                  Florianópolis
+                </h6>
+                <div class="d-flex justify-content-center">
+                  <a href="tel:+" class="text-center text-dark">
+                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />
+                    +55 (00) 0000-0000
+                  </a>
+                </div>
+                <h6 class="text-center fs-15 mb-0 mt-10 fw-600">
+                  Curitiba
+                </h6>
+                <div class="d-flex justify-content-center">
+                  <a href="tel:+" class="text-center text-dark">
+                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />
+                    +55 (00) 0000-0000
+                  </a>
+                </div>
+                <h6 class="text-center fs-15 mb-0 mt-10 fw-600">
+                  Caçador
+                </h6>
+                <div class="d-flex justify-content-center">
+                  <a href="tel:+" class="text-center text-dark">
+                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />
+                    +55 (00) 0000-0000
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </b-collapse>
       </nav>
       <nav v-scroll="ScrollNav" class="navbar d-xs-none d-sm-none d-lg-flex fixed-top nav" :class="{'bg-nav-scroll border-bottom py-10 shadow': NavScroll, 'pt-40': !NavScroll}">
         <div class="container">
           <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
-            <img src="../assets/img/img-teste-logo.webp" width="220" alt="Logo Graziela Detetives">
+            <img v-show="!NavScroll" src="../assets/img/logo-grazi-2.webp" width="100" alt="Logo Graziela Detetives">
+            <img v-show="NavScroll" src="../assets/img/logo-chapeu.webp" width="50" alt="Logo Graziela Detetives">
           </a>
           <div class="ml-auto d-flex">
             <button
@@ -143,7 +207,7 @@
                     <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/provas-para-advogados/')">
                       Provas para advogados <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/programa-de-celular-vip/')">
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/software-espiao-de-celular/')">
                       Software espião para filhos <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
                   </div>

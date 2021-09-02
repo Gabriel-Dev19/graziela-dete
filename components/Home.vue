@@ -12,7 +12,7 @@
       'bg-imprensa': bgImprensa
     }"
   >
-    <div class="container mt-110">
+    <div class="container mt-150">
       <h1 class="text-white text-center position-relative d-flex px-0 justify-content-center col-xl-8 mx-auto text-uppercase fw-400 display-sm-4 display-lg-3 font-teko">
         {{ titleHome }}
         <div class="separation-home" />
@@ -125,15 +125,15 @@ export default {
   props: {
     titleHome: {
       type: String,
-      default: 'Agência de Detetives particulares Graziella Bastos'
+      default: 'Acabe com suas suspeitas! Agência Graziella Bastos'
     },
     descriptionHome: {
       type: String,
       default:
-      `A Agência de detetives particulares Graziella Bastos está a mais de 24 anos no mercado
+      `A Agência de detetives particulares Graziella Bastos está a mais de 15 anos no mercado
       proporcionando para seus clientes investigações de qualidade além de segurança e confidenciabilidade. 
-      somos peritos em investigação conjugal, investigação empresarial, localização de pessoas desaparecidas,
-      software espião para filhos menores e muitos outros serviços.
+      Conte com a equipe de detetives particulares da Agência de Detetives Graziella Bastos para solucionar
+      casos de investigação particular, conjugal, empresarial e muito mais.
       `
     },
     nameBtnHomeServicos: {
