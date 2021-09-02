@@ -115,40 +115,36 @@
             </h3>
             <div class="d-flex">
               <div class="pl-10 mt-10">
-                <h6 class="text-center fs-15 mb-0 fw-600">
+                <h6 class="text-center fs-15 mb-0 mt-20 fw-600">
                   Baln. Camboriú
                 </h6>
                 <div class="d-flex justify-content-center">
-                  <a href="tel:+" class="text-center text-dark">
-                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />
-                    +55 (00) 0000-0000
+                  <a href="tel:4732400934" class="text-center text-dark">
+                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />+55 (47) 3240-0934
                   </a>
                 </div>
                 <h6 class="text-center fs-15 mb-0 mt-10 fw-600">
                   Florianópolis
                 </h6>
                 <div class="d-flex justify-content-center">
-                  <a href="tel:+" class="text-center text-dark">
-                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />
-                    +55 (00) 0000-0000
+                  <a href="tel:4840429661" class="text-center text-dark">
+                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />+55 (48) 4042-9661
                   </a>
                 </div>
                 <h6 class="text-center fs-15 mb-0 mt-10 fw-600">
                   Curitiba
                 </h6>
                 <div class="d-flex justify-content-center">
-                  <a href="tel:+" class="text-center text-dark">
-                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />
-                    +55 (00) 0000-0000
+                  <a href="tel:4140427365" class="text-center text-dark">
+                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />+55 (41) 4042-7365
                   </a>
                 </div>
                 <h6 class="text-center fs-15 mb-0 mt-10 fw-600">
-                  Caçador
+                  Lages
                 </h6>
                 <div class="d-flex justify-content-center">
-                  <a href="tel:+" class="text-center text-dark">
-                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />
-                    +55 (00) 0000-0000
+                  <a href="tel:4932400948" class="text-center text-dark">
+                    <ion-icon class="text-roxo-escuro fs-23" name="call-outline" style="margin-bottom: -4px; margin-left: -7px; margin-right: 2px;" />+55 (49) 3240-0948
                   </a>
                 </div>
               </div>
