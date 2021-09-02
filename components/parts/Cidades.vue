@@ -2,7 +2,7 @@
   <div class="pt-100">
     <div class="container">
       <h1 class="font-teko position-relative col-lg-10 mx-auto px-0 d-flex justify-content-center text-uppercase text-center">
-        Contate um detetive em {{ nameCidades }}
+        Precisando de um detetive particular em {{ nameCidades }}?
         <div class="separation-tema" />
       </h1>
       <div class="d-flex justify-content-between align-items-start row mx-auto mt-80">
@@ -12,20 +12,19 @@
             <div class="borda-tema-fina" />
           </h1>
           <p class="mt-3 text-xs-center text-sm-center text-lg-left fw-500 px-0">
-            Procurando um detetive particular em {{ nameCidades }}? sit amet consectetur adipisicing elit. Animi ipsam consequatur modi rem voluptas molestias
-            omnis sed iusto veniam error? Nostrum quaerat inventore earum commodi nihil, et ad mollitia voluptatem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsam consequatur modi rem voluptas molestias
-            omnis sed iusto veniam error? Nostrum quaerat inventore earum commodi nihil, et ad mollitia voluptatem.
+            A <b>Agência de Detetives Graziella Bastos</b> está em {{ nameCidades }} e queremos ajudar você a desvendar suas
+            dúvidas. Com mais de 15 anos de experiência e muitos casos resolvidos, atuamos em todo o
+            território nacional.
           </p>
           <h1 class="font-teko mt-30 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative position-relative mb-1">
             Nossa equipe
             <div class="borda-tema-fina" />
           </h1>
           <p class="mt-3 text-xs-center text-sm-center text-lg-left fw-500 px-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsam consequatur modi rem voluptas molestias
-            omnis sed iusto veniam error? Nostrum quaerat inventore earum commodi nihil, et ad mollitia voluptatem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsam consequatur modi rem voluptas molestias
-            omnis sed iusto veniam error? Nostrum quaerat inventore earum commodi nihil, et ad mollitia voluptatem.
+            Nossa agência é especializada em investigações de caráter particular, conjugal, empresarial, acompanhamento de
+            filhos, localização de bens e pessoas desaparecidas, levantamento de provas para advogados, dentre outras.
+            Seja qual for o seu problema e complexidade do caso que você vem enfrentando, a Agência de Detetives
+            Graziella Bastos terá a satisfação em ajuda-lo a desvendar.
           </p>
           <div class="d-flex justify-content-xs-center justify-content-sm-center mt-4 justify-content-lg-start">
             <BtnQuatroSete v-show="showQuatroSete" />

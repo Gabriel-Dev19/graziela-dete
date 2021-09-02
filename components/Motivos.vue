@@ -7,10 +7,7 @@
           <div class="separation-tema" />
         </h1>
         <p class="col-xl-10 mx-auto text-center text-white mt-4">
-          Conduzimos investigações de forma detalhada e completa, todas as provas coletadas
-          são de extrema confidenciabilidade e entregues somente ao cliente. Além disso
-          todas as nossas investigações são conduzidas de forma totalmente discreta e disfarçada,
-          tudo para que o sigilo seja preservado.
+          Nosso trabalho é realizado por detetives experientes e devidamente capacitados que trabalham conosco há muitos anos o que garante um trabalho bem executado com rapidez e sigilo absoluto.
         </p>
         <div class="d-flex mt-40 justify-content-center">
           <ion-icon class="text-white fs-60" name="chevron-down-circle-outline" style="--ionicon-stroke-width: 15px;" />
@@ -25,11 +22,10 @@
           </div>
         </div>
         <h2 class="font-teko text-center mb-1 text-uppercase mt-30">
-          Agência preparada
+          Garantia de Trabalho
         </h2>
         <p class="fw-500 col-11 mb-0 px-0 mx-auto text-center">
-          Trabalhando com uma agência de investigação você não corre
-          riscos de chantagens e extorção de enganadores.
+          Garantimos o trabalho realizado através de informações durante o andamento das investigações.
         </p>
       </div>
       <div class="col-sm-10 col-md col-lg-5 col-xl-4 mt-xs-30 mt-sm-30 mt-md-0 ml-md-50 bg-paper py-60 shadow-sm border">
@@ -39,11 +35,10 @@
           </div>
         </div>
         <h2 class="font-teko text-center mb-1 text-uppercase mt-30">
-          Grandes detetives
+          Detetives experientes
         </h2>
         <p class="fw-500 col-11 mb-0 px-0 mx-auto text-center">
-          A Agência de detetives Graziella Bastos só trabalha com
-          profissionais altamente capacitados e discretos.
+          Detetives com anos de experiência em diversos casos para levantar provas e informações.
         </p>
       </div>
     </div>

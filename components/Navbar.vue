@@ -38,8 +38,8 @@
                   <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/investigacao-empresarial/')">
                     Investigação empresarial <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
                   </button>
-                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/investigacao-politica/')">
-                    Investigação política <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/comportamento-de-filhos/')">
+                    Comportamento de filhos <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
                   </button>
                   <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/localizacao-de-pessoas/')">
                     Localização de pessoas <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
@@ -47,8 +47,8 @@
                   <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/provas-para-advogados/')">
                     Provas para advogados <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
                   </button>
-                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/software-espiao-de-celular/')">
-                    Software celular espião (filhos) <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
+                  <button v-b-toggle.collapse-navbar class="btn py-0 fw-500 fs-18 px-0 text-left d-flex align-items-center" @click.prevent="$router.push('/servicos/celular-VIP/')">
+                    Celular VIP <i class="fa fa-arrow-right text-roxo fs-15 ml-2" style="margin-top: 2px;" />
                   </button>
                 </div>
               </b-collapse>
@@ -195,8 +195,8 @@
                     <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/investigacao-empresarial/')">
                       Investigação empresarial <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/investigacao-politica/')">
-                      Investigação política <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/comportamento-de-filhos/')">
+                      Comportamento de filhos <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
                     <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/localizacao-de-pessoas/')">
                       Localização de pessoas <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
@@ -204,8 +204,8 @@
                     <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/provas-para-advogados/')">
                       Provas para advogados <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
-                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/software-espiao-de-celular/')">
-                      Software espião para filhos <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
+                    <button class="py-1 btn d-flex col-12 fw-500 align-items-center" @click.prevent="$router.push('/servicos/celular-VIP/')">
+                      Celular VIP <i class="fa fa-arrow-right ml-2 fs-13 text-roxo" />
                     </button>
                   </div>
                 </div>

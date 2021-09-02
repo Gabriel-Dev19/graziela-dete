@@ -5,7 +5,7 @@
       'bg-home': bgHome,
       'bg-investigacao-conjugal': bgConjugal,
       'bg-investigacao-empresarial': bgEmpresarial,
-      'bg-investigacao-politica': bgPolitica,
+      'bg-comportamento-de-filhos': bgComportamento,
       'bg-localizacao-de-pessoas': bgLocalizacao,
       'bg-provas': bgProvas,
       'bg-software': bgSoftware,
@@ -160,7 +160,7 @@ export default {
       type: Boolean,
       default: false
     },
-    bgPolitica: {
+    bgComportamento: {
       type: Boolean,
       default: false
     },
@@ -261,11 +261,11 @@ export default {
     -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-empresarial.webp) center center no-repeat;
     background-size: cover;
   }
-  .bg-investigacao-politica{
-   background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
-    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
-    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
-    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-politica.webp) center center no-repeat;
+  .bg-comportamento-de-filhos{
+   background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-comportamento.webp) center center no-repeat;
+    -o-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-comportamento.webp) center center no-repeat;
+    -moz-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-comportamento.webp) center center no-repeat;
+    -webkit-background: linear-gradient(90deg, #000000c4, #000000c4), url(../assets/img/servicos/bg-comportamento.webp) center center no-repeat;
     background-size: cover;
   }
   .bg-localizacao-de-pessoas{

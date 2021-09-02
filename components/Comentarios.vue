@@ -2,7 +2,7 @@
   <div class="pt-130">
     <div class="container px-0 position-relative d-flex justify-content-center row mx-auto pb-80">
       <h1 class="font-teko position-relative col-12 d-flex justify-content-center text-uppercase text-center">
-        Nosso trabalho fala por sí!
+        O que nossos clientes falam de nós?
         <div class="separation-tema" />
       </h1>
       <b-carousel
@@ -20,15 +20,12 @@
               </div>
             </div>
             <h5 class="text-center mt-20 fw-700">
-              Juliana Santos / Floarianópolis - SC
+              Caroline A. / São Paulo - SP
             </h5>
           </div>
           <p class="fw-500 text-center mt-10 col-lg-10 fs-17 px-xs-0 mx-auto">
-            <i class="fas fa-quote-left text-roxo" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, numquam ad temporibus cumque accusantium
-            assumenda quibusdam officiis iste ex optio rem vel soluta placeat enim, atque minima
-            porro voluptas consectetur
-            placeat enim, atque minima
-            porro voluptas consectetur
+            <i class="fas fa-quote-left text-roxo" />
+            Profissionalismo e respeito. Me fez sentir muito confortável e segura durante todo o processo. Salvei meu relacionamento.
             <i class="fas fa-quote-right text-roxo" />
           </p>
         </b-carousel-slide>
@@ -40,15 +37,12 @@
               </div>
             </div>
             <h5 class="text-center mt-20 fw-700">
-              Fabrício Cavalcante / Mafra - SC
+              Márcia L. / Curitiba - PR
             </h5>
           </div>
           <p class="fw-500 text-center mt-10 col-lg-10 fs-17 px-xs-0 mx-auto">
-            <i class="fas fa-quote-left text-roxo" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, numquam ad temporibus cumque accusantium
-            assumenda quibusdam officiis iste ex optio rem vel soluta placeat enim, atque minima
-            porro voluptas consectetur
-            placeat enim, atque minima
-            porro voluptas consectetur
+            <i class="fas fa-quote-left text-roxo" />
+            Confie na sua empresa e contratei seus serviços. Estou muito satisfeito com o trabalho que realizaram pra mim. Do início ao fim, só houve profissionalismo e confiança. Espero não precisar mais desses serviços, mas se um dia precisar não hesitarei em contratar novamente.
             <i class="fas fa-quote-right text-roxo" />
           </p>
         </b-carousel-slide>
@@ -60,35 +54,12 @@
               </div>
             </div>
             <h5 class="text-center mt-20 fw-700">
-              Emmily Fonseca / Blumenal - SC
+              Antônio Carlos / Florianópolis - SC
             </h5>
           </div>
           <p class="fw-500 text-center mt-10 col-lg-10 fs-17 px-xs-0 mx-auto">
-            <i class="fas fa-quote-left text-roxo" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, numquam ad temporibus cumque accusantium
-            assumenda quibusdam officiis iste ex optio rem vel soluta placeat enim, atque minima
-            porro voluptas consectetur
-            placeat enim, atque minima
-            porro voluptas consectetur
-            <i class="fas fa-quote-right text-roxo" />
-          </p>
-        </b-carousel-slide>
-        <b-carousel-slide>
-          <div>
-            <div class="d-flex justify-content-center">
-              <div class="profile-principal mx-auto d-flex justify-content-center align-items-center">
-                <i class="fa fa-user fw-300 fs-50 text-roxo-escuro" />
-              </div>
-            </div>
-            <h5 class="text-center mt-20 fw-700">
-              Emílio Alencar / Curitiba - PR
-            </h5>
-          </div>
-          <p class="fw-500 text-center mt-10 col-lg-10 fs-17 px-xs-0 mx-auto">
-            <i class="fas fa-quote-left text-roxo" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, numquam ad temporibus cumque accusantium
-            assumenda quibusdam officiis iste ex optio rem vel soluta placeat enim, atque minima
-            porro voluptas consectetur
-            placeat enim, atque minima
-            porro voluptas consectetur
+            <i class="fas fa-quote-left text-roxo" />
+            Preço justo e excepcionalmente rápido no que fazem, recomendo a quem precisa de ajuda nesse tipo de trabalho.
             <i class="fas fa-quote-right text-roxo" />
           </p>
         </b-carousel-slide>
@@ -99,7 +70,7 @@
             <i class="fa fa-user fw-400 fs-20 text-roxo-escuro" />
           </div>
           <h6 class="text-center mb-0 fs-11 mt-2 fw-600">
-            Juliana
+            Caroline
           </h6>
         </div>
         <div class="indicadores cursor-pointer mx-20" :class="{'active': Active2}" @click.prevent="$refs.carouselComentarios.setSlide(1)">
@@ -107,7 +78,7 @@
             <i class="fa fa-user fw-400 fs-20 text-roxo-escuro" />
           </div>
           <h6 class="text-center mb-0 fs-11 mt-2 fw-600">
-            Fabrício
+            Márcia
           </h6>
         </div>
         <div class="indicadores cursor-pointer" :class="{'active': Active3}" @click.prevent="$refs.carouselComentarios.setSlide(2)">
@@ -115,15 +86,7 @@
             <i class="fa fa-user fw-400 fs-20 text-roxo-escuro" />
           </div>
           <h6 class="text-center mb-0 fs-11 mt-2 fw-600">
-            Emmily
-          </h6>
-        </div>
-        <div class="indicadores cursor-pointer ml-20" :class="{'active': Active4}" @click.prevent="$refs.carouselComentarios.setSlide(3)">
-          <div class="profile-comments mx-auto d-flex justify-content-center align-items-center">
-            <i class="fa fa-user fw-400 fs-20 text-roxo-escuro" />
-          </div>
-          <h6 class="text-center mb-0 fs-11 mt-2 fw-600">
-            Emílio
+            Antônio
           </h6>
         </div>
       </div>
@@ -180,17 +143,17 @@
         possuir um veículo para locomoção e ter certificação em algum curso de detetive particular.
       </p>
       <div class="d-flex row mx-auto col-12 px-0 mt-20 justify-content-center">
-        <BtnRoxoContatoScroll class="col-xs-8" name-btn="Trabalhe conosco!" />
+        <BtnRoxoRouter name-btn="Trabalhe conosco" router-to="/trabalhe-conosco" />
         <BtnRoxoFooter class="ml-sm-3 col-xs-8 mt-xs-10" />
       </div>
     </div>
   </div>
 </template>
 <script>
-import BtnRoxoContatoScroll from './buttons/BtnRoxoContatoScroll.vue'
 import BtnRoxoFooter from './buttons/BtnRoxoFooter.vue'
+import BtnRoxoRouter from './buttons/BtnRoxoRouter.vue'
 export default {
-  components: { BtnRoxoContatoScroll, BtnRoxoFooter },
+  components: { BtnRoxoFooter, BtnRoxoRouter },
   data () {
     return {
       Active1: true,

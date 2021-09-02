@@ -14,9 +14,9 @@
           quia soluta vitae quo ad fuga.
         </p>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-xl-start">
-          <button class="font-teko py-0 px-0 text-uppercase d-flex align-items-center fs-20 text-white btn">
+          <nuxt-link to="/sobre" class="font-teko py-0 px-0 text-uppercase d-flex align-items-center fs-20 text-white btn">
             Saiba mais <i class="fa fa-angle-right fw-400 mb-1 ml-1" />
-          </button>
+          </nuxt-link>
         </div>
       </div>
       <div class="borda-separation-footer my-xs-4 my-sm-4 my-xl-0 mx-xl-4" />
@@ -31,8 +31,8 @@
           <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/investigacao-empresarial')">
             # Investigação empresarial
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/investigacao-politica')">
-            # Investigação política
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/comportamento-de-filhos')">
+            # Comportamento de filhos
           </button>
           <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/localizacao-de-pessoas')">
             # Localização de pessoas
@@ -40,8 +40,8 @@
           <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/provas-para-advogados')">
             # Provas para advogados
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/software-espiao-de-celular')">
-            # Software celular espião (para filhos)
+          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/servicos/celular-VIP')">
+            # Celular VIP
           </button>
           <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/politica-de-privacidade')">
             # Políticas de privacidade

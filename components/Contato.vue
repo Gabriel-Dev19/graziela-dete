@@ -61,8 +61,8 @@
             <option value="Investigação empresarial">
               Investigação empresarial
             </option>
-            <option value="Investigação política">
-              Investigação política
+            <option value="Comportamento de filhos">
+              Comportamento de filhos
             </option>
             <option value="Localização de pessoas">
               Localização de pessoas

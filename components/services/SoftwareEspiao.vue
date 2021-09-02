@@ -10,17 +10,15 @@
     <div id="content-servicos-6" v-scroll="ScrollContent" class="col-md-10 col-lg-12 px-0 d-flex position-relative justify-content-start align-items-center row mx-auto">
       <div :class="{'show-content-servicos-1': ShowContentScroll}" class="conteudo-right hide-content-servicos-1 shadow pb-xs-20 pb-sm-20 pt-xs-40 pt-sm-40 py-lg-20 order-xs-2 order-sm-2 order-lg-1 col-lg-6 px-lg-20">
         <h1 class="font-teko mb-1 text-white text-xs-center text-sm-center fw-400 text-lg-left text-uppercase">
-          Software espião (filhos menores)
+          Celular VIP
         </h1>
         <h5 class="text-uppercase d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative text-white-50 font-teko">
           Serviços de detetive
           <div class="borda-tema-servicos" />
         </h5>
         <p class="text-white text-xs-center text-lg-left text-sm-center mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum esse cum illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae, assumenda obcaecati cumque excepturi quidem dicta vero?
-          illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae
+          Obtenha acesso remoto a todas as atividades do celular do seu filho. Todas
+          as informações são armazenadas de modo seguro e protegido, apenas você terá acesso a elas.
         </p>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative align-items-center">
           <h1 class="text-white font-teko fs-45 fw-400">
@@ -33,12 +31,12 @@
           <div class="borda-numeros-servicos" />
         </div>
         <div class="d-flex mt-3 justify-content-xs-center justify-content-sm-center justify-content-lg-start">
-          <BtnLightTekoRouter router-to="/servicos/software-espiao-de-celular/" />
+          <BtnLightTekoRouter router-to="/servicos/celular-VIP/" />
           <BtnLightTekoWhatsApp class="ml-3" />
         </div>
       </div>
       <div :class="{'show-img-servicos-1': ShowImgScroll}" class="col-lg-7 hide-img-servicos-1 px-0">
-        <img src="../../assets/img/servicos/bg-software.webp" class="img-fluid shadow" alt="Software espião para filhos menores">
+        <img src="../../assets/img/servicos/bg-software.webp" class="img-fluid shadow" alt="Celular VIP para filhos menores">
       </div>
     </div>
   </div>

@@ -8,10 +8,15 @@
           <div class="separation-tema" />
         </h1>
         <p class="mt-35 text-center fw-500 px-0">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsam consequatur modi rem voluptas molestias
-          omnis sed iusto veniam error? Nostrum quaerat inventore earum commodi nihil, et ad mollitia voluptatem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsam consequatur modi rem voluptas molestias
-          omnis sed iusto veniam error? Nostrum quaerat inventore earum commodi nihil, et ad mollitia voluptatem.
+          A <b>Agência de Detetives Graziella Bastos</b> está no <b>Distrito Federal</b> e queremos ajudar você a desvendar suas
+          dúvidas. Com mais de 15 anos de experiência e muitos casos resolvidos, atuamos em todo o
+          território nacional.
+        </p>
+        <p class="text-center fw-500 px-0">
+          Nossa agência é especializada em investigações de caráter particular, conjugal, empresarial, acompanhamento de
+          filhos, localização de bens e pessoas desaparecidas, levantamento de provas para advogados, dentre outras.
+          Seja qual for o seu problema e complexidade do caso que você vem enfrentando, a Agência de Detetives
+          Graziella Bastos terá a satisfação em ajuda-lo a desvendar.
         </p>
         <div class="d-flex row mx-auto justify-content-center mt-4">
           <btn-roxo-contato-scroll class="col-xs-9" name-btn="Entre em contato" />

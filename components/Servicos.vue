@@ -8,7 +8,7 @@
       <div class="mt-70">
         <InvestigacaoConjugal v-show="hideConjugal" />
         <InvestigacaoEmpresarial v-show="hideEmpresarial" />
-        <InvestigacaoPolitica v-show="hidePolitica" />
+        <ComportamentoDeFilhos v-show="hideComportamento" />
         <LocalizacaoDePessoas v-show="hideLocalizacao" />
         <ProvasParaAdvogados v-show="hideProvas" />
         <SoftwareEspiao v-show="hideSoftware" :hide-seta="hideSetaSoftware" />
@@ -19,7 +19,7 @@
 <script>
 import InvestigacaoConjugal from './services/InvestigacaoConjugal.vue'
 import InvestigacaoEmpresarial from './services/InvestigacaoEmpresarial.vue'
-import InvestigacaoPolitica from './services/InvestigacaoPolitica.vue'
+import ComportamentoDeFilhos from './services/ComportamentoDeFilhos.vue'
 import LocalizacaoDePessoas from './services/Localizacao.vue'
 import ProvasParaAdvogados from './services/ProvasParaAdvogados.vue'
 import SoftwareEspiao from './services/SoftwareEspiao.vue'
@@ -27,7 +27,7 @@ export default {
   components: {
     InvestigacaoConjugal,
     InvestigacaoEmpresarial,
-    InvestigacaoPolitica,
+    ComportamentoDeFilhos,
     LocalizacaoDePessoas,
     ProvasParaAdvogados,
     SoftwareEspiao
@@ -49,7 +49,7 @@ export default {
       type: Boolean,
       default: true
     },
-    hidePolitica: {
+    hideComportamento: {
       type: Boolean,
       default: true
     },

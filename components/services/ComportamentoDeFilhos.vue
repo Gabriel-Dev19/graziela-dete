@@ -3,7 +3,7 @@
     <div id="content-servicos-3" v-scroll="ScrollContent" class="col-md-10 col-lg-12 px-0 d-flex position-relative justify-content-end align-items-center row mx-auto">
       <div :class="{'show-content-servicos-1': ShowContentScroll}" class="conteudo-left hide-content-servicos-1 shadow pb-xs-20 pb-sm-20 pt-xs-40 pt-sm-40 py-lg-20 order-xs-2 order-sm-2 order-lg-1 col-lg-6 px-lg-20">
         <h1 class="font-teko mb-1 text-white text-xs-center text-sm-center fw-400 text-lg-left text-uppercase">
-          Investigação política
+          Comportamento de filhos
         </h1>
         <h5 class="text-uppercase d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative text-white-50 font-teko">
           Serviços de detetive
@@ -26,12 +26,12 @@
           <div class="borda-numeros-servicos" />
         </div>
         <div class="d-flex mt-3 justify-content-xs-center justify-content-sm-center justify-content-lg-start">
-          <BtnLightTekoRouter router-to="/servicos/investigacao-politica/" />
+          <BtnLightTekoRouter router-to="/servicos/comportamento-de-filhos/" />
           <BtnLightTekoWhatsApp class="ml-3" />
         </div>
       </div>
       <div :class="{'show-img-servicos-1': ShowImgScroll}" class="col-lg-7 hide-img-servicos-1 px-0">
-        <img src="../../assets/img/servicos/bg-politica.webp" class="img-fluid shadow" alt="Investigação política">
+        <img src="../../assets/img/servicos/bg-comportamento.webp" class="img-fluid shadow" alt="Comportamento de filhos">
       </div>
     </div>
     <div class="bb-roxo col-md-10 col-lg-12 mx-auto d-flex justify-content-center align-items-center col-12 my-xs-60 my-sm-70 my-lg-110 my-xl-80">

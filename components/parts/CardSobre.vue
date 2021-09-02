@@ -36,16 +36,16 @@
     </b-carousel-slide>
     <b-carousel-slide>
       <div class="bg-roxo-escuro pt-3 pl-3 pr-3 pb-45">
-        <img src="../../assets/img/servicos/bg-software.webp" class="img-fluid" alt="Software espião de celular para filhos menores">
+        <img src="../../assets/img/servicos/bg-software.webp" class="img-fluid" alt="Celular VIP de celular para filhos menores">
         <h3 class="font-teko text-uppercase mt-4 mb-1 text-center text-white">
-          Software espião
+          Celular VIP
         </h3>
         <p class="text-center fs-14 text-white">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sapiente officiis alias nobis ad doloremque,
           deleniti labore ut
         </p>
         <div class="d-flex justify-content-center">
-          <BtnLightTekoRouter name-btn="Software espião" router-to="/servicos/software-espiao-de-celular/" />
+          <BtnLightTekoRouter name-btn="Celular VIP" router-to="/servicos/celular-VIP/" />
         </div>
       </div>
     </b-carousel-slide>

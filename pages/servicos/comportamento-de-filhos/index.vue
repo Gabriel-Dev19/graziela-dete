@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Home title-home="Investigação política - eleições fraudadas" name-btn-home-servicos="Outros serviços" :bg-politica="true" />
+    <Home title-home="Comportamento de filhos - atitudes suspeitas" name-btn-home-servicos="Outros serviços" :bg-comportamento="true" />
     <section class="pt-100">
       <div class="container">
         <h1 class="font-teko position-relative col-12 px-0 d-flex justify-content-center text-uppercase text-center">
-          Mais sobre investigação política
+          Mais sobre Comportamento de filhos
           <div class="separation-tema" />
         </h1>
         <div class="mt-50 row mx-auto d-xs-flex d-sm-block">
@@ -68,7 +68,7 @@
         </div>
       </div>
     </section>
-    <Servicos title-servicos="Outros serviços" class="mt-150" :hide-politica="false" />
+    <Servicos title-servicos="Outros serviços" class="mt-150" :hide-comportamento="false" />
   </div>
 </template>
 
@@ -80,7 +80,7 @@ export default {
   components: { Home, Servicos, BtnRoxoContatoScroll },
   layout: 'LayoutServicos',
   head: {
-    title: 'Investigação política - Agência de detetives Graziella Bastos'
+    title: 'Comportamento de filhos - Agência de detetives Graziella Bastos'
   },
   mounted () {
     this.$smoothScroll({

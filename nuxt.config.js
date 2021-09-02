@@ -18,7 +18,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A Agência de detetives Graziella Bastos está preparada para atender todos os tipos de necessidades. Investigações conjugais - Casos de traição - Investigação empresarial - Investigação política - Software celular espião para filhos menores' },
+      { hid: 'description', name: 'description', content: 'A Agência de detetives Graziella Bastos está preparada para atender todos os tipos de necessidades. Investigações conjugais - Casos de traição - Investigação empresarial - Comportamento de filhos - Celular VIP' },
       { name: 'theme-color', content: '#f8f9fa' },
       { name: 'apple-mobile-web-app-status-bar-style', content: '#f8f9fa' },
       { name: 'msapplication-navbutton-color', content: '#f8f9fa' }

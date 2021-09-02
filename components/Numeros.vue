@@ -10,12 +10,10 @@
           <div class="borda-tema-numeros" />
         </h5>
         <p class="fw-500 text-xs-center text-sm-center text-lg-left mt-25">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos voluptatibus molestiae fugiat
-          eos culpa voluptatum tempora delectus illo dolorum recusandae voluptate, sequi veniam dolor
-          dignissimos odit magnam. Ex, quasi similique!
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos voluptatibus molestiae fugiat
-          eos culpa voluptatum tempora delectus illo dolorum recusandae voluptate, sequi veniam dolor
-          dignissimos odit magnam. Ex, quasi similique!
+          Nosso serviço investigação particular, conta com o trabalho de detetives altamente capacitados e treinados,
+          prontos para orientar nosso cliente e ajudar solucionar os seus problemas.  Toda a estratégia de investigação
+          será devidamente planejada junto com nosso cliente, a fim de termos êxito em nossa investigação.
+          Lembrando que cada caso é um caso.
         </p>
         <h2 class="font-teko text-xs-center text-sm-center text-lg-left mb-0 mt-40 text-uppercase">
           Melhores resultados
