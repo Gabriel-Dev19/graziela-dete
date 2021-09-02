@@ -10,11 +10,11 @@
         allowfullscreen
       />
       <h3 class="mt-3 mb-1 font-teko">
-        Entrevista completa de Graziella Bastos para a Rádio Cidade
+        Entrevista completa de Graziella Bastos para a Rádio Magia FM 107.3
       </h3>
       <div class="height-2-px bg-roxo-escuro col-12 px-0" />
       <p class="fw-500 mt-10">
-        Confira a entrevista completa de Graziella Bastos para a Rádio Cidade, onde ela explica mais sobre a profissão
+        Confira a entrevista completa de Graziella Bastos para a Magia FM 107.3, onde ela explica mais sobre a profissão
         de detetive particular e ensina técnicas para descobrir uma possível infidelidade e o que fazer em casos como esse!
       </p>
     </div>

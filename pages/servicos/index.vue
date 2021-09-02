@@ -2,22 +2,14 @@
   <div>
     <Home title-home="Serviços de detetive particular" :bg-home="true" />
     <Servicos />
-    <ParalaxHome />
-    <Numeros />
-    <Contato />
-    <Footer />
   </div>
 </template>
 
 <script>
-import Contato from '~/components/Contato.vue'
-import Footer from '~/components/Footer.vue'
 import Home from '~/components/Home.vue'
-import Numeros from '~/components/Numeros.vue'
-import ParalaxHome from '~/components/ParalaxHome.vue'
 import Servicos from '~/components/Servicos.vue'
 export default {
-  components: { Home, Servicos, ParalaxHome, Numeros, Contato, Footer },
+  components: { Home, Servicos },
   layout: 'LayoutServicos',
   head: {
     title: 'Serviços - Agência de detetives Graziella Bastos'

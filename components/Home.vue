@@ -49,7 +49,7 @@
         </div>
         <div class="col separation-redes-home ml-4" />
       </div>
-      <div class="mt-70 bg-roxo-escuro d-flex row mx-auto px-xs-3 px-sm-3 px-lg-30 px-xl-50 py-30">
+      <div id="quadrado-roxo" v-scroll="ScrollQuadradoRoxo" :class="{'hide-quadrado-home': HideQuadradoRoxo, 'show-quadrado-home': !HideQuadradoRoxo}" class="mt-70 bg-roxo-escuro d-flex row mx-auto px-xs-3 px-sm-3 px-lg-30 px-xl-50 py-30">
         <div class="col-xl-4 col-xl-5 px-0 text-white">
           <h3 class="mb-0 text-xs-center text-sm-center text-xl-left">
             <i class="fab fa-telegram-plane mb-1 mr-10 fs-xs-38 fs-sm-38 fs-xl-28 float-xl-left" />
@@ -183,7 +183,8 @@ export default {
   },
   data () {
     return {
-      Quantidade_retira_hash: 0
+      Quantidade_retira_hash: 0,
+      HideQuadradoRoxo: true
     }
   },
   methods: {
@@ -196,6 +197,14 @@ export default {
       setTimeout(() => {
         this.HideHash()
       }, 490)
+    },
+    ScrollQuadradoRoxo () {
+      const Janela = document.body.getBoundingClientRect()
+      const ContainerScroll = document.getElementById('quadrado-roxo').getBoundingClientRect()
+      const OffsetScroll = ContainerScroll.top - Janela.top
+      if (window.scrollY > OffsetScroll - window.innerHeight + 0) {
+        this.HideQuadradoRoxo = false
+      }
     },
     ScrollFooter () {
       this.$smoothScroll({
@@ -319,5 +328,27 @@ export default {
     height: 2px;
     border-radius: 3px;
     background-color: var(--roxo_escuro);
+  }
+  .hide-quadrado-home{
+    transform: translateY(300px);
+    -o-transform: translateY(300px);
+    -moz-transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+    opacity: 0;
+    transition: all .6s;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+  }
+  .show-quadrado-home{
+    transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+    transition: all .6s;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
   }
 </style>

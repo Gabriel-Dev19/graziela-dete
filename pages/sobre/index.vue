@@ -19,7 +19,7 @@
             <p class="text-xs-center text-sm-center text-lg-left fw-500 px-0">
               Atendemos em todo território nacional com escritórios nas principais cidades de cada região. Dedicamos a nossa experiência aos particulares e às empresas que procuram um serviço de investigação privada com base na integridade, competência, e profissionalismo, empenhando os nossos esforços com objetividade e eficiência. As investigações propostas são convenientemente analisadas caso a caso, atendendo às suas circunstâncias e grau de dificuldade. O sigilo e a confidencialidade são assegurados como elementos primordiais nos serviços prestados ao cliente.
             </p>
-            <h1 class="font-teko mt-40 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative position-relative mb-1">
+            <h1 class="font-teko text-xs-center text-sm-center text-lg-left mt-40 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
               Transparência e qualidade na investigação
               <div class="borda-tema-fina" />
             </h1>
@@ -29,14 +29,14 @@
             <p class="text-xs-center text-sm-center text-lg-left fw-500 px-0">
               Ao finalizarmos o caso, oferecemos ao cliente, provas, das mais variadas mídias, como fotos, áudios e vídeos, tudo de altíssima qualidade. Tudo devidamente escrito sob a forma da lei para serem utilizadas em processos judiciais futuros. Somos inscritos junto aos órgãos competentes, logo garantimos a plena confidencialidade de cada caso, sejam os encerrados ou os em andamento.
             </p>
-            <h1 class="font-teko mt-40 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative position-relative mb-1">
+            <h1 class="font-teko mt-40 text-xs-center text-sm-center text-lg-left d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
               Serviços de detetive particular 24 horas
               <div class="borda-tema-fina" />
             </h1>
             <p class="mt-4 text-xs-center text-sm-center text-lg-left fw-500 px-0">
               Com uma equipe de detetives especializados e qualificados que seguem o código de ética da profissão, o trabalho da Agência de Detetives Graziella Bastos é apresentar uma solução para o problema de seus clientes, por meio de provas reais (imagens, áudios e documentos) que comprovem ou não a suspeita, com total certeza e máximo sigilo.
             </p>
-            <h1 class="font-teko mt-40 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative position-relative mb-1">
+            <h1 class="font-teko mt-40 text-xs-center text-sm-center text-lg-left d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
               Investigação particular
               <div class="borda-tema-fina" />
             </h1>

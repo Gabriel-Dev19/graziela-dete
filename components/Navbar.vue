@@ -4,7 +4,8 @@
       <nav v-scroll="ScrollNav" class="navbar align-items-center px-0 d-lg-none fixed-top nav" :class="{'bg-nav-scroll py-0 shadow': NavScroll, 'pt-40': !NavScroll}">
         <div class="container px-30" :class="{'border-bottom pt-15 pb-15': CollapseNav, 'pt-10 pb-10': NavScroll}">
           <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
-            <img src="../assets/img/img-teste-logo.webp" width="230" alt="Logo Graziela Detetives">
+            <img v-show="!NavScroll" src="../assets/img/logo-grazi-2.webp" width="70" alt="Logo Graziela Detetives">
+            <img v-show="NavScroll" src="../assets/img/logo-chapeu.webp" width="40" alt="Logo Graziela Detetives">
           </a>
           <button v-b-toggle.collapse-navbar class="btn py-0 px-0">
             <ion-icon v-show="IconBar" class="fs-40 text-roxo" name="menu-outline" style="margin-bottom: -7px;" />
@@ -12,7 +13,7 @@
           </button>
         </div>
         <b-collapse id="collapse-navbar" class="col-12 px-0">
-          <div class="nav-event col-12 bg-light">
+          <div class="nav-event col-12 pb-40 bg-light">
             <h3 class="font-teko mt-3">
               Menu principal
             </h3>
@@ -365,7 +366,7 @@ export default {
     -webkit-animation-duration: .3s !important;
   }
   .nav-event{
-    height: calc(100vh - 63px);
+    height: calc(100vh - 77px);
     overflow-y: scroll;
   }
   nav, nav .container{
