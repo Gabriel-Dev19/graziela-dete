@@ -6,12 +6,9 @@
           Graziella Bastos
         </h1>
         <p class="text-white mb-2 text-xs-center text-sm-center text-xl-left fs-14">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, eius obcaecati reiciendis nam deserunt, doloribus,
-          quia soluta vitae quo ad fuga.
-          Modi, eius obcaecati reiciendis nam deserunt, doloribus,
-          quia soluta vitae quo ad fuga.
-          nam deserunt, doloribus,
-          quia soluta vitae quo ad fuga.
+          Nosso serviço investigação particular, conta com o trabalho de detetives
+          altamente capacitados e treinados. Conte com a equipe de detetives particulares da Agência de Detetives
+          Graziella Bastos para solucionar casos de investigação particular, conjugal, empresarial e muito mais.
         </p>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-xl-start">
           <nuxt-link to="/sobre" class="font-teko py-0 px-0 text-uppercase d-flex align-items-center fs-20 text-white btn">
@@ -46,9 +43,6 @@
           <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/politica-de-privacidade')">
             # Políticas de privacidade
           </button>
-          <button class="btn d-block text-xs-center text-sm-center text-xl-left col-12 px-0 py-0 fs-15 text-white btn-link" @click.prevent="$router.push('/trabalhe-conosco')">
-            # Trabalhe conosco
-          </button>
         </div>
       </div>
       <div class="borda-separation-footer my-xs-4 my-sm-4 my-xl-0 mx-xl-4" />
@@ -68,7 +62,7 @@
           é exclusivo para atendentes mulheres
         </p>
         <div class="col-12 px-xs-0 px-sm-0 px-xl-5 d-flex justify-content-xs-center justify-content-sm-center justify-content-xl-start mt-4">
-          <a href="mailto:" class="no-underline">
+          <a href="mailto:contato@detetivegraziella.com.br" target="_blank" rel="nopenner noreferrer" class="no-underline">
             <div class="d-flex justify-content-center col-12 px-0">
               <ion-icon class="fs-36 text-white" name="mail-outline" />
             </div>
@@ -76,7 +70,7 @@
               E-mail
             </h4>
           </a>
-          <a href="tel:+55" class="no-underline mx-40">
+          <a href="tel:48998200602" class="no-underline mx-40">
             <div class="d-flex justify-content-center col-12 px-0">
               <ion-icon class="fs-36 text-white" name="call-outline" />
             </div>
@@ -84,7 +78,7 @@
               Telefone
             </h4>
           </a>
-          <a class="no-underline cursor-pointer" @click.prevent="$root.$emit('ShowModalWhatsapp')">
+          <a href="https://wa.me/5548998200602?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" rel="nopenner noreferrer" class="no-underline cursor-pointer">
             <div class="d-flex justify-content-center col-12 px-0">
               <ion-icon class="fs-36 text-white" name="logo-whatsapp" />
             </div>

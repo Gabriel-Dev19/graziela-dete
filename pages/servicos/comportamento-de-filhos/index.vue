@@ -48,22 +48,13 @@
             </div>
           </div>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            O comportamento dos filhos pode mudar à medida que eles adquirirem certa independência. Alguns podem desenvolver a habilidade de mentir e enganar os pais quanto aos locais que frequentam, companhias e atividades. Por influência de amigos, redes sociais e outros adultos eles podem se envolver em atividades criminosas ou ilegais.
           </p>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            Atos de rebeldia, como pequenos furtos ou vandalismo podem ser o resultado da busca por “emoção” e autoafirmação dos pré-adolescentes e adolescentes. Embora muitos desses delitos não sejam graves — ou não venham se tornar parte da vida dos filhos — os pais devem estar atentos para prevenirem o risco de isso acontecer.
           </p>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            Foi pensando em cuidar da proteção da sua família que a Agência de Detetives Graziella Bastos idealizou o serviço de Detetive Particular voltado ao monitoramento do comportamento dos filhos. Crianças ou adolescentes acreditam estar acima de todos os perigos que o mundo lhes reserva, devido à pouca experiência de vida que têm.
           </p>
         </div>
       </div>

@@ -143,17 +143,17 @@
         possuir um veículo para locomoção e ter certificação em algum curso de detetive particular.
       </p>
       <div class="d-flex row mx-auto col-12 px-0 mt-20 justify-content-center">
-        <BtnRoxoRouter name-btn="Trabalhe conosco" router-to="/trabalhe-conosco" />
+        <BtnRoxoContatoScroll name-btn="Trabalhe conosco" />
         <BtnRoxoFooter class="ml-sm-3 col-xs-8 mt-xs-10" />
       </div>
     </div>
   </div>
 </template>
 <script>
+import BtnRoxoContatoScroll from './buttons/BtnRoxoContatoScroll.vue'
 import BtnRoxoFooter from './buttons/BtnRoxoFooter.vue'
-import BtnRoxoRouter from './buttons/BtnRoxoRouter.vue'
 export default {
-  components: { BtnRoxoFooter, BtnRoxoRouter },
+  components: { BtnRoxoFooter, BtnRoxoContatoScroll },
   data () {
     return {
       Active1: true,

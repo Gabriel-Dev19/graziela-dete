@@ -80,7 +80,7 @@
               para a Grazi
             </p>
             <div class="d-flex pt-1 justify-content-center">
-              <a href="mailto:" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
+              <a href="mailto:contato@detetivegraziella.com.br" target="_blank" rel="nopenner noreferrer" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
                 Envie seu E-mail <i class="fab fa-telegram-plane ml-1 mb-1" />
               </a>
             </div>
@@ -95,23 +95,23 @@
               para a Grazi
             </p>
             <div class="d-flex pt-1 justify-content-center">
-              <a href="mailto:" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
+              <a href="tel:48998200602" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
                 Ligue agora <i class="fa fa-phone-alt fs-12 ml-1 mb-1" />
               </a>
             </div>
           </div>
           <div class="col-xs-9 col-sm-9 col-md py-10 px-2">
             <div class="d-flex justify-content-center">
-              <ion-icon class="fs-37" name="reader-outline" style="margin-top: 0px" />
+              <ion-icon class="fs-37" name="logo-whatsapp" style="margin-top: 0px" />
             </div>
             <p class="fs-13 col-11 mt-1 mb-10 text-center line-height-p-mulher px-0 mx-auto">
-              Preencha nosso
+              Mande uma
               <br>
-              formulário
+              Mensagem
             </p>
             <div class="d-flex pt-1 justify-content-center">
-              <a href="mailto:" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
-                Formulário <ion-icon class="fs-16" name="reader-outline" style="margin-bottom: -3px" />
+              <a href="https://wa.me/5548998200602?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" target="_blank" rel="nopenner noreferrer" class="text-center btn col-12 btn-outline-light border-radius-0 btn-sm">
+                Mensagem <ion-icon class="fs-16" name="logo-whatsapp" style="margin-bottom: -3px" />
               </a>
             </div>
           </div>

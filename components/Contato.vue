@@ -113,7 +113,7 @@
         </div>
       </form>
       <div class="mt-80 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-between row mx-auto">
-        <div class="col-sm-6 col-lg">
+        <div class="col-sm-6 px-0 col-lg">
           <h3 class="text-uppercase position-relative d-flex justify-content-center text-center font-teko fw-600">
             Telefones
             <div class="separation-contatos" />
@@ -151,7 +151,7 @@
             </a>
           </div>
         </div>
-        <div class="col-sm-6 mt-xs-40 col-lg mx-lg-40">
+        <div class="col-sm-6 mt-xs-40 px-0 col-lg mx-lg-40">
           <h3 class="text-uppercase position-relative d-flex justify-content-center text-center font-teko fw-600">
             Redes sociais
             <div class="separation-contatos" />
@@ -176,14 +176,15 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg mt-xs-40 mt-sm-40 mt-lg-0">
+        <div class="col-md-6 col-lg-4 col-xl mt-xs-40 px-0 mt-sm-40 mt-lg-0">
           <h3 class="text-uppercase position-relative d-flex justify-content-center text-center font-teko fw-600">
             E-mail
             <div class="separation-contatos" />
           </h3>
           <div class="d-flex mt-15 justify-content-center">
-            <a href="mailto:">
-              <ion-icon class="text-roxo-escuro fs-25" name="mail-outline" style="margin-bottom: -7px; margin-left: -7px; margin-right: 8px;" />contato@Graziella.com.br
+            <a href="mailto:contato@detetivegraziella.com.br" target="_blank" rel="nopenner noreferrer">
+              <ion-icon class="text-roxo-escuro fs-25" name="mail-outline" style="margin-bottom: -7px; margin-left: -7px; margin-right: 8px;" />
+              contato@detetivegraziella.com.br
             </a>
           </div>
           <h3 class="text-uppercase position-relative mt-40 d-flex justify-content-center text-center font-teko fw-600">
@@ -191,8 +192,8 @@
             <div class="separation-contatos" />
           </h3>
           <div class="d-flex mt-15 justify-content-center">
-            <a class="cursor-pointer" @click.prevent="$root.$emit('ShowModalWhatsapp')">
-              <ion-icon class="text-roxo-escuro fs-25" name="logo-whatsapp" style="margin-bottom: -7px; margin-left: -7px; margin-right: 8px;" />+55 (00) 0000-0000
+            <a href="https://wa.me/5548998200602?text=Olá,+estou+visitando+o+site+da+Gaziella+Bastos+e+gostaria+de+receber+mais+informações" class="cursor-pointer" target="_blank" rel="nopenner noreferrer">
+              <ion-icon class="text-roxo-escuro fs-25" name="logo-whatsapp" style="margin-bottom: -7px; margin-left: -7px; margin-right: 8px;" />+55 (48) 9820-0602
             </a>
           </div>
         </div>

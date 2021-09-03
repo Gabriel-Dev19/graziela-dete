@@ -62,7 +62,7 @@
             Foi pensando na mitigação destes riscos familiares que a Agência de Detetives Graziella Bastos idealizou em seu portfólio de serviços de Detetive Particular o Celular VIP. Trata-se de uma ferramenta eficaz no monitoramento de filhos e sua utilização de dispositivos eletrônicos tais como celulares, tablets e computadores.
             Consulte-nos acerca das funcionalidades do Celular VIP. Adquira sua tranquilidade!
           </p>
-          <h1 class="font-teko text-xs-center text-sm-center text-lg-left mt-40 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
+          <h1 class="font-teko text-xs-center text-sm-center mx-auto text-lg-left mt-40 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
             Funções do celular VIP
             <div class="borda-tema-fina" />
           </h1>
@@ -79,7 +79,7 @@
               </div>
             </div>
           </div>
-          <h1 class="font-teko text-xs-center text-sm-center text-lg-left mt-50 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
+          <h1 class="font-teko text-xs-center text-sm-center mx-auto text-lg-left mt-50 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
             A iportância do monitoramento
             <div class="borda-tema-fina" />
           </h1>
