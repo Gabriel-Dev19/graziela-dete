@@ -10,10 +10,9 @@
           <div class="borda-tema-servicos" />
         </h5>
         <p class="text-white text-xs-center text-lg-left text-sm-center mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum esse cum illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae, assumenda obcaecati cumque excepturi quidem dicta vero?
-          illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae
+          Tem dúvidas quanto ao seu companheiro(a)? Não se iniba de saber a verdade! Temos a opção certa para resolver o seu problema!
+          Muitas vezes em relacionamentos, há a necessidade de reafirmar a sua fidelidade, ou, quando surge a
+          suspeita de adultério, é possível contratar um serviço especializado de investigação conjugal.
         </p>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative align-items-center">
           <h1 class="text-white font-teko fs-45 fw-400">

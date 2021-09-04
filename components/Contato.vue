@@ -67,6 +67,12 @@
             <option value="Localização de pessoas">
               Localização de pessoas
             </option>
+            <option value="Celular VIP">
+              Celular VIP
+            </option>
+            <option value="Celular VIP">
+              Provas para advogados
+            </option>
           </select>
           <div v-show="ShowMsgError" v-if="$v.tipo_servico.$error" class="error text-left px-2">
             Selecione o tipo de serviço
@@ -293,7 +299,7 @@ export default {
       this.$v.$touch()
       if (this.$v.$invalid === false) {
         axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-        axios.post('', JSON.stringify({
+        axios.post('https://detetivegraziella.com.br/envio.php', JSON.stringify({
           nome: this.nome,
           email: this.email,
           telefone: this.telefone,

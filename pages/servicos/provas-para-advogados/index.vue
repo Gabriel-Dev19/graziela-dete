@@ -44,22 +44,13 @@
             </div>
           </div>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            Algumas ações judiciais possuem trâmites específicos que podem levar o processo a se arrastar por longos anos, o que pode implicar um procedimento dispendioso e nem sempre eficaz como método de solução de conflitos.
           </p>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            Isso acontece porque, em um processo judicial, sua instauração e prosseguimento dependem do atendimento de algumas condições para seu desenvolvimento válido e regular, como a localização e citação de uma pessoa, por exemplo. Além disso, o desfecho eficaz de um processo judicial pode depender da análise de provas produzidas pelas partes litigantes, tais como: documentos, imagens, laudos técnicos, provas testemunhais, estudos sociais e psicológicos, apresentação de bens passíveis de constrição judicial etc.
           </p>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            Por essa razão, a Agência de Detetives Graziella Bastos, valendo-se do conhecimento jurídico de membros de sua equipe, atua juntamente com advogados para poder reunir todas as provas necessárias a fim de garantir aos seus clientes um julgamento justo em ações judiciais.
           </p>
         </div>
       </div>

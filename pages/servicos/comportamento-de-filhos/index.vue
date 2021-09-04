@@ -56,6 +56,40 @@
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
             Foi pensando em cuidar da proteção da sua família que a Agência de Detetives Graziella Bastos idealizou o serviço de Detetive Particular voltado ao monitoramento do comportamento dos filhos. Crianças ou adolescentes acreditam estar acima de todos os perigos que o mundo lhes reserva, devido à pouca experiência de vida que têm.
           </p>
+          <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
+            Nosso objetivo é permitir que pais e mães antevejam e minimizem esses perigos aos quais os filhos venham a se expor. Atuamos com Detetives discretos que trabalham dia e noite para segurança da sua família.
+          </p>
+          <h1 class="font-teko text-xs-center text-sm-center mx-auto text-lg-left mt-40 d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
+            Comportamento suspeito
+            <div class="borda-tema-fina" />
+          </h1>
+          <p class="fw-500 col-xs-12 mt-30 px-0 text-xs-center text-sm-left">
+            A maioria dos adolescentes passa pela fase de responder aos pais apenas com um sussurro, evitando-os a todo custo e ocultando sua vida pessoal. Embora isso possa ser normal, também pode ser um alerta de que algo está errado. Alguns dos sinais que podem sugerir que o comportamento dos filhos precisa ser monitorado, são:
+          </p>
+          <p class="fw-500 col-xs-12 mb-1 px-0 text-xs-center text-sm-left">
+            <b>1. </b>
+            Machucados sem explicação;
+          </p>
+          <p class="fw-500 col-xs-12 mb-1 px-0 text-xs-center text-sm-left">
+            <b>2. </b>
+            Trancar-se no quarto durante horas a fio;
+          </p>
+          <p class="fw-500 col-xs-12 mb-1 px-0 text-xs-center text-sm-left">
+            <b>3. </b>
+            Instabilidade emocional;
+          </p>
+          <p class="fw-500 col-xs-12 mb-1 px-0 text-xs-center text-sm-left">
+            <b>4. </b>
+            Ausência de atividades sociais ou familiares;
+          </p>
+          <p class="fw-500 col-xs-12 mb-1 px-0 text-xs-center text-sm-left">
+            <b>5. </b>
+            Suspeita de uso de drogas;
+          </p>
+          <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
+            <b>6. </b>
+            Grupos sociais diferentes e envolvimento com pessoas suspeitas.
+          </p>
         </div>
       </div>
     </section>
@@ -106,6 +140,14 @@ export default {
     height: 3px;
     width: 200px;
     bottom: -10px;
+    border-radius: 3px;
+    background-color: var(--roxo_escuro);
+  }
+  .borda-tema-fina{
+    position: absolute;
+    height: 2px;
+    width: 200px;
+    bottom: -5px;
     border-radius: 3px;
     background-color: var(--roxo_escuro);
   }

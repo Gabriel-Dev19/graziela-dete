@@ -13,7 +13,7 @@
               Quem somos?
               <div class="borda-tema-fina" />
             </h1>
-            <p class="mt-4 text-xs-center text-sm-center text-lg-left fw-500 px-0">
+            <p class="mt-30 text-xs-center text-sm-center text-lg-left fw-500 px-0">
               A Agência de Detetives Graziella Bastos está no mercado da Investigação Particular desde 2006, são 15 anos de atuação dedicando-se em investigações na área particular e empresarial.
             </p>
             <p class="text-xs-center text-sm-center text-lg-left fw-500 px-0">
@@ -23,7 +23,7 @@
               Transparência e qualidade na investigação
               <div class="borda-tema-fina" />
             </h1>
-            <p class="mt-4 text-xs-center text-sm-center text-lg-left fw-500 px-0">
+            <p class="mt-30 text-xs-center text-sm-center text-lg-left fw-500 px-0">
               Nós, independentemente do tipo de investigação, nos destacamos pela transparência em nossos serviços. Buscamos deixar o cliente por dentro de tudo que está acontecendo, tendo à disposição uma total abertura a respeito de cada procedimento realizado.
             </p>
             <p class="text-xs-center text-sm-center text-lg-left fw-500 px-0">
@@ -33,14 +33,14 @@
               Serviços de detetive particular 24 horas
               <div class="borda-tema-fina" />
             </h1>
-            <p class="mt-4 text-xs-center text-sm-center text-lg-left fw-500 px-0">
+            <p class="mt-30 text-xs-center text-sm-center text-lg-left fw-500 px-0">
               Com uma equipe de detetives especializados e qualificados que seguem o código de ética da profissão, o trabalho da Agência de Detetives Graziella Bastos é apresentar uma solução para o problema de seus clientes, por meio de provas reais (imagens, áudios e documentos) que comprovem ou não a suspeita, com total certeza e máximo sigilo.
             </p>
             <h1 class="font-teko mt-40 text-xs-center text-sm-center text-lg-left d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative mb-1">
               Investigação particular
               <div class="borda-tema-fina" />
             </h1>
-            <p class="mt-4 text-xs-center text-sm-center text-lg-left fw-500 px-0">
+            <p class="mt-30 text-xs-center text-sm-center text-lg-left fw-500 px-0">
               A investigação particular tem no seu campo de atuação os mais variados interesses. O sigilo é regra de ouro para a Agência de Detetives Graziella Bastos, os assuntos dos nossos clientes que respeitam ao foro pessoal são tidos em conta com o máximo sigilo e confidencialidade, tratando-se de segredos invioláveis e absolutamente intransmissíveis. Caso não encontre o seu caso especifico abaixo descrito não hesite em contatar-nos.
             </p>
             <p class="text-xs-center text-sm-center text-lg-left fw-500 px-0">

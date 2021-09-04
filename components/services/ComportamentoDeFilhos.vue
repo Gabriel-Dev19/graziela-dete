@@ -10,10 +10,7 @@
           <div class="borda-tema-servicos" />
         </h5>
         <p class="text-white text-xs-center text-lg-left text-sm-center mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum esse cum illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae, assumenda obcaecati cumque excepturi quidem dicta vero?
-          illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae
+          O comportamento dos filhos pode mudar à medida que eles adquirirem certa independência. Alguns podem desenvolver a habilidade de mentir e enganar os pais quanto aos locais que frequentam, companhias e atividades. Por influência de amigos, redes sociais e outros adultos eles podem se envolver em atividades criminosas ou ilegais.
         </p>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative align-items-center">
           <h1 class="text-white font-teko fs-45 fw-400">

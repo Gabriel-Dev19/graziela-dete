@@ -10,10 +10,8 @@
           <div class="borda-tema-servicos" />
         </h5>
         <p class="text-white text-xs-center text-lg-left text-sm-center mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum esse cum illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae, assumenda obcaecati cumque excepturi quidem dicta vero?
-          illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae
+          O serviço de detetive particular é cada vez mais necessário para as organizações como empresas, seguradoras, entidades, entre outas.
+          A coleta de provas para processos de natureza cível e trabalhista, constitui o principal objetivo da atividade da investigação empresarial em todo o mundo.
         </p>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative align-items-center">
           <h1 class="text-white font-teko fs-45 fw-400">

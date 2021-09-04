@@ -48,22 +48,19 @@
             </div>
           </div>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            Tem dúvidas quanto ao seu companheiro(a)? Não se iniba de saber a verdade! Temos a opção certa para resolver o seu problema!
           </p>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            Muitas vezes em relacionamentos, há a necessidade de reafirmar a sua fidelidade, ou, quando surge a suspeita de adultério, é possível contratar um serviço especializado de investigação conjugal.
           </p>
           <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel doloribus repellendus voluptatem recusandae
-            mollitia dolorem iusto culpa! Veritatis facilis placeat quisquam animi voluptas quibusdam odio nihil debitis rem in. Quia?
+            A Agência de Detetives Graziella Bastos, terá a satisfação em lhe ajudar a desvendar tudo que está acontecendo, entre em contato conosco agora mesmo!
+          </p>
+          <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
+            As inseguranças podem começar por conta de mudanças de comportamento, compras inusitadas, omissões, horários diferentes entre outros. Se a dúvida surgiu entre vocês, conte com a Agência de Detetives Graziella Bastos para trazer mais clareza para você.
+          </p>
+          <p class="fw-500 col-xs-12 px-0 text-xs-center text-sm-left">
+            De forma ética e com bastante discrição, a nossa equipe de detetives reunirá provas e evidências que poderão ser utilizadas em processos jurídicos e muito mais, resolvendo questões em aberto e dando novos rumos para ao seu relacionamento.
           </p>
         </div>
       </div>

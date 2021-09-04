@@ -10,10 +10,8 @@
           <div class="borda-tema-servicos" />
         </h5>
         <p class="text-white text-xs-center text-lg-left text-sm-center mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum esse cum illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae, assumenda obcaecati cumque excepturi quidem dicta vero?
-          illo asperiores numquam est, ratione unde ex
-          eligendi corrupti voluptas repudiandae
+          Colaboramos com advogados na recolha de elementos e informações admissíveis para processos judiciais.
+          Trabalhamos para a descoberta da verdade, desenvolvemos as nossas diligências com método, ética e profissionalismo, e com o máximo de sigilo e segurança.
         </p>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative align-items-center">
           <h1 class="text-white font-teko fs-45 fw-400">

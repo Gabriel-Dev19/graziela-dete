@@ -3,8 +3,8 @@
     <header>
       <nav v-scroll="ScrollNav" class="navbar align-items-center px-0 d-lg-none fixed-top nav" :class="{'bg-nav-scroll py-0 shadow': NavScroll, 'pt-40': !NavScroll}">
         <div class="container px-30" :class="{'border-bottom pt-15 pb-15': CollapseNav, 'pt-10 pb-10': NavScroll}">
-          <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
-            <img v-show="!NavScroll" src="../assets/img/logo-grazi-2.webp" width="70" alt="Logo Graziela Detetives">
+          <a href="https://detetivegraziella.com.br" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
+            <img v-show="!NavScroll" src="../assets/img/logo-grazi.webp" width="70" alt="Logo Graziela Detetives">
             <img v-show="NavScroll" src="../assets/img/logo-chapeu.webp" width="40" alt="Logo Graziela Detetives">
           </a>
           <button v-b-toggle.collapse-navbar class="btn py-0 px-0">
@@ -154,8 +154,8 @@
       </nav>
       <nav v-scroll="ScrollNav" class="navbar d-xs-none d-sm-none d-lg-flex fixed-top nav" :class="{'bg-nav-scroll border-bottom py-10 shadow': NavScroll, 'pt-40': !NavScroll}">
         <div class="container">
-          <a href="" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
-            <img v-show="!NavScroll" src="../assets/img/logo-grazi-2.webp" width="100" alt="Logo Graziela Detetives">
+          <a href="https://detetivegraziella.com.br" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
+            <img v-show="!NavScroll" src="../assets/img/logo-grazi.webp" width="100" alt="Logo Graziela Detetives">
             <img v-show="NavScroll" src="../assets/img/logo-chapeu.webp" width="50" alt="Logo Graziela Detetives">
           </a>
           <div class="ml-auto d-flex">

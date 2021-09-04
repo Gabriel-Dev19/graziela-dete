@@ -83,7 +83,7 @@
             A iportância do monitoramento
             <div class="borda-tema-fina" />
           </h1>
-          <p class="fw-500 col-xs-12 mt-20 px-0 text-xs-center text-sm-left">
+          <p class="fw-500 col-xs-12 mt-30 px-0 text-xs-center text-sm-left">
             Como os pais sabem se os filhos estão envolvidos em atividades virtuais inapropriadas para eles? E como você saberia se a sua criança ou o seu adolescente foi vítima de abuso se ela(e) não lhe disser? E se essas atividades ultrapassarem os limites virtuais e seu(sua) filho(a) for ao encontro de algum delinquente? Veja, a seguir, outros perigos aos quais seus filhos estão expostos e que podem ser mitigados por um Detetive Particular.
           </p>
           <div class="d-flex justify-content-center justify-content-lg-start">
