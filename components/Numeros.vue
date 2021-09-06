@@ -47,7 +47,7 @@
           </div>
           <div class="col-xs-6 col-sm-auto mt-20 px-0 py-20">
             <h1 class="font-teko display-4 d-flex justify-content-center position-relative fw-500 text-center">
-              {{ Numeros.Clientes }}
+              {{ Numeros.Clientes }}%
               <div class="borda-numeros" />
             </h1>
             <h5 class="fw-700 mt-4 text-center text-uppercase fs-14">
@@ -90,13 +90,13 @@ export default {
 
       if (window.scrollY > OffsetScroll - 650) {
         setInterval(() => {
-          if (this.Numeros.Casos < 128) {
-            this.Numeros.Casos = this.Numeros.Casos + 1
+          if (this.Numeros.Casos < 6094) {
+            this.Numeros.Casos = this.Numeros.Casos + 10 + 1
           }
-          if (this.Numeros.Suspeitas < 109) {
-            this.Numeros.Suspeitas = this.Numeros.Suspeitas + 1
+          if (this.Numeros.Suspeitas < 5489) {
+            this.Numeros.Suspeitas = this.Numeros.Suspeitas + 10 + 1
           }
-          if (this.Numeros.Clientes < 98) {
+          if (this.Numeros.Clientes < 94) {
             this.Numeros.Clientes = this.Numeros.Clientes + 1
           }
         }, 80)

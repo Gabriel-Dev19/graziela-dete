@@ -8,6 +8,10 @@
     <Footer />
     <ModalWhatsapp />
     <BtnVoltarTopo />
+    <BtnWhatsappFlutuante />
+    <client-only>
+      <Cookies />
+    </client-only>
   </div>
 </template>
 <script>
@@ -20,6 +24,8 @@ import Numeros from '~/components/Numeros.vue'
 import Contato from '~/components/Contato.vue'
 import Footer from '~/components/Footer.vue'
 import ModalWhatsapp from '~/components/ModalWhatsapp.vue'
+import Cookies from '~/components/Cookies.vue'
+import BtnWhatsappFlutuante from '~/components/buttons/BtnWhatsappFlutuante.vue'
 Vue.use(VueSmoothScroll)
 Vue.directive('scroll', {
   inserted (el, binding) {
@@ -39,7 +45,9 @@ export default {
     Numeros,
     Contato,
     Footer,
-    ModalWhatsapp
+    ModalWhatsapp,
+    Cookies,
+    BtnWhatsappFlutuante
   }
 }
 </script>

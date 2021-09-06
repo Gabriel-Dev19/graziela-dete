@@ -11,8 +11,8 @@
           Investigação conjugal
         </h3>
         <p class="text-center fs-14 text-white">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sapiente officiis alias nobis ad doloremque,
-          deleniti labore ut
+          Tem dúvidas quanto ao seu companheiro(a)? Não se iniba de saber a verdade!
+          Temos a opção certa para resolver o seu problema!
         </p>
         <div class="d-flex justify-content-center">
           <BtnLightTekoRouter name-btn="Investigação conjugal" router-to="/servicos/investigacao-conjugal/" />
@@ -26,8 +26,8 @@
           Investigação empresarial
         </h3>
         <p class="text-center fs-14 text-white">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sapiente officiis alias nobis ad doloremque,
-          deleniti labore ut
+          Se você necessita dos serviços de Investigação Empresarial, saiba que a
+          Agência de Detetives Graziella Bastos atua no ramo há 15 anos
         </p>
         <div class="d-flex justify-content-center">
           <BtnLightTekoRouter name-btn="Investigação empresarial" router-to="/servicos/investigacao-empresarial/" />
@@ -41,8 +41,8 @@
           Celular VIP
         </h3>
         <p class="text-center fs-14 text-white">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, sapiente officiis alias nobis ad doloremque,
-          deleniti labore ut
+          Obtenha acesso remoto a todas as atividades do celular do seu filho.
+          Todas as informações são armazenadas de modo seguro e protegido
         </p>
         <div class="d-flex justify-content-center">
           <BtnLightTekoRouter name-btn="Celular VIP" router-to="/servicos/celular-VIP/" />

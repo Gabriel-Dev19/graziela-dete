@@ -9,27 +9,11 @@
         <div class="col-lg px-0">
           <span class="display-3 d-block fw-500 font-teko">01.</span>
           <h4 class="text-uppercase font-teko mt-30">
-            Diagnóstico
-          </h4>
-          <p class="mt-2 fw-500 fs-15">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi soluta, voluptatibus totam sed temporibus
-            consequatur, facilis, fuga nihil delectus quas voluptatem praesentium odio. Id ducimus fuga corporis vel sunt aliquid.
-          </p>
-          <div class="detalhe-bottom mt-20">
-            <div class="h-100 bg-roxo-escuro" />
-          </div>
-          <button class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko" @click.prevent="ScrollContato">
-            Faça um diagnóstico <i class="fa fa-angle-right fw-600 ml-1 mb-1" />
-          </button>
-        </div>
-        <div class="col-lg px-0 my-xs-90 my-sm-90 my-lg-0 mx-lg-50">
-          <span class="display-3 d-block fw-500 font-teko">02.</span>
-          <h4 class="text-uppercase font-teko mt-30">
             Planejamento
           </h4>
           <p class="mt-2 fw-500 fs-15">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi soluta, voluptatibus totam sed temporibus
-            consequatur, facilis, fuga nihil delectus quas voluptatem praesentium odio. Id ducimus fuga corporis vel sunt aliquid.
+            Antes de darmos início a investigação, sentaremos com você para que
+            possamos juntos planejar todo o desenvolvimento do trabalho.
           </p>
           <div class="detalhe-bottom mt-20">
             <div class="h-100 bg-roxo-escuro" />
@@ -38,20 +22,36 @@
             Planeje com a gente <i class="fa fa-angle-right fw-600 ml-1 mb-1" />
           </button>
         </div>
-        <div class="col-lg px-0">
-          <span class="display-3 d-block fw-500 font-teko">03.</span>
+        <div class="col-lg px-0 my-xs-90 my-sm-90 my-lg-0 mx-lg-50">
+          <span class="display-3 d-block fw-500 font-teko">02.</span>
           <h4 class="text-uppercase font-teko mt-30">
             Investigação
           </h4>
           <p class="mt-2 fw-500 fs-15">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi soluta, voluptatibus totam sed temporibus
-            consequatur, facilis, fuga nihil delectus quas voluptatem praesentium odio. Id ducimus fuga corporis vel sunt aliquid.
+            A investigação particular fornecida por nós, conta com o trabalho de
+            detetives altamente capacitados e prontos para solucionar os seus problemas.
           </p>
           <div class="detalhe-bottom mt-20">
             <div class="h-100 bg-roxo-escuro" />
           </div>
           <button class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko" @click.prevent="ScrollContato">
             Saiba de tudo! <i class="fa fa-angle-right fw-600 ml-1 mb-1" />
+          </button>
+        </div>
+        <div class="col-lg px-0">
+          <span class="display-3 d-block fw-500 font-teko">03.</span>
+          <h4 class="text-uppercase font-teko mt-30">
+            Resultados
+          </h4>
+          <p class="mt-2 fw-500 fs-15">
+            Buscamos através da investigação particular o máximo de pistas para se chegar
+            ao investigado e conseguir um material concreto para ser entregue, ao final do processo.
+          </p>
+          <div class="detalhe-bottom mt-20">
+            <div class="h-100 bg-roxo-escuro" />
+          </div>
+          <button class="btn text-uppercase mt-2 px-0 fs-20 d-flex align-items-center fw-500 btn-teko" @click.prevent="ScrollContato">
+            Tenha resultados! <i class="fa fa-angle-right fw-600 ml-1 mb-1" />
           </button>
         </div>
       </div>

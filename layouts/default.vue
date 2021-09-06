@@ -4,6 +4,9 @@
     <BtnVoltarTopo />
     <BtnWhatsappFlutuante />
     <ModalWhatsapp />
+    <client-only>
+      <Cookies />
+    </client-only>
   </div>
 </template>
 <script>
@@ -12,6 +15,7 @@ import VueSmoothScroll from '../node_modules/vue2-smooth-scroll'
 import BtnVoltarTopo from '~/components/buttons/BtnVoltarTopo.vue'
 import BtnWhatsappFlutuante from '~/components/buttons/BtnWhatsappFlutuante.vue'
 import ModalWhatsapp from '~/components/ModalWhatsapp.vue'
+import Cookies from '~/components/Cookies.vue'
 Vue.use(VueSmoothScroll)
 Vue.directive('scroll', {
   inserted (el, binding) {
@@ -24,7 +28,7 @@ Vue.directive('scroll', {
   }
 })
 export default {
-  components: { BtnVoltarTopo, BtnWhatsappFlutuante, ModalWhatsapp }
+  components: { BtnVoltarTopo, BtnWhatsappFlutuante, ModalWhatsapp, Cookies }
 
 }
 </script>

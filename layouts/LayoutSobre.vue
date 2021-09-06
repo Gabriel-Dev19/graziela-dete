@@ -9,6 +9,10 @@
     <Footer />
     <ModalWhatsapp />
     <BtnVoltarTopo />
+    <BtnWhatsappFlutuante />
+    <client-only>
+      <Cookies />
+    </client-only>
   </div>
 </template>
 <script>
@@ -22,6 +26,8 @@ import Numeros from '~/components/Numeros.vue'
 import ParalaxHome from '~/components/ParalaxHome.vue'
 import Servicos from '~/components/Servicos.vue'
 import ModalWhatsapp from '~/components/ModalWhatsapp.vue'
+import Cookies from '~/components/Cookies.vue'
+import BtnWhatsappFlutuante from '~/components/buttons/BtnWhatsappFlutuante.vue'
 Vue.use(VueSmoothScroll)
 Vue.directive('scroll', {
   inserted (el, binding) {
@@ -34,7 +40,7 @@ Vue.directive('scroll', {
   }
 })
 export default {
-  components: { Navbar, BtnVoltarTopo, Servicos, ParalaxHome, Numeros, Contato, Footer, ModalWhatsapp }
+  components: { Navbar, BtnVoltarTopo, Servicos, ParalaxHome, Numeros, Contato, Footer, ModalWhatsapp, Cookies, BtnWhatsappFlutuante }
 }
 </script>
 <style lang="">

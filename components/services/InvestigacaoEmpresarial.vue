@@ -15,7 +15,7 @@
         </p>
         <div class="d-flex justify-content-xs-center justify-content-sm-center justify-content-lg-start position-relative align-items-center">
           <h1 class="text-white font-teko fs-45 fw-400">
-            34
+            634
           </h1>
           <div class="borda-numeros mb-3 mx-10" />
           <h3 class="text-white mb-10 font-teko text-uppercase">
