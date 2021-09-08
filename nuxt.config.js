@@ -59,8 +59,13 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'https://detetivegraziella.com.br'
+  },
 
   router: {
     scrollBehavior () {}

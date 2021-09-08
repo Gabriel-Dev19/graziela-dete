@@ -2,7 +2,7 @@
   <div>
     <transition enter-active-class="animate__animated animate__fadeIn" leave-active-class="animate__animated animate__fadeOut">
       <div v-show="ShowBtn" v-scroll="ScrollShow">
-        <button class="btn-topo bg-roxo-super-escuro btn shadow d-flex justify-content-center align-items-center" @click="ScrollTop">
+        <button :class="{'subir-topo': SubirWhatsapp}" class="btn-topo bg-roxo-super-escuro btn shadow d-flex justify-content-center align-items-center" @click="ScrollTop">
           <i class="fa fa-angle-up text-white fs-43 fw-300 mb-1" />
         </button>
       </div>
@@ -14,8 +14,18 @@ export default {
   data () {
     return {
       Quantidade_retira_hash: 0,
-      ShowBtn: false
+      ShowBtn: false,
+      SubirWhatsapp: false
     }
+  },
+  created () {
+    if (!this.getGDPR() === true) {
+      this.SubirWhatsapp = true
+    }
+
+    this.$root.$on('DescerTopo', () => {
+      this.SubirWhatsapp = false
+    })
   },
   methods: {
     ScrollShow () {
@@ -23,6 +33,11 @@ export default {
         this.ShowBtn = true
       } else {
         this.ShowBtn = false
+      }
+    },
+    getGDPR () {
+      if (process.browser) {
+        return localStorage.getItem('GDPR:accepted', true)
       }
     },
     ScrollTop () {
@@ -65,7 +80,12 @@ export default {
       left: 15px;
       width: 48px;
       height: 48px;
+      z-index: 1000;
       border-radius: 50%;
+    }
+    .subir-topo{
+      bottom: 220px !important;
+      z-index: 1030 !important;
     }
   }
   @media (min-width: 576px) {
@@ -75,7 +95,24 @@ export default {
       left: 30px;
       width: 48px;
       height: 48px;
+      z-index: 1000;
       border-radius: 50%;
+    }
+    .subir-topo{
+      bottom: 180px !important;
+      z-index: 1030 !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .subir-topo{
+      bottom: 150px !important;
+      z-index: 1030 !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .subir-topo{
+      bottom: 100px !important;
+      z-index: 1030 !important;
     }
   }
 </style>

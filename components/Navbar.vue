@@ -1,11 +1,11 @@
 <template>
   <div>
     <header>
-      <nav v-scroll="ScrollNav" class="navbar align-items-center px-0 d-lg-none fixed-top nav" :class="{'bg-nav-scroll py-0 shadow': NavScroll, 'pt-40': !NavScroll}">
+      <nav v-scroll="ScrollNav" class="navbar align-items-center px-0 d-lg-none fixed-top nav" :class="{'bg-nav-scroll py-0 shadow': NavScroll, 'pt-35': !NavScroll}">
         <div class="container px-30" :class="{'border-bottom pt-15 pb-15': CollapseNav, 'pt-10 pb-10': NavScroll}">
           <a href="https://detetivegraziella.com.br" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
-            <img v-show="!NavScroll" src="../assets/img/logo-grazi.webp" width="70" alt="Logo Graziela Detetives">
-            <img v-show="NavScroll" src="../assets/img/logo-chapeu.webp" width="40" alt="Logo Graziela Detetives">
+            <img v-show="!NavScroll" src="../assets/img/logo-grazi.webp" width="85" alt="Logo Graziela Detetives">
+            <img v-show="NavScroll" src="../assets/img/logo-chapeu.webp" width="50" alt="Logo Graziela Detetives">
           </a>
           <button v-b-toggle.collapse-navbar class="btn py-0 px-0">
             <ion-icon v-show="IconBar" class="fs-40 text-roxo" name="menu-outline" style="margin-bottom: -7px;" />
@@ -156,7 +156,7 @@
         <div class="container">
           <a href="https://detetivegraziella.com.br" :class="{'text-white': !NavScroll, 'text-grafite': NavScroll}">
             <img v-show="!NavScroll" src="../assets/img/logo-grazi.webp" width="100" alt="Logo Graziela Detetives">
-            <img v-show="NavScroll" src="../assets/img/logo-chapeu.webp" width="50" alt="Logo Graziela Detetives">
+            <img v-show="NavScroll" src="../assets/img/logo-chapeu.webp" width="55" alt="Logo Graziela Detetives">
           </a>
           <div class="ml-auto d-flex">
             <button

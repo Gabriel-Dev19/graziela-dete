@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="div-botao-suspenso-whatsapp">
+    <div id="div-botao-suspenso-whatsapp" :class="{'subir-whatsapp': SubirWhatsapp}">
       <button id="botao-suspenso-whatsapp" class=" shadow-lg d-flex btn justify-content-center d-block" :class="{'animate-whatsapp bg-whatsapp': !ShowDropdownWhatsapp, 'bg-roxo-escuro': ShowDropdownWhatsapp}" @click.prevent="ShowDropdownWhatsapp = !ShowDropdownWhatsapp">
         <i v-show="!ShowDropdownWhatsapp" class=" fab fa-whatsapp align-self-center" />
         <i v-show="ShowDropdownWhatsapp" class=" fa fa-times fw-300 align-self-center" />
@@ -138,7 +138,24 @@
 export default {
   data () {
     return {
-      ShowDropdownWhatsapp: false
+      ShowDropdownWhatsapp: false,
+      SubirWhatsapp: false
+    }
+  },
+  created () {
+    if (!this.getGDPR() === true) {
+      this.SubirWhatsapp = true
+    }
+
+    this.$root.$on('DescerWhatsapp', () => {
+      this.SubirWhatsapp = false
+    })
+  },
+  methods: {
+    getGDPR () {
+      if (process.browser) {
+        return localStorage.getItem('GDPR:accepted', true)
+      }
     }
   }
 }
@@ -193,6 +210,10 @@ export default {
       right: 15px;
       z-index: -1;
     }
+    .subir-whatsapp{
+      bottom: 220px !important;
+      z-index: 1030 !important;
+    }
   }
 
   @media (min-width: 576px) {
@@ -231,6 +252,24 @@ export default {
     .height-div-meio-whatsapp{
       height: 71.3%;
       overflow-y: scroll;
+    }
+
+    .subir-whatsapp{
+      bottom: 180px !important;
+      z-index: 1030 !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .subir-whatsapp{
+      bottom: 150px !important;
+      z-index: 1030 !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .subir-whatsapp{
+      bottom: 100px !important;
+      z-index: 1030 !important;
     }
   }
   .bolinha-whatsapp-conteudo{

@@ -1,22 +1,24 @@
 <template>
   <transition enter-active-class="animate__animated animate__fadeIn" leave-active-class="animate__animated animate__fadeOut">
-    <div v-if="isOpen" class="cookie bg-info shadow-lg py-10 px-0 col-12">
-      <div class="container d-flex align-items-center">
-        <div class="align-items-center d-flex row mx-auto col-12 px-0">
-          <p class="col px-0 text-white text-xs-center text-sm-center text-xl-left mb-0 fs-15">
-            <ion-icon class="fs-23 mr-1" name="alert-circle-outline" style="margin-bottom: -6px;" />
-            Usamos cookies para fornecer nossos serviços e para análises e marketing. Para saber mais sobre nosso uso
-            de cookies, consulte nossa <button class="btn fs-15 text-white text-underline py-0 px-0" @click="Politica">
-              Política de Privacidade
-            </button>.
-          </p>
-          <div class="d-flex align-items-center mt-xs-3 mt-sm-3 mt-xl-0 justify-content-xs-center justify-content-sm-center justify-content-xl-end col-xl-3 px-0 row mx-auto">
-            <button class="btn border-radius-0 fw-500 px-15 btn-light" @click="accept">
-              {{ buttonTextAccept }}
-            </button>
-            <button class="btn border-radius-0 px-15 fw-500 btn-outline-dark ml-2" text @click="deny">
-              {{ buttonTextDeny }}
-            </button>
+    <div v-if="isOpen" class="cookie mb-3 px-0 col-12">
+      <div class="mx-3 bg-white div-cookie mx-lg-auto py-10 shadow-lg px-0">
+        <div class="d-flex px-3 align-items-center">
+          <div class="align-items-center d-flex row mx-auto col-12 px-0">
+            <p class="col px-0 text-xs-center text-sm-center text-xl-left mb-0 fs-15">
+              <ion-icon class="fs-23 mr-1" name="alert-circle-outline" style="margin-bottom: -6px;" />
+              Usamos cookies para fornecer nossos serviços e para análises e marketing. Para saber mais sobre nosso uso
+              de cookies, consulte nossa <button class="btn fs-15 text-underline py-0 px-0" @click="Politica">
+                Política de Privacidade
+              </button>.
+            </p>
+            <div class="d-flex align-items-center mt-xs-3 mt-sm-3 mt-xl-0 justify-content-xs-center justify-content-sm-center justify-content-xl-end col-xl-3 px-0 row mx-auto">
+              <button class="btn border-radius-0 fw-500 px-15 btn-dark" @click="accept">
+                {{ buttonTextAccept }}
+              </button>
+              <button class="btn border-radius-0 px-15 fw-500 btn-outline-dark ml-2" text @click="deny">
+                {{ buttonTextDeny }}
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -70,12 +72,16 @@ export default {
     accept () {
       if (process.browser) {
         this.isOpen = false
+        this.$root.$emit('DescerWhatsapp')
+        this.$root.$emit('DescerTopo')
         localStorage.setItem('GDPR:accepted', true)
       }
     },
     deny () {
       if (process.browser) {
         this.isOpen = false
+        this.$root.$emit('DescerWhatsapp')
+        this.$root.$emit('DescerTopo')
         localStorage.setItem('GDPR:accepted', false)
       }
     },
@@ -99,5 +105,13 @@ export default {
   }
   .cookie__link:hover{
     text-decoration: none
+  }
+  .div-cookie{
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.556) !important;
+  }
+  @media (min-width: 992px) {
+    .div-cookie{
+      width: 80%;
+    }
   }
 </style>
